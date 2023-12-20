@@ -86,7 +86,8 @@ function Nav() {
           </div>
           <div className={styles.logo}>
             <Link href='/' className={styles.logo}>
-              Golfguise
+              Golf <br />
+              Guise
             </Link>
           </div>
           <div className={styles.searchBar}>
