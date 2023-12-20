@@ -6,6 +6,7 @@ export default function Home() {
     <main>
       <h1>Golf Guise</h1>
       <h1>Golf Guise</h1>
+      <h1>Golf Guise</h1>
     </main>
   );
 }
