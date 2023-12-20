@@ -1,8 +1,10 @@
 :root {
   --black: #2a2a2a;
-  --green: #295f4e;
-  --green2: #6db193;
-  --tan: #f2ecdd;
+  --green: #3edc91;
+  --gray: #f5f5f5;
+  --border: #c5c3c3;
+  --darkGray: #F5F5F5;
+  --purple: #466cfa;
 }
 
 * {
@@ -11,12 +13,11 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  font-family: var(--messina);
+  font-family: var(--aeonik);
   overscroll-behavior: none;
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
   -webkit-tap-highlight-color: transparent;
-  color: var(--black);
 }
 
 html {
