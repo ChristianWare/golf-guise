@@ -30,6 +30,38 @@
   margin-top: 2rem;
 }
 
+.leftCTA {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  background: rgb(6, 238, 199);
+  background: -moz-linear-gradient(
+    66deg,
+    rgba(6, 238, 199, 1) 0%,
+    rgba(7, 25, 82, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    66deg,
+    rgba(6, 238, 199, 1) 0%,
+    rgba(7, 25, 82, 1) 100%
+  );
+  background: linear-gradient(
+    66deg,
+    rgba(6, 238, 199, 1) 0%,
+    rgba(7, 25, 82, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#06eec7",endColorstr="#071952",GradientType=1);
+  padding: 10rem;
+}
+
+.ctaHeading {
+  color: var(--gray);
+  letter-spacing: normal;
+  width: 70%;
+  text-align: right;
+  margin-left: auto;
+}
+
 @media screen and (max-width: 968px) {
   .top,
   .bottom {
@@ -48,5 +80,9 @@
 @media screen and (max-width: 768px) {
   .leftBottom {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .leftCTA {
+    padding: 8rem;
   }
 }

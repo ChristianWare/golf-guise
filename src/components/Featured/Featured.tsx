@@ -28,6 +28,12 @@ const Featured: FC<BlogSectionProps> = ({ blogData }) => {
                   <BlogPreviewMedium key={index} mapData={x} />
                 ))}
               </div>
+              <div className={styles.leftCTA}>
+                <h2 className={styles.ctaHeading}>
+                  Get Prospector&#39;s Picks, the 5 minute weekly email used by
+                  +43,000 investors.
+                </h2>
+              </div>
             </div>
             <div className={styles.right}>
               <h2 className={styles.heading3}>Latest</h2>
