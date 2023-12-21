@@ -19,8 +19,9 @@
   align-items: flex-end;
   justify-content: space-between;
   gap: 5rem;
-  padding: 2rem 3rem;
+  padding: 2rem 0rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .socialsContainer {
