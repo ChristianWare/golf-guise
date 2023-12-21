@@ -4,6 +4,7 @@ import FeaturedSection from "@/components/FeaturedSection/FeaturedSection";
 import GuidesSection from "@/components/GuidesSection/GuidesSection";
 import Upcoming from "@/components/Upcoming/Upcoming";
 import TermsSection from "@/components/TermsSection/TermsSection";
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
 
 export default function Home() {
   const fs = require("fs");
@@ -36,6 +37,7 @@ export default function Home() {
       <GuidesSection blogData={blogs} />
       <Upcoming blogData={blogs} />
       <TermsSection />
+      <FinalCTA />
     </main>
   );
 }
