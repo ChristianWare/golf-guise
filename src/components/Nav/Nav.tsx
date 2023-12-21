@@ -8,7 +8,6 @@ import Instagram from "../../../public/icons/instagram.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import Twitter from "../../../public/icons/twitter.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
-import SearchIcon from "../../../public/icons/search.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,12 +77,6 @@ function Nav() {
       <div className={styles.greenTop}></div>
       <header className={styles.header}>
         <div className={styles.navTop}>
-          <div className={styles.socialsContainer}>
-            <Instagram className={styles.icon} width={18} height={18} />
-            <Facebook className={styles.icon} width={18} height={18} />
-            <Twitter className={styles.icon} width={18} height={18} />
-            <LinkedIn className={styles.icon} width={18} height={18} />
-          </div>
           <div className={styles.logo}>
             <Link href='/' className={styles.logo}>
               Golf <br />
@@ -92,6 +85,12 @@ function Nav() {
           </div>
           <div className={styles.searchBar}>
             <Search />
+            <div className={styles.socialsContainer}>
+              <Instagram className={styles.icon} width={18} height={18} />
+              <Facebook className={styles.icon} width={18} height={18} />
+              <Twitter className={styles.icon} width={18} height={18} />
+              <LinkedIn className={styles.icon} width={18} height={18} />
+            </div>
           </div>
         </div>
         <nav className={styles.navbar}>

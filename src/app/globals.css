@@ -18,6 +18,7 @@
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
   -webkit-tap-highlight-color: transparent;
+  /* color: var(--black); */
 }
 
 html {
