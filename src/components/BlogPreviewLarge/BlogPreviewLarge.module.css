@@ -8,7 +8,8 @@
 .column {
   grid-template-columns: repeat(1, 1fr);
   border-top-right-radius: 10px;
-  padding: 1rem;
+  padding: 2rem;
+  height: 100%;
 }
 
 .left,
@@ -36,7 +37,6 @@
 
 .imgCol {
   border-radius: 10px;
-  border: 1px solid var(--black);
 }
 
 .right {
@@ -57,6 +57,14 @@
 .featured {
   background-color: var(--purple);
   color: var(--gray);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+
+.guide {
+  background-color: var(--green);
+  color: var(--black);
   padding: 0.3rem 1rem;
   border-radius: 20px;
   font-size: 1.1rem;
@@ -101,5 +109,10 @@
   .img {
     border-top-right-radius: 8px;
     border-bottom-left-radius: 0px;
+  }
+  
+  .imgCol {
+    border-bottom-left-radius: 10px;
+    
   }
 }

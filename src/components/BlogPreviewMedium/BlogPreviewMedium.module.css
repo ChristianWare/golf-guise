@@ -41,6 +41,15 @@
   font-size: 1.1rem;
 }
 
+.guide {
+  background-color: var(--green);
+  color: var(--black);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  position: relative;
+}
+
 .tagsContainer {
   display: flex;
   align-items: center;

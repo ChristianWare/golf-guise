@@ -1,0 +1,29 @@
+.container {
+  padding-bottom: 5rem;
+}
+
+.top {
+  margin-bottom: 3rem;
+}
+
+.heading {
+  font-size: 4.6rem;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 968px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

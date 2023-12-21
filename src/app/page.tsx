@@ -1,6 +1,7 @@
 import ReviewsSection from "@/components/ReviewsSection/ReviewsSection";
 import styles from "./page.module.css";
 import FeaturedSection from "@/components/FeaturedSection/FeaturedSection";
+import GuidesSection from "@/components/GuidesSection/GuidesSection";
 
 export default function Home() {
   const fs = require("fs");
@@ -30,6 +31,7 @@ export default function Home() {
     <main>
       <FeaturedSection blogData={blogs} />
       <ReviewsSection blogData={blogs} />
+      <GuidesSection blogData={blogs} />
     </main>
   );
 }
