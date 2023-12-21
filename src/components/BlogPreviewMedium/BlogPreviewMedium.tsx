@@ -1,16 +1,15 @@
-"use client";
-
 import Image from "next/image";
 import Img from "../../../public/images/img1.png";
 import Link from "next/link";
 import styles from "./BlogPreviewMedium.module.css";
 import { BlogPreviewProps } from "@/lib/interface";
 import { FC } from "react";
-import { usePathname } from "next/navigation";
 
-const BlogPreviewMedium: FC<BlogPreviewProps> = ({ mapData, key }) => {
-  const pathname = usePathname();
-
+const BlogPreviewMedium: FC<BlogPreviewProps> = ({
+  mapData,
+  key,
+  featured,
+}) => {
   return (
     <article key={key} className={styles.container}>
       <div className={styles.left}>
@@ -20,9 +19,7 @@ const BlogPreviewMedium: FC<BlogPreviewProps> = ({ mapData, key }) => {
       </div>
       <div className={styles.right}>
         <span className={styles.tagsContainer}>
-          {pathname === "/" && (
-            <span className={styles.featured}>FEATURED</span>
-          )}
+          {featured && <span className={styles.featured}>FEATURED</span>}
           <span className={styles.category}>CATEGORY</span>
         </span>
 

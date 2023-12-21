@@ -1,3 +1,4 @@
+import Reviews from "@/components/Reviews/Reviews";
 import styles from "./page.module.css";
 import Featured from "@/components/Featured/Featured";
 
@@ -28,6 +29,7 @@ export default function Home() {
   return (
     <main>
       <Featured blogData={blogs} />
+      <Reviews blogData={blogs} />
     </main>
   );
 }

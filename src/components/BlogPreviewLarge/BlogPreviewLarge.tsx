@@ -1,28 +1,33 @@
-"use client";
-
 import { BlogPreviewProps } from "@/lib/interface";
 import { FC } from "react";
 import styles from "./BlogPreviewLarge.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/img1.png";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
-const BlogPreviewLarge: FC<BlogPreviewProps> = ({ mapData, key }) => {
-  const pathname = usePathname();
-
+const BlogPreviewLarge: FC<BlogPreviewProps> = ({
+  mapData,
+  key,
+  column = "",
+  imgCol = "",
+  colPadding = "",
+  featured,
+}) => {
   return (
-    <article key={key} className={styles.container}>
+    <article key={key} className={`${styles.container} ${styles[column]}`}>
       <div className={styles.left}>
-        <div className={styles.imgContainer}>
-          <Image src={Img} alt='image' fill className={styles.img} />
+        <div className={`${styles.imgContainer} ${styles[column]}`}>
+          <Image
+            src={Img}
+            alt='image'
+            fill
+            className={`${styles.img} ${styles[imgCol]}`}
+          />
         </div>
       </div>
-      <div className={styles.right}>
+      <div className={`${styles.right} ${styles[colPadding]}`}>
         <span className={styles.tagsContainer}>
-          {pathname === "/" && (
-            <span className={styles.featured}>FEATURED</span>
-          )}
+          {featured && <span className={styles.featured}>FEATURED</span>}
           <span className={styles.category}>CATEGORY</span>
         </span>
 

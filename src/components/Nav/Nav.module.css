@@ -141,6 +141,7 @@
     width: 100%;
     border-bottom: 2px solid var(--darkGray);
     padding-bottom: 1rem;
+    margin-top: 2rem;
     position: relative;
   }
 
@@ -185,7 +186,7 @@
     border: none;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
     gap: 3rem;
     margin-top: 1rem;

@@ -42,4 +42,8 @@ export interface BlogData {
 export interface BlogPreviewProps {
   mapData: BlogData;
   key: number;
+  featured?: boolean;
+  column?: string;
+  imgCol?: string;
+  colPadding?: string;
 }

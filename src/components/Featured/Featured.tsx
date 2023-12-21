@@ -1,9 +1,9 @@
 import { FC } from "react";
+import { BlogData, BlogSectionProps } from "@/lib/interface";
 import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
 import BlogPreviewSmall from "../BlogPreviewSmall/BlogPreviewSmall";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Featured.module.css";
-import { BlogData, BlogSectionProps } from "@/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import BlogPreviewMedium from "../BlogPreviewMedium/BlogPreviewMedium";
 
@@ -20,12 +20,12 @@ const Featured: FC<BlogSectionProps> = ({ blogData }) => {
             <div className={styles.left}>
               <div className={styles.leftTop}>
                 {blogData.slice(0, 1).map((x: BlogData, index: number) => (
-                  <BlogPreviewLarge key={index} mapData={x} />
+                  <BlogPreviewLarge key={index} mapData={x} featured />
                 ))}
               </div>
               <div className={styles.leftBottom}>
                 {blogData.slice(0, 4).map((x: BlogData, index: number) => (
-                  <BlogPreviewMedium key={index} mapData={x} />
+                  <BlogPreviewMedium key={index} mapData={x} featured />
                 ))}
               </div>
               <div className={styles.leftCTA}>
