@@ -25,8 +25,18 @@
   gap: 1rem;
 }
 
+.iconContainer {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+
 .icon {
-  color: var(--black);
+  color: var(--gray);
 }
 
 .logo {

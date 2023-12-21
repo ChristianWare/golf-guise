@@ -87,10 +87,18 @@ function Nav() {
             <div className={styles.searchBar}>
               <Search />
               <div className={styles.socialsContainer}>
-                <Instagram className={styles.icon} width={18} height={18} />
-                <Facebook className={styles.icon} width={18} height={18} />
-                <Twitter className={styles.icon} width={18} height={18} />
-                <LinkedIn className={styles.icon} width={18} height={18} />
+                <div className={styles.iconContainer}>
+                  <Instagram className={styles.icon} width={18} height={18} />
+                </div>
+                <div className={styles.iconContainer}>
+                  <Facebook className={styles.icon} width={18} height={18} />
+                </div>
+                <div className={styles.iconContainer}>
+                  <Twitter className={styles.icon} width={18} height={18} />
+                </div>
+                <div className={styles.iconContainer}>
+                  <LinkedIn className={styles.icon} width={18} height={18} />
+                </div>
               </div>
             </div>
           </div>
@@ -115,7 +123,9 @@ function Nav() {
               ))}
               {isOpen && (
                 <li className={styles.navItem} onClick={() => setIsOpen(false)}>
-                  <Link href='/search' className={styles.navItem}>Search</Link>
+                  <Link href='/search' className={styles.navItem}>
+                    Search
+                  </Link>
                 </li>
               )}
             </ul>
