@@ -17,6 +17,18 @@ const aeonikBold = localFont({
   display: "swap",
 });
 
+const ppMoriRegualr = localFont({
+  src: "../../public/fonts/PPMoriRegular.otf",
+  variable: "--ppMoriRegualr",
+  display: "swap",
+});
+
+const ppMoriSemiBold = localFont({
+  src: "../../public/fonts/PPMoriSemiBold.otf",
+  variable: "--ppMoriSemiBold",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -25,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} ${aeonik.variable} ${aeonikBold.variable}`}
+        className={`${inter.className} ${aeonik.variable} ${aeonikBold.variable} ${ppMoriRegualr.variable} ${ppMoriSemiBold.variable}`}
       >
         <Nav />
         {children}

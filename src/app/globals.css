@@ -42,13 +42,12 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--aeonik);
+  font-family: var(--ppMoriSemiBold);
   color: var(--black);
   hyphens: auto;
 }
 
 h1 {
-  font-family: var(--aeonikBold);
   font-size: 10rem;
   line-height: 80%;
   letter-spacing: -5px;
