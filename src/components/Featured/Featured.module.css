@@ -6,12 +6,47 @@
   margin-top: 2rem;
 }
 
-.heading {
+.top {
   margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2rem;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+}
+
+.heading3 {
+  display: none;
+}
+
+.leftBottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 968px) {
+  .top,
   .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heading2 {
+    display: none;
+  }
+
+  .heading3 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftBottom {
     grid-template-columns: repeat(1, 1fr);
   }
 }

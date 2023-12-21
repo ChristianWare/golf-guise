@@ -113,6 +113,11 @@ function Nav() {
                   </Link>
                 </li>
               ))}
+              {isOpen && (
+                <li className={styles.navItem} onClick={() => setIsOpen(false)}>
+                  <Link href='/search' className={styles.navItem}>Search</Link>
+                </li>
+              )}
             </ul>
             {isOpen && (
               <div

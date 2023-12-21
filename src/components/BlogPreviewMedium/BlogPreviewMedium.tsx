@@ -1,14 +1,14 @@
 "use client";
 
-import { BlogPreviewProps } from "@/lib/interface";
-import { FC } from "react";
-import styles from "./BlogPreviewLarge.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/img1.png";
 import Link from "next/link";
+import styles from "./BlogPreviewMedium.module.css";
+import { BlogPreviewProps } from "@/lib/interface";
+import { FC } from "react";
 import { usePathname } from "next/navigation";
 
-const BlogPreviewLarge: FC<BlogPreviewProps> = ({ mapData, key }) => {
+const BlogPreviewMedium: FC<BlogPreviewProps> = ({ mapData, key }) => {
   const pathname = usePathname();
 
   return (
@@ -36,4 +36,4 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({ mapData, key }) => {
     </article>
   );
 };
-export default BlogPreviewLarge;
+export default BlogPreviewMedium;
