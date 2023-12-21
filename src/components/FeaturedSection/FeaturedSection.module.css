@@ -1,3 +1,5 @@
+
+
 .top {
   margin-bottom: 2rem;
   display: grid;
@@ -32,7 +34,6 @@
 
 .leftCTA {
   margin-top: 2rem;
-  margin-bottom: 5rem;
   border-radius: 10px;
   background: rgb(6, 238, 199);
   background: -moz-linear-gradient(
@@ -74,6 +75,10 @@
 
   .heading3 {
     display: block;
+  }
+
+  .left {
+    margin-bottom: 5rem;
   }
 }
 

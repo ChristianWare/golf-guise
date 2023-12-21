@@ -1,8 +1,8 @@
+import { FC } from "react";
+import { BlogData, BlogSectionProps } from "@/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./GuidesSection.module.css";
-import { FC } from "react";
-import { BlogData, BlogSectionProps } from "@/lib/interface";
 import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
 import BlogPreviewMedium from "../BlogPreviewMedium/BlogPreviewMedium";
 
@@ -12,7 +12,7 @@ const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Guides</h2>
+            <h2 className={styles.heading}>Guides.</h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
