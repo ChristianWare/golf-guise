@@ -23,6 +23,10 @@
   height: 330px;
 }
 
+.colImg {
+  height: 275px;
+}
+
 .img {
   object-fit: cover;
   border-radius: 8px;
@@ -68,8 +72,12 @@
   font-size: 1.1rem;
 }
 
+.colTitle {
+  font-size: 2.2rem;
+}
+
 .date {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--black);
   opacity: 0.7;
 }

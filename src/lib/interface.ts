@@ -46,4 +46,6 @@ export interface BlogPreviewProps {
   column?: string;
   imgCol?: string;
   colPadding?: string;
+  colTitle?: string;
+  colImg?: string;
 }

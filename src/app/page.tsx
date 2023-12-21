@@ -1,6 +1,6 @@
-import Reviews from "@/components/Reviews/Reviews";
+import ReviewsSection from "@/components/ReviewsSection/ReviewsSection";
 import styles from "./page.module.css";
-import Featured from "@/components/Featured/Featured";
+import FeaturedSection from "@/components/FeaturedSection/FeaturedSection";
 
 export default function Home() {
   const fs = require("fs");
@@ -28,8 +28,8 @@ export default function Home() {
 
   return (
     <main>
-      <Featured blogData={blogs} />
-      <Reviews blogData={blogs} />
+      <FeaturedSection blogData={blogs} />
+      <ReviewsSection blogData={blogs} />
     </main>
   );
 }

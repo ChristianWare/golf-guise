@@ -3,7 +3,7 @@ import { BlogData, BlogSectionProps } from "@/lib/interface";
 import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
 import BlogPreviewSmall from "../BlogPreviewSmall/BlogPreviewSmall";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import styles from "./Featured.module.css";
+import styles from "./FeaturedSection.module.css";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import BlogPreviewMedium from "../BlogPreviewMedium/BlogPreviewMedium";
 

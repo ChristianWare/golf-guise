@@ -8,15 +8,17 @@ import Link from "next/link";
 const BlogPreviewLarge: FC<BlogPreviewProps> = ({
   mapData,
   key,
+  featured,
   column = "",
   imgCol = "",
   colPadding = "",
-  featured,
+  colTitle = "",
+  colImg = "",
 }) => {
   return (
     <article key={key} className={`${styles.container} ${styles[column]}`}>
       <div className={styles.left}>
-        <div className={`${styles.imgContainer} ${styles[column]}`}>
+        <div className={`${styles.imgContainer} ${styles[colImg]}`}>
           <Image
             src={Img}
             alt='image'
@@ -32,7 +34,9 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
         </span>
 
         <Link href={`/blog/${mapData.slug}`} passHref>
-          <h2 className={styles.title}>{mapData.meta.title}</h2>
+          <h2 className={`${styles.title} ${styles[colTitle]}`}>
+            {mapData.meta.title}
+          </h2>
         </Link>
         <time dateTime='2023-02-02' className={styles.date}>
           {mapData.meta.date}

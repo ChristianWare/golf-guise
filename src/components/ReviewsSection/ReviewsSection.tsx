@@ -2,7 +2,7 @@ import { FC } from "react";
 import { BlogData, BlogSectionProps } from "@/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import styles from "./Reviews.module.css";
+import styles from "./ReviewsSection.module.css";
 import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
 
 const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
@@ -23,8 +23,10 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
                   key={index}
                   mapData={x}
                   column='column'
+                  colImg='colImg'
                   imgCol='imgCol'
                   colPadding='colPadding'
+                  colTitle='colTitle'
                 />
               ))}
             </div>
