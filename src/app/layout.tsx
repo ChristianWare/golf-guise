@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${aeonik.variable} ${aeonikBold.variable}`}
       >
+        <Nav />
         {children}
       </body>
     </html>
