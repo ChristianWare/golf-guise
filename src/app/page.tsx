@@ -1,7 +1,4 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import Time from "@/components/Time/Time";
-import Nav from "@/components/Nav/Nav";
 import Featured from "@/components/Featured/Featured";
 
 export default function Home() {
