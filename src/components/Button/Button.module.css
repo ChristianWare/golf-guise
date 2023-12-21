@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--ppMoriSemiBold);
+  white-space: nowrap;
+  border-radius: 50px;
+  user-select: none;
+  transition: all 0.1s ease-in;
+  display: inline-block;
+  padding: 3px 25px;
+  padding-top: 5px;
+  border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  line-height: 1;
+}
+
+.primary {
+  color: var(--black);
+  background-color: var(--green);
+}
+
+.icon {
+  position: relative;
+  top: 1px;
+  margin-left: 1rem;
+}

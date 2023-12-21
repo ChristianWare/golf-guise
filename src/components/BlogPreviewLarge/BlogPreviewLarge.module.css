@@ -58,6 +58,7 @@
   background-color: var(--purple);
   color: var(--gray);
   padding: 0.3rem 1rem;
+  padding-top: .6rem;
   border-radius: 20px;
   font-size: 1.1rem;
 }
@@ -66,6 +67,7 @@
   background-color: var(--green);
   color: var(--black);
   padding: 0.3rem 1rem;
+  padding-top: .6rem;
   border-radius: 20px;
   font-size: 1.1rem;
 }

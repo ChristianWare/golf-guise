@@ -11,7 +11,7 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Reviews</h2>
+            <h2 className={styles.heading}>Reviews.</h2>
             <p className={styles.copy}>
               Our latest reviews from golf analysts around the world
             </p>
