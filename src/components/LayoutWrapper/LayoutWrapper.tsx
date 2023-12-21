@@ -4,7 +4,7 @@ import styles from "./LayoutWrapper.module.css";
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className={styles.layout}>
-      <ContentPadding>{children}</ContentPadding>
+      {children}
     </div>
   );
 };

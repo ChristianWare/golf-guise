@@ -1,8 +1,5 @@
 .header {
   position: relative;
-  max-width: 1500px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .greenTop {
@@ -16,8 +13,8 @@
   align-items: flex-end;
   justify-content: space-between;
   gap: 5rem;
-  padding: 2rem 0rem;
   position: relative;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 

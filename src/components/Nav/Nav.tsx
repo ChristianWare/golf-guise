@@ -8,6 +8,7 @@ import Instagram from "../../../public/icons/instagram.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import Twitter from "../../../public/icons/twitter.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
+import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,6 +76,7 @@ function Nav() {
   return (
     <>
       <div className={styles.greenTop}></div>
+    <LayoutWrapper>
       <header className={styles.header}>
         <div className={styles.navTop}>
           <div className={styles.logo}>
@@ -138,6 +140,7 @@ function Nav() {
           </span>
         </nav>
       </header>
+      </LayoutWrapper>
     </>
   );
 }
