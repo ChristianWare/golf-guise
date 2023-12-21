@@ -108,6 +108,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
+    gap: 2rem;
   }
 
   .logo {
@@ -129,7 +130,7 @@
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     border-bottom: 2px solid var(--darkGray);
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     position: relative;
   }
 
@@ -137,6 +138,7 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 1rem;
+    margin-bottom: 0rem;
     gap: 2rem;
     padding: 1rem;
   }

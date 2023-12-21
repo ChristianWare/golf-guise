@@ -10,11 +10,16 @@ const Featured: FC<BlogSectionProps> = ({ blogData }) => {
     <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
-          <h2 className={styles.heading}>Featured</h2>
           <div className={styles.bottom}>
-            {blogData.slice(0, 1).map((x: BlogData, index: number) => (
-              <BlogPreviewLarge key={index} mapData={x} />
-            ))}
+            <div className={styles.left}>
+              <h2 className={styles.heading}>Featured</h2>
+              {blogData.slice(0, 1).map((x: BlogData, index: number) => (
+                <BlogPreviewLarge key={index} mapData={x} />
+              ))}
+            </div>
+            <div className={styles.right}>
+              <h2 className={styles.heading}>Latest</h2>
+            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>

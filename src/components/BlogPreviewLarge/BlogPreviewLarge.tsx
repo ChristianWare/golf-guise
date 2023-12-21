@@ -1,11 +1,16 @@
+"use client";
+
 import { BlogPreviewProps } from "@/lib/interface";
 import styles from "./BlogPreviewLarge.module.css";
 import { FC } from "react";
 import Image from "next/image";
 import Img from "../../../public/images/img1.png";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const BlogPreviewLarge: FC<BlogPreviewProps> = ({ mapData, key }) => {
+  const pathname = usePathname();
+
   return (
     <article key={key} className={styles.container}>
       <div className={styles.left}>
@@ -14,6 +19,13 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({ mapData, key }) => {
         </div>
       </div>
       <div className={styles.right}>
+        <span className={styles.tagsContainer}>
+          {pathname === "/" && (
+            <span className={styles.featured}>FEATURED</span>
+          )}
+          <span className={styles.category}>CATEGORY</span>
+        </span>
+
         <Link href={`/blog/${mapData.slug}`} passHref>
           <h2 className={styles.title}>{mapData.meta.title}</h2>
         </Link>
