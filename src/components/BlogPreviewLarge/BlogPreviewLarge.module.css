@@ -66,13 +66,13 @@
 }
 
 .guide {
-  background-color: var(--green);
+  background-color: transparent;
   color: var(--black);
 }
 
 .review {
-  background-color: var(--greenii);
-  color: var(--gray);
+  background-color: transparent;
+  color: var(--black);
 }
 
 .tagsContainer {

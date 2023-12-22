@@ -37,12 +37,12 @@
 }
 
 .guide {
-  background-color: var(--green);
+  background-color: transparent;
   color: var(--black);
 }
 
 .review {
-  background-color: var(--greenii);
+  background-color: transparent;
   color: var(--gray);
 }
 
