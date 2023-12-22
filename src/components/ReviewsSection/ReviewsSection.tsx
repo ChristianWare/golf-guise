@@ -4,6 +4,8 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./ReviewsSection.module.css";
 import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
+import BlogPreviewMedium from "../BlogPreviewMedium/BlogPreviewMedium";
+import BlogPreviewSmall from "../BlogPreviewSmall/BlogPreviewSmall";
 
 const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
   return (
@@ -18,19 +20,28 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              {blogData.slice(0, 4).map((x: BlogData, index: number) => (
+              {blogData.slice(0, 1).map((x: BlogData, index: number) => (
                 <BlogPreviewLarge
                   key={index}
                   mapData={x}
                   column='column'
-                  colImg='colImg'
                   imgCol='imgCol'
                   colPadding='colPadding'
-                  colTitle='colTitle'
                 />
               ))}
             </div>
-            <div className={styles.right}></div>
+            <div className={styles.right}>
+              <div className={styles.rightBottom}>
+                {blogData.slice(0, 2).map((x: BlogData, index: number) => (
+                  <BlogPreviewMedium key={index} mapData={x} />
+                ))}
+              </div>
+              <div className={styles.rightTop}>
+                {blogData.slice(0, 1).map((x: BlogData, index: number) => (
+                  <BlogPreviewLarge key={index} mapData={x} />
+                ))}
+              </div>
+            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>
