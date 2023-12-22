@@ -31,16 +31,10 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
               ))}
             </div>
             <div className={styles.right}>
-              <div className={styles.rightBottom}>
-                {blogData.slice(0, 2).map((x: BlogData, index: number) => (
+                {blogData.slice(0, 3).map((x: BlogData, index: number) => (
                   <BlogPreviewMedium key={index} mapData={x} />
                 ))}
-              </div>
-              <div className={styles.rightTop}>
-                {blogData.slice(0, 1).map((x: BlogData, index: number) => (
-                  <BlogPreviewLarge key={index} mapData={x} />
-                ))}
-              </div>
+              
             </div>
           </div>
         </ContentPadding>
