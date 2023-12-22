@@ -27,14 +27,14 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
                   column='column'
                   imgCol='imgCol'
                   colPadding='colPadding'
+                  review
                 />
               ))}
             </div>
             <div className={styles.right}>
-                {blogData.slice(0, 3).map((x: BlogData, index: number) => (
-                  <BlogPreviewMedium key={index} mapData={x} />
-                ))}
-              
+              {blogData.slice(0, 3).map((x: BlogData, index: number) => (
+                <BlogPreviewMedium key={index} mapData={x} review />
+              ))}
             </div>
           </div>
         </ContentPadding>

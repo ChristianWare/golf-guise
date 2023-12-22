@@ -44,6 +44,7 @@ export interface BlogPreviewProps {
   key: number;
   featured?: boolean;
   guide?: boolean;
+  review?: boolean;
   column?: string;
   imgCol?: string;
   colPadding?: string;

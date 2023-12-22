@@ -53,23 +53,26 @@
   padding-top: 2rem;
 }
 
-.featured {
+.featured,
+.guide,
+.review {
   background-color: var(--purple);
   color: var(--gray);
   padding: 0.3rem 1rem;
   padding-top: 0.6rem;
   border-radius: 20px;
   font-size: 1.1rem;
+  border: 1px solid var(--black);
 }
 
 .guide {
   background-color: var(--green);
   color: var(--black);
-  padding: 0.3rem 1rem;
-  padding-top: 0.6rem;
-  border-radius: 20px;
-  border: 1px solid var(--black);
-  font-size: 1.1rem;
+}
+
+.review {
+  background-color: var(--greenii);
+  color: var(--gray);
 }
 
 .tagsContainer {

@@ -24,6 +24,34 @@
   opacity: 0.7;
 }
 
+.featured,
+.guide,
+.review {
+  background-color: var(--purple);
+  color: var(--gray);
+  padding: 0.3rem 1rem;
+  padding-top: 0.6rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  border: 1px solid var(--black);
+}
+
+.guide {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.review {
+  background-color: var(--greenii);
+  color: var(--gray);
+}
+
+.tagsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 968px) {
   .container {
     padding: 2rem;
