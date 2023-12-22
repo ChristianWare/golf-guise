@@ -4,6 +4,7 @@
   border: 1px solid var(--borderii);
   background-color: var(--gray);
   border-radius: 10px;
+  height: 100%;
 }
 
 .left,
