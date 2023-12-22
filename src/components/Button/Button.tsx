@@ -5,7 +5,13 @@ import Arrow from "../../../public/icons/arrow.svg";
 
 import styles from "./Button.module.css";
 
-const Button: FC<ButtonProps> = ({ href = "", text, btnType, target = "" }) => {
+const Button: FC<ButtonProps> = ({
+  href = "",
+  text,
+  btnType,
+  target = "",
+  iconColor = "",
+}) => {
   return (
     <button className={styles.container}>
       <Link
@@ -15,7 +21,11 @@ const Button: FC<ButtonProps> = ({ href = "", text, btnType, target = "" }) => {
       >
         {text}
         <span>
-          <Arrow width={20} height={20} className={styles.icon} />
+          <Arrow
+            width={25}
+            height={25}
+            className={`${styles.icon} ${styles[iconColor]}`}
+          />
         </span>
       </Link>
     </button>

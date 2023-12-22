@@ -101,7 +101,6 @@ function Nav() {
               </div>
             </div>
           </div>
-          {/* <div className={styles.greenTop}></div> */}
           <nav className={styles.navbar}>
             <ul
               className={

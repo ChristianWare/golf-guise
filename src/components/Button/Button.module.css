@@ -35,8 +35,24 @@
   background-color: var(--green);
 }
 
+.secondary {
+  background-color: var(--black);
+  color: var(--gray);
+  padding: 3px 25px;
+  padding-top: 5px;
+}
+
+.secondary:hover {
+  background-color: var(--blackii);
+}
+
 .icon {
   position: relative;
   top: 1px;
   margin-left: 1rem;
+  color: var(--black);
+}
+
+.white {
+  color: #ffffff;
 }

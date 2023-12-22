@@ -6,6 +6,7 @@ export interface ButtonProps {
   text: string;
   btnType: string;
   target?: string;
+  iconColor?: string;
 }
 
 export interface ImageGridProps {

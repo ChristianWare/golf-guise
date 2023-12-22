@@ -68,7 +68,7 @@
   margin-left: auto;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
   .top,
   .bottom {
     grid-template-columns: repeat(1, 1fr);

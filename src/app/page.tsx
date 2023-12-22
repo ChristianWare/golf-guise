@@ -5,6 +5,7 @@ import GuidesSection from "@/components/GuidesSection/GuidesSection";
 import Upcoming from "@/components/Upcoming/Upcoming";
 import TermsSection from "@/components/TermsSection/TermsSection";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import Gear from "@/components/Gear/Gear";
 
 export default function Home() {
   const fs = require("fs");
@@ -36,6 +37,7 @@ export default function Home() {
       <ReviewsSection blogData={blogs} />
       <GuidesSection blogData={blogs} />
       <Upcoming blogData={blogs} />
+      <Gear />
       <TermsSection />
       <FinalCTA />
     </main>
