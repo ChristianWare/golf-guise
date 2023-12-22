@@ -75,7 +75,6 @@ function Nav() {
 
   return (
     <>
-      <div className={styles.greenTop}></div>
       <LayoutWrapper>
         <header className={styles.header}>
           <div className={styles.navTop}>
@@ -102,6 +101,7 @@ function Nav() {
               </div>
             </div>
           </div>
+          {/* <div className={styles.greenTop}></div> */}
           <nav className={styles.navbar}>
             <ul
               className={
@@ -153,6 +153,7 @@ function Nav() {
               <span className={styles.whiteBar}></span>
             </span>
           </nav>
+          <div className={styles.greenTop}></div>
         </header>
       </LayoutWrapper>
     </>

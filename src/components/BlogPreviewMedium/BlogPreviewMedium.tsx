@@ -24,7 +24,7 @@ const BlogPreviewMedium: FC<BlogPreviewProps> = ({
           {featured && <span className={styles.featured}>FEATURED</span>}
           {guide && <span className={styles.guide}>GUIDE</span>}
           {review && <span className={styles.review}>REVIEW</span>}
-          <span className={styles.category}>5 MIN READ</span>
+          <span className={styles.category}>Category</span>
         </span>
 
         <Link href={`/blog/${mapData.slug}`} passHref>

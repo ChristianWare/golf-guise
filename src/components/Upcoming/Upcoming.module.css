@@ -3,7 +3,8 @@
 }
 
 .heading {
-  font-size: 4.6rem;
+  border-bottom: thick double #06eec7;
+  padding-bottom: 1rem;
 }
 
 .bottom {
@@ -62,6 +63,12 @@
 
   .left {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

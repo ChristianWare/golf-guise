@@ -3,7 +3,8 @@
 }
 
 .heading {
-  font-size: 4.6rem;
+  border-bottom: thick double #06eec7;
+  padding-bottom: 1rem;
 }
 
 .copy {

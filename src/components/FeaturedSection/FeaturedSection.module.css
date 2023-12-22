@@ -1,10 +1,10 @@
-
-
 .top {
   margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 2rem;
+  
+  padding-bottom: 1rem;
 }
 
 .bottom {
@@ -13,6 +13,11 @@
   grid-gap: 2rem;
   margin-top: 2;
   margin-top: 2rem;
+}
+
+.heading, .heading2, .heading3 {
+  border-bottom: thick double #06eec7;
+  padding-bottom: 1rem;
 }
 
 .right {

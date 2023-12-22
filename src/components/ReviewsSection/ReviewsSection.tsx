@@ -5,7 +5,6 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./ReviewsSection.module.css";
 import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
 import BlogPreviewMedium from "../BlogPreviewMedium/BlogPreviewMedium";
-import BlogPreviewSmall from "../BlogPreviewSmall/BlogPreviewSmall";
 
 const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
   return (
@@ -13,10 +12,7 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Reviews.</h2>
-            <p className={styles.copy}>
-              Our latest reviews from golf analysts around the world
-            </p>
+            <h2 className={styles.heading}>Reviews</h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
@@ -27,13 +23,12 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
                   column='column'
                   imgCol='imgCol'
                   colPadding='colPadding'
-                  review
                 />
               ))}
             </div>
             <div className={styles.right}>
               {blogData.slice(0, 3).map((x: BlogData, index: number) => (
-                <BlogPreviewMedium key={index} mapData={x} review />
+                <BlogPreviewMedium key={index} mapData={x} />
               ))}
             </div>
           </div>

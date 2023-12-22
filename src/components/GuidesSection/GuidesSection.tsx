@@ -12,12 +12,12 @@ const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Guides.</h2>
+            <h2 className={styles.heading}>Guides</h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
               {blogData.slice(0, 3).map((x: BlogData, index: number) => (
-                <BlogPreviewMedium key={index} mapData={x} guide />
+                <BlogPreviewMedium key={index} mapData={x} />
               ))}
             </div>
             <div className={styles.right}>
@@ -28,7 +28,6 @@ const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
                   column='column'
                   imgCol='imgCol'
                   colPadding='colPadding'
-                  guide
                 />
               ))}
             </div>

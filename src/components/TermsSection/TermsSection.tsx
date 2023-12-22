@@ -11,10 +11,7 @@ const TermsSection = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Golf terms to know.</h2>
-            <div className={styles.btnContainer}>
-              <Button btnType='primary' text='View All' href='/' />
-            </div>
+            <h2 className={styles.heading}>Golf terms to know</h2>
           </div>
           <div className={styles.bottom}>
             {terms.map((x, index) => (
@@ -29,7 +26,7 @@ const TermsSection = () => {
               </div>
             ))}
           </div>
-          <div className={styles.btnContainerii}>
+          <div className={styles.btnContainer}>
             <Button btnType='primary' text='View All' href='/' />
           </div>
         </ContentPadding>

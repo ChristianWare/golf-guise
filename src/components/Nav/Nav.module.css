@@ -4,7 +4,7 @@
 
 .greenTop {
   width: 100%;
-  height: 30px;
+  height: 3px;
   background-color: var(--green);
 }
 
@@ -68,8 +68,9 @@
   width: 100%;
   padding: 1rem;
   z-index: 1000;
-  border-top: 1px solid var(--black);
-  border-bottom: 1px solid var(--black);
+  border-top: 1px solid var(--borderii);
+  border-bottom: 1px solid var(--borderii);
+  background-color: var(--gray);
 }
 
 .navMenu {
@@ -87,6 +88,7 @@
   user-select: none;
   transition: all 0.2s ease-in;
   color: var(--black);
+  font-family: var(--ppMoriSemiBold);
 }
 
 .navItem:hover {
@@ -143,6 +145,14 @@
     padding-bottom: 1rem;
     margin-top: 2rem;
     position: relative;
+  }
+
+  .navbar {
+    background-color: transparent;
+  }
+
+  .greenTop {
+    display: none;
   }
 
   .navTop {
