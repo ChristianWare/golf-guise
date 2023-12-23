@@ -63,7 +63,7 @@
   padding-top: 0.6rem;
   border-radius: 20px;
   font-size: 1.1rem;
-  border: 1px solid var(--black);
+  border: 1px solid var(--border);
 }
 
 .guide {
@@ -88,6 +88,16 @@
 
 .colTitle {
   font-size: 2.2rem;
+}
+
+.desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 1.6rem;
+  opacity: 0.6;
+  margin-top: 2rem;
 }
 
 .date {

@@ -41,6 +41,7 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
           <h2 className={`${styles.title} ${styles[colTitle]}`}>
             {mapData.meta.title}
           </h2>
+          <p className={styles.desc}>{mapData.meta.description}</p>
         </Link>
         <time dateTime='2023-02-02' className={styles.date}>
           {mapData.meta.date}

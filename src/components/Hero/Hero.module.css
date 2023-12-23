@@ -1,19 +1,25 @@
 .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
-.heading {
-  flex: 1;
+.left {
+  flex: 2;
+}
+
+.copy {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  width: 70%;
 }
 
 .searchContainer {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    flex: 1;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
 }
 
 .socialsContainer {
@@ -39,13 +45,23 @@
 }
 
 @media screen and (max-width: 1068px) {
-    .content {
-        flex-direction: column;
-    }
+  .content {
+    flex-direction: column;
+  }
+
+  .heading, .copy {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .copy {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .searchContainer {
-        width: 100%;
-    }
+  .searchContainer {
+    width: 100%;
+  }
 }

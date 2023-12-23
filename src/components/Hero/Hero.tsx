@@ -13,7 +13,13 @@ const Hero = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
-            <h1 className={styles.heading}>golf guise</h1>
+            <div className={styles.left}>
+              <h1 className={styles.heading}>golf guise</h1>
+              <p className={styles.copy}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+                ex aliquid, repudiandae non illo quibusdam?
+              </p>
+            </div>
             <div className={styles.searchContainer}>
               <Search />
               <div className={styles.socialsContainer}>
