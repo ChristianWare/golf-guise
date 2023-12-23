@@ -19,10 +19,10 @@ const TermsSection = () => {
                 <h3 className={styles.title}>
                   {x.title}
                   <span className={styles.arrow}>
-                    <Arrow width={30} height={30} className={styles.arrow} />
+                    <Arrow width={25} height={25} className={styles.arrow} />
                   </span>
                 </h3>
-                <p className={styles.title}>{x.description}</p>
+                <p className={styles.desc}>{x.description}</p>
               </div>
             ))}
           </div>
