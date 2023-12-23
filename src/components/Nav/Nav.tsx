@@ -3,7 +3,6 @@
 import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Search from "../Search/Search";
 
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../ContentPadding/ContentPadding";
@@ -72,91 +71,64 @@ function Nav() {
   ];
 
   return (
-    <>
-      <LayoutWrapper>
-        <ContentPadding>
-          <header className={styles.header}>
-            <div className={styles.navTop}>
-              {/* <div className={styles.logo}>
-                <Link href='/' className={styles.logo}>
-                  <h1>golf guise.</h1>
-                </Link>
-              </div> */}
-                {/* <Search /> */}
-                {/* <div className={styles.socialsContainer}>
-                  <div className={styles.iconContainer}>
-                    <Instagram className={styles.icon} width={18} height={18} />
-                  </div>
-                  <div className={styles.iconContainer}>
-                    <Facebook className={styles.icon} width={18} height={18} />
-                  </div>
-                  <div className={styles.iconContainer}>
-                    <Twitter className={styles.icon} width={18} height={18} />
-                  </div>
-                  <div className={styles.iconContainer}>
-                    <LinkedIn className={styles.icon} width={18} height={18} />
-                  </div>
-                </div> */}
-            </div>
-            <nav className={styles.navbar}>
-              <ul
-                className={
-                  isOpen === false
-                    ? styles.navMenu
-                    : `${styles.navMenu} ${styles.active}`
-                }
-              >
-                {navItems.map((navItem, index) => (
-                  <li
-                    key={index}
-                    className={styles.navItem}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    <Link href={navItem.href} className={styles.navItem}>
-                      {navItem.text}
-                    </Link>
-                  </li>
-                ))}
-                {isOpen && (
-                  <li
-                    className={styles.navItem}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    <Link href='/search' className={styles.navItem}>
-                      Search
-                    </Link>
-                  </li>
-                )}
-              </ul>
+    <LayoutWrapper>
+      <ContentPadding>
+        <header className={styles.header}>
+          <nav className={styles.navbar}>
+            <ul
+              className={
+                isOpen === false
+                  ? styles.navMenu
+                  : `${styles.navMenu} ${styles.active}`
+              }
+            >
+              {navItems.map((navItem, index) => (
+                <li
+                  key={index}
+                  className={styles.navItem}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <Link href={navItem.href} className={styles.navItem}>
+                    {navItem.text}
+                  </Link>
+                </li>
+              ))}
               {isOpen && (
-                <div
-                  className={`${styles.overlay} ${
-                    isOverlayVisible ? styles.visible : ""
-                  }`}
-                  onClick={() => {
-                    setIsOpen(false);
-                    setIsOverlayVisible(false);
-                  }}
-                ></div>
+                <li className={styles.navItem} onClick={() => setIsOpen(false)}>
+                  <Link href='/search' className={styles.navItem}>
+                    Search
+                  </Link>
+                </li>
               )}
-              <span
-                className={
-                  isOpen === false
-                    ? styles.hamburger
-                    : `${styles.hamburger} ${styles.active}`
-                }
-                onClick={openMenu}
-              >
-                <span className={styles.whiteBar}></span>
-                <span className={styles.whiteBar}></span>
-                <span className={styles.whiteBar}></span>
-              </span>
-            </nav>
-            <div className={styles.greenTop}></div>
-          </header>
-        </ContentPadding>
-      </LayoutWrapper>
-    </>
+            </ul>
+            {isOpen && (
+              <div
+                className={`${styles.overlay} ${
+                  isOverlayVisible ? styles.visible : ""
+                }`}
+                onClick={() => {
+                  setIsOpen(false);
+                  setIsOverlayVisible(false);
+                }}
+              ></div>
+            )}
+            <span
+              className={
+                isOpen === false
+                  ? styles.hamburger
+                  : `${styles.hamburger} ${styles.active}`
+              }
+              onClick={openMenu}
+            >
+              <span className={styles.whiteBar}></span>
+              <span className={styles.whiteBar}></span>
+              <span className={styles.whiteBar}></span>
+            </span>
+          </nav>
+          <div className={styles.greenTop}></div>
+        </header>
+      </ContentPadding>
+    </LayoutWrapper>
   );
 }
 export default Nav;

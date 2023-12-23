@@ -70,6 +70,7 @@
   z-index: 1000;
   border-bottom: 1px solid var(--borderii);
   background-color: var(--gray);
+  padding-top: 2rem;
 }
 
 .navMenu {
@@ -136,16 +137,6 @@
 }
 
 @media screen and (max-width: 868px) {
-  .header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    border-bottom: 2px solid var(--darkGray);
-    padding-bottom: 1rem;
-    margin-top: 2rem;
-    position: relative;
-  }
-
   .navbar {
     background-color: transparent;
   }
