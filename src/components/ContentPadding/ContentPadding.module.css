@@ -1,15 +1,18 @@
 .container {
-  padding: 5rem 0rem;
+  padding: 5rem;
+  padding-top: 0rem;
 }
 
 @media screen and (max-width: 870px) {
   .container {
     padding: 3rem;
+    padding-top: 0rem;
   }
 }
 
 @media screen and (max-width: 568px) {
   .container {
     padding: 3rem 2rem;
+    padding-top: 0rem;
   }
 }
