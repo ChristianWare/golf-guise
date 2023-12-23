@@ -7,6 +7,7 @@ import TermsSection from "@/components/TermsSection/TermsSection";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Gear from "@/components/Gear/Gear";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
+import Hero from "@/components/Hero/Hero";
 
 export default function Home() {
   const fs = require("fs");
@@ -34,6 +35,7 @@ export default function Home() {
 
   return (
     <main>
+      <Hero />
       <FeaturedSection blogData={blogs} />
       <ReviewsSection blogData={blogs} />
       <GuidesSection blogData={blogs} />

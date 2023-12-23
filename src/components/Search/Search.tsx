@@ -12,7 +12,7 @@ const Search = () => {
     <form className={styles.form} id='search'>
       <div>
         <div className={styles.searchIconContainer}>
-          <SearchIcon width={20} height={20} className={styles.icon} />
+          <SearchIcon width={18} height={18} className={styles.icon} />
         </div>
         <input
           type='search'

@@ -4,10 +4,7 @@ import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Search from "../Search/Search";
-import Instagram from "../../../public/icons/instagram.svg";
-import Facebook from "../../../public/icons/facebook.svg";
-import Twitter from "../../../public/icons/twitter.svg";
-import LinkedIn from "../../../public/icons/linkedin.svg";
+
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../ContentPadding/ContentPadding";
 
@@ -80,14 +77,13 @@ function Nav() {
         <ContentPadding>
           <header className={styles.header}>
             <div className={styles.navTop}>
-              <div className={styles.logo}>
+              {/* <div className={styles.logo}>
                 <Link href='/' className={styles.logo}>
                   <h1>golf guise.</h1>
                 </Link>
-              </div>
-              <div className={styles.searchBar}>
-                <Search />
-                <div className={styles.socialsContainer}>
+              </div> */}
+                {/* <Search /> */}
+                {/* <div className={styles.socialsContainer}>
                   <div className={styles.iconContainer}>
                     <Instagram className={styles.icon} width={18} height={18} />
                   </div>
@@ -100,8 +96,7 @@ function Nav() {
                   <div className={styles.iconContainer}>
                     <LinkedIn className={styles.icon} width={18} height={18} />
                   </div>
-                </div>
-              </div>
+                </div> */}
             </div>
             <nav className={styles.navbar}>
               <ul
