@@ -37,7 +37,7 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
           <span className={styles.category}>Category</span>
         </span>
 
-        <Link href={`/blog/${mapData.slug}`} passHref>
+        <Link href={`/${mapData.meta.category}/${mapData.slug}`} passHref>
           <h2 className={`${styles.title} ${styles[colTitle]}`}>
             {mapData.meta.title}
           </h2>

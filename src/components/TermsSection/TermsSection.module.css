@@ -34,6 +34,10 @@
   font-size: 2.1rem;
 }
 
+.desc {
+  color: var(--blackiii);
+}
+
 .arrow {
   margin-left: 0.5rem;
   position: relative;
