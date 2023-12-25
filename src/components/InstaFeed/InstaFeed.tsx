@@ -6,9 +6,9 @@ import Img from "../../../public/images/img1.png";
 
 const InstaFeed = () => {
   return (
-    <section className={styles.container}>
-      <LayoutWrapper>
-        <ContentPadding>
+    <LayoutWrapper>
+      <ContentPadding>
+        <section className={styles.container}>
           <div className={styles.top}>
             <h2 className={styles.heading}>Lates from Instagram</h2>
           </div>
@@ -26,9 +26,9 @@ const InstaFeed = () => {
               <Image src={Img} alt='image' fill className={styles.img} />
             </div>
           </div>
-        </ContentPadding>
-      </LayoutWrapper>
-    </section>
+        </section>
+      </ContentPadding>
+    </LayoutWrapper>
   );
 };
 export default InstaFeed;

@@ -1,3 +1,8 @@
+.container {
+  border-bottom: thick double #06eec7;
+  padding-bottom: 2rem;
+}
+
 .heading {
   border-bottom: thick double #06eec7;
   padding-bottom: 1rem;
