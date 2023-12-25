@@ -1,0 +1,48 @@
+.container {
+  background: linear-gradient(
+    257deg,
+    rgba(6, 238, 199, 1) 0%,
+    rgba(7, 25, 82, 1) 91%
+  );
+  border-radius: 10px;
+  padding: 10rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.heading,
+.copy {
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 968px) {
+    .container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .btnContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}
