@@ -99,6 +99,10 @@
   justify-content: space-between;
 }
 
+.logoii {
+  color: var(--black);
+}
+
 .disclosures {
   text-decoration: none;
   list-style: none;
