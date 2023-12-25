@@ -19,7 +19,7 @@
 .logo {
   font-size: 5rem;
   font-family: var(--ppMoriSemiBold);
-  color: var(--black);
+  color: var(--blackiii);
   letter-spacing: -3px;
 }
 
@@ -27,6 +27,7 @@
   font-size: 1.3rem;
   width: 60%;
   margin-top: 1rem;
+  color: var(--blackiii);
 }
 
 .socials {
@@ -37,7 +38,7 @@
 }
 
 .socialContainer {
-  background-color: var(--black);
+  background-color: var(--blackiii);
   width: 30px;
   height: 30px;
   display: flex;
@@ -55,14 +56,14 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  color: var(--black);
+  color: var(--blackiii);
 }
 
 .heading {
-  color: var(--black);
+  color: var(--blackiii);
   font-family: var(--ppMoriSemiBold);
   text-transform: uppercase;
-  border-bottom: 1px solid var(--borderii);
+  border-bottom: 1px solid var(--blackiii);
   width: 90%;
   padding-bottom: 1rem;
   margin-bottom: 0.5rem;
@@ -84,12 +85,12 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: var(--black);
+  color: var(--blackiii);
   font-size: 1.2rem;
 }
 
 .iconii {
-  color: var(--black);
+  color: var(--blackiii);
 }
 
 .bottom {
@@ -100,7 +101,7 @@
 }
 
 .logoii {
-  color: var(--black);
+  color: var(--blackiii);
 }
 
 .disclosures {
@@ -110,7 +111,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  color: var(--black);
+  color: var(--blackiii);
   font-size: 1.2rem;
 }
 

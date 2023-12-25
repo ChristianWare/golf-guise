@@ -15,7 +15,7 @@ const FinalCTA = () => {
             Fares. Either way, you’ll never overpay on flights again.
           </p>
           <div className={styles.btnContainer}>
-            <Button btnType='primary' text='Get Going' href='/' />
+            <Button btnType='primary' text='See All Articles' href='/' />
           </div>
         </section>
       </ContentPadding>
