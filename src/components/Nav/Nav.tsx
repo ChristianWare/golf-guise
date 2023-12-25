@@ -45,19 +45,19 @@ function Nav() {
       href: "#",
     },
     {
-      text: "Guides",
-      href: "#",
-    },
-    {
       text: "Reviews",
       href: "#",
     },
     {
-      text: "Golf Courses",
+      text: "Guides",
       href: "#",
     },
     {
-      text: "Tours",
+      text: "Gear",
+      href: "#",
+    },
+    {
+      text: "Terms",
       href: "#",
     },
     {
