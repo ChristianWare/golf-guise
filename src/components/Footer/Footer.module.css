@@ -1,6 +1,18 @@
+.container {
+  border: 1px solid #dfdddd;
+  border-radius: 10px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #edeaea 0,
+    #edeaea 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
+}
+
 .top,
 .bottom {
-  background-color: var(--gray);
   padding: 3rem;
   border-radius: 10px;
 }
@@ -19,7 +31,7 @@
 .logo {
   font-size: 5rem;
   font-family: var(--ppMoriSemiBold);
-  color: var(--blackiii);
+  color: var(--black);
   letter-spacing: -3px;
 }
 
@@ -27,7 +39,8 @@
   font-size: 1.3rem;
   width: 60%;
   margin-top: 1rem;
-  color: var(--blackiii);
+  color: var(--black);
+  font-family: var(--ppMoriSemiBold);
 }
 
 .socials {
@@ -38,7 +51,7 @@
 }
 
 .socialContainer {
-  background-color: var(--blackiii);
+  background-color: var(--black);
   width: 30px;
   height: 30px;
   display: flex;
@@ -56,14 +69,14 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  color: var(--blackiii);
+  color: var(--black);
 }
 
 .heading {
-  color: var(--blackiii);
+  color: var(--black);
   font-family: var(--ppMoriSemiBold);
   text-transform: uppercase;
-  border-bottom: 1px solid var(--borderii);
+  border-bottom: 1px solid var(--border);
   width: 90%;
   padding-bottom: 1rem;
   margin-bottom: 0.5rem;
@@ -71,6 +84,7 @@
 
 .link {
   text-transform: uppercase;
+  font-family: var(--ppMoriSemiBold);
   font-size: 1.2rem;
 }
 
@@ -85,23 +99,24 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: var(--blackiii);
+  color: var(--black);
   font-size: 1.2rem;
+  font-family: var(--ppMoriSemiBold);
 }
 
 .iconii {
-  color: var(--blackiii);
+  color: var(--black);
 }
 
 .bottom {
-  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logoii {
-  color: var(--blackiii);
+  color: var(--black);
+  font-family: var(--ppMoriSemiBold);
 }
 
 .disclosures {
@@ -111,8 +126,12 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  color: var(--blackiii);
+  color: var(--black);
   font-size: 1.2rem;
+}
+
+.disc {
+  font-family: var(--ppMoriSemiBold);
 }
 
 @media screen and (max-width: 968px) {
@@ -126,13 +145,11 @@
 
   .brandInfoMobile {
     display: block;
-    background-color: var(--gray);
     padding: 3rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
   }
