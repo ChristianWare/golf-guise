@@ -59,6 +59,7 @@
 @media screen and (max-width: 1068px) {
   .content {
     flex-direction: column;
+    padding: 4rem;
   }
 
   .heading,
@@ -74,7 +75,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .searchContainer {
+  .searchContainer,
+  .copy {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .content {
+    padding: 3rem;
   }
 }

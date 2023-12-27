@@ -1,11 +1,12 @@
 .header {
   position: relative;
+  margin-top: 2rem;
 }
 
 .greenTop {
   width: 100%;
   height: 3px;
-  background-color: var(--green);
+  border-bottom: thick double #06eec7;
 }
 
 .navTop {
@@ -25,41 +26,11 @@
   gap: 1rem;
 }
 
-.iconContainer {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--black);
-  border-radius: 50%;
-}
-
-.icon {
-  color: var(--green);
-}
-
 .logo {
-  font-size: 10rem;
+  font-size: 1.6rem;
   color: var(--black);
   font-family: var(--aeonikBold);
   z-index: 998;
-  line-height: 80%;
-  letter-spacing: -4px;
-}
-
-.logo,
-.searchBar {
-  flex: 1;
-}
-
-.searchBar {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 3rem;
-  height: 100%;
 }
 
 .navbar {
@@ -68,22 +39,28 @@
   width: 100%;
   padding: 1rem;
   z-index: 1000;
-  border-bottom: 1px solid var(--borderii);
-  background-color: var(--gray);
   padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+.navMenu {
+  flex: 1;
 }
 
 .navMenu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
   width: 100%;
 }
 
 .navItem {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   user-select: none;
   transition: all 0.2s ease-in;
@@ -95,8 +72,7 @@
   opacity: 0.7;
 }
 
-.hamburger,
-.searchIconContainer {
+.hamburger {
   display: none;
   z-index: 999;
   position: relative;
@@ -114,54 +90,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1268px) {
-  .navTop {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-    gap: 4rem;
-  }
-
+@media screen and (max-width: 968px) {
   .logo {
-    text-align: center;
-  }
-
-  .searchBar {
-    width: 70%;
-  }
-
-  .socialsContainer {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 868px) {
-  .navbar {
-    background-color: transparent;
-  }
-
-  .greenTop {
-    display: none;
-  }
-
-  .navTop {
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    gap: 2rem;
-    padding: 1rem;
-  }
-
-  .logo {
-    font-size: 5rem;
-    letter-spacing: -2px;
-    text-align: left;
-  }
-
-  .searchBar {
-    display: none;
+    font-size: 2.6rem;
   }
 
   .overlay {
@@ -245,5 +176,9 @@
   .header {
     padding-right: 5px;
     padding-left: 5px;
+  }
+
+  .greenTop {
+    margin-top: 2rem;
   }
 }

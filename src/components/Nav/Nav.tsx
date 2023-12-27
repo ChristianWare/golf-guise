@@ -61,10 +61,6 @@ function Nav() {
       href: "#",
     },
     {
-      text: "About",
-      href: "#",
-    },
-    {
       text: "All Articles",
       href: "#",
     },
@@ -75,6 +71,7 @@ function Nav() {
       <ContentPadding>
         <header className={styles.header}>
           <nav className={styles.navbar}>
+            <div className={styles.logo}>GG</div>
             <ul
               className={
                 isOpen === false
@@ -125,8 +122,8 @@ function Nav() {
               <span className={styles.whiteBar}></span>
             </span>
           </nav>
-          <div className={styles.greenTop}></div>
         </header>
+        <div className={styles.greenTop}></div>
       </ContentPadding>
     </LayoutWrapper>
   );
