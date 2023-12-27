@@ -57,8 +57,8 @@ function Nav() {
       href: "/gear",
     },
     {
-      text: "Terms",
-      href: "/terms",
+      text: "Glossary",
+      href: "/glossary",
     },
     {
       text: "All Articles",

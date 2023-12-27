@@ -1,5 +1,4 @@
 import ReviewsSection from "@/components/ReviewsSection/ReviewsSection";
-import styles from "./page.module.css";
 import FeaturedSection from "@/components/FeaturedSection/FeaturedSection";
 import GuidesSection from "@/components/GuidesSection/GuidesSection";
 import Upcoming from "@/components/Upcoming/Upcoming";
