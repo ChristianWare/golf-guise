@@ -3,6 +3,10 @@ import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import LayoutWrapper from "@/components/LayoutWrapper/LayoutWrapper";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import styles from "../../styles/ReviewsPage.module.css";
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import InstaFeed from "@/components/InstaFeed/InstaFeed";
+import TermsSection from "@/components/TermsSection/TermsSection";
+import Gear from "@/components/Gear/Gear";
 
 export default function ReviewsPage() {
   const fs = require("fs");
@@ -63,6 +67,10 @@ export default function ReviewsPage() {
           </div>
         </ContentPadding>
       </LayoutWrapper>
+      <Gear />
+      <TermsSection />
+      <InstaFeed />
+      <FinalCTA />
     </main>
   );
 }
