@@ -1,0 +1,12 @@
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1068px) {
+    .bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

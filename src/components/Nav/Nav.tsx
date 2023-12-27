@@ -42,27 +42,27 @@ function Nav() {
   const navItems = [
     {
       text: "Home",
-      href: "#",
+      href: "/",
     },
     {
       text: "Reviews",
-      href: "#",
+      href: "/reviews",
     },
     {
       text: "Guides",
-      href: "#",
+      href: "/guides",
     },
     {
       text: "Gear",
-      href: "#",
+      href: "/gear",
     },
     {
       text: "Terms",
-      href: "#",
+      href: "/terms",
     },
     {
       text: "All Articles",
-      href: "#",
+      href: "/all",
     },
   ];
 
