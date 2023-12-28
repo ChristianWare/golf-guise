@@ -48,4 +48,17 @@ export const gear = [
     title: "Yevlon 745 Steal Hawk",
     price: 775.99,
   },
+  {
+    title: "Titleist 2023 T350",
+    price: 379.99,
+  },
+  {
+    title: "Ping G430 Iron Set",
+    price: 549.99,
+  },
+  {
+    title: "Mizuno JPX 923 Hot Metal",
+    price: 849.99,
+  },
+
 ];

@@ -7,7 +7,7 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
 import TermsSection from "@/components/TermsSection/TermsSection";
 import Gear from "@/components/Gear/Gear";
-import BlogPreview from "@/components/BlogPreview/BlogPreview";
+import BlogPreviewSmall from "@/components/BlogPreviewSmall/BlogPreviewSmall";
 
 export default function GuidesPage() {
   const fs = require("fs");
@@ -50,13 +50,13 @@ export default function GuidesPage() {
                 <BlogPreviewLarge key={index} mapData={x} />
               </div>
             ))}
-          <div className={styles.bottom}>
+          <div className={styles.bottomii}>
             {blogs
               .filter((y: any) => y.meta.category === "guides")
               .slice(1, 10)
               .map((x: any, index: number) => (
                 <div key={index}>
-                  <BlogPreview key={index} mapData={x} />
+                  <BlogPreviewSmall key={index} mapData={x} />
                 </div>
               ))}
           </div>

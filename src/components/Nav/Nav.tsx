@@ -61,8 +61,8 @@ function Nav() {
       href: "/glossary",
     },
     {
-      text: "All Articles",
-      href: "/all",
+      text: "About",
+      href: "/about",
     },
   ];
 

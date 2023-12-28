@@ -15,7 +15,7 @@ const Gear = () => {
             <h2 className={styles.heading}>Gear we love</h2>
           </div>
           <div className={styles.bottom}>
-            {gear.map((x, index) => (
+            {gear.slice(0, 4).map((x, index) => (
               <div key={index} className={styles.box}>
                 <div className={styles.imgContainer}>
                   <Image src={Img} alt='hello' fill className={styles.img} />
