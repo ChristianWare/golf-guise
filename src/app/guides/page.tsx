@@ -7,6 +7,7 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
 import TermsSection from "@/components/TermsSection/TermsSection";
 import Gear from "@/components/Gear/Gear";
+import BlogPreview from "@/components/BlogPreview/BlogPreview";
 
 export default function GuidesPage() {
   const fs = require("fs");
@@ -55,13 +56,7 @@ export default function GuidesPage() {
               .slice(1, 10)
               .map((x: any, index: number) => (
                 <div key={index}>
-                  <BlogPreviewLarge
-                    key={index}
-                    mapData={x}
-                    column='column'
-                    imgCol='imgCol'
-                    colPadding='colPadding'
-                  />
+                  <BlogPreview key={index} mapData={x} />
                 </div>
               ))}
           </div>
