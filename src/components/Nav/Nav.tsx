@@ -67,7 +67,9 @@ function Nav() {
       <ContentPadding>
         <header className={styles.header}>
           <nav className={styles.navbar}>
-            <div className={styles.logo}>GG</div>
+            <Link href='/' className={styles.logo}>
+              GG
+            </Link>
             <ul
               className={
                 isOpen === false
