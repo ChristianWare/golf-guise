@@ -41,15 +41,17 @@ const GlossaryPage = () => {
               ))}
             </div>
             <div className={styles.bottomRight}>
-              {terms.map((x, index) => (
-                <div className={styles.termBox} key={index}>
-                  <h3 className={styles.title}>
-                    {x.title}
-                    <span className={styles.arrow}>
-                      <Arrow width={25} height={25} className={styles.arrow} />
-                    </span>
-                  </h3>
-                  <p className={styles.desc}>{x.description}</p>
+              {glossaryMenu.map((x, index) => (
+                <div key={index} className={styles.sectionContainer}>
+                  <h2 className={styles.heading}>{x.letter}</h2>
+                  <div className={styles.sBottom}>
+                    {x.section.map((y, inedx) => (
+                      <div key={index} className={styles.section}>
+                        <h3 className={styles.title}>{y.term}</h3>
+                        <p className={styles.desc}>{y.description}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>

@@ -382,8 +382,9 @@ export const glossaryMenu = [
     letter: "Z",
     section: [
       {
-        term: "None",
-        description: "No Z yet",
+        term: "Zoomie",
+        description:
+          "A drive that gos further than most drives ever hit by the golfer who smacked it.",
       },
     ],
   },
@@ -393,11 +394,12 @@ export const terms = [
   {
     title: "19th Hole",
     description:
-      "A slang term referring to the clubhouse or bar where golfers gather after a round to socialize and relax. It's a symbolic 'hole' that comes after the 18 holes on the golf course.",
+      "A slang term referring to a symbolic 'hole' that comes after the 18 holes on the golf course.",
   },
   {
     title: "Ace",
-    description: "Another term for a hole-in-one.",
+    description:
+      "Another term for a hole-in-one, achieved by holing the ball in a single stroke on a par-3 hole.",
   },
   {
     title: "Address",
@@ -563,8 +565,8 @@ export const terms = [
     description: "A type of club designed for short, high shots.",
   },
   {
-    title: "None",
-    description: "No X yet",
+    title: "X",
+    description: "N/A",
   },
   {
     title: "Yips",
@@ -572,7 +574,8 @@ export const terms = [
       "A nervous condition that causes a golfer to twitch or flinch during a shot.",
   },
   {
-    title: "None",
-    description: "No Z yet",
+    title: "Zoomie",
+    description:
+      "A drive that gos further than most drives ever hit by the golfer who smacked it.",
   },
 ];
