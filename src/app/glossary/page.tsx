@@ -2,9 +2,8 @@ import LayoutWrapper from "@/components/LayoutWrapper/LayoutWrapper";
 import styles from "../../styles/GlossaryPage.module.css";
 import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import PageIntro from "@/components/PageIntro/PageIntro";
-import { glossaryMenu, terms } from "@/lib/data";
+import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";
-import Arrow from "../../../public/icons/arrow.svg";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
 
@@ -20,7 +19,7 @@ const GlossaryPage = () => {
         <ContentPadding>
           <div className={styles.top}>
             {glossaryMenu.map((x, index) => (
-              <Link href='#' key={index} className={styles.letter}>
+              <Link href={`#${x.letter}`} key={index} className={styles.letter}>
                 {x.letter}
               </Link>
             ))}
@@ -29,7 +28,9 @@ const GlossaryPage = () => {
             <div className={styles.bottomLeft}>
               {glossaryMenu.map((x, index) => (
                 <div key={index} className={styles.box}>
-                  <div className={styles.letter}>{x.letter}</div>
+                  <Link href={`#${x.letter}`} className={styles.letter}>
+                    {x.letter}
+                  </Link>
                   <div className={styles.term}>
                     {x.section.map((y, index) => (
                       <div key={index} className={styles.term}>
@@ -42,11 +43,15 @@ const GlossaryPage = () => {
             </div>
             <div className={styles.bottomRight}>
               {glossaryMenu.map((x, index) => (
-                <div key={index} className={styles.sectionContainer}>
+                <div
+                  key={index}
+                  className={styles.sectionContainer}
+                  id={x.letter}
+                >
                   <h2 className={styles.heading}>{x.letter}</h2>
                   <div className={styles.sBottom}>
                     {x.section.map((y, inedx) => (
-                      <div key={index} className={styles.section}>
+                      <div key={index} className={styles.section} id={y.term}>
                         <h3 className={styles.title}>{y.term}</h3>
                         <p className={styles.desc}>{y.description}</p>
                       </div>

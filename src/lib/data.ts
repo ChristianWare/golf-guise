@@ -246,11 +246,6 @@ export const glossaryMenu = [
         term: "Nine Iron",
         description: "A type of iron club with a moderate loft.",
       },
-      {
-        term: "Out of Bounds",
-        description:
-          "Areas outside the boundaries of the golf course where play is not allowed.",
-      },
     ],
   },
   {
@@ -260,6 +255,11 @@ export const glossaryMenu = [
         term: "Open Face",
         description:
           "A clubface that is angled to the right for a right-handed golfer.",
+      },
+      {
+        term: "Out of Bounds",
+        description:
+          "Areas outside the boundaries of the golf course where play is not allowed.",
       },
     ],
   },
