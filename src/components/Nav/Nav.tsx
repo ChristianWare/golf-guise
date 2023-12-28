@@ -60,10 +60,6 @@ function Nav() {
       text: "Glossary",
       href: "/glossary",
     },
-    {
-      text: "About",
-      href: "/about",
-    },
   ];
 
   return (

@@ -14,7 +14,7 @@ const TermsSection = () => {
             <h2 className={styles.heading}>Golf terms to know</h2>
           </div>
           <div className={styles.bottom}>
-            {terms.map((x, index) => (
+            {terms.slice(0, 6).map((x, index) => (
               <div className={styles.box} key={index}>
                 <h3 className={styles.title}>
                   {x.title}

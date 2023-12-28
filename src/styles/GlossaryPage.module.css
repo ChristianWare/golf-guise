@@ -1,0 +1,90 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.bottomRight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.box {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.letter {
+  color: var(--black);
+  font-family: var(--ppMoriSemiBold);
+  user-select: none;
+}
+
+.term {
+  margin-bottom: 1rem;
+}
+
+.termBox {
+  background-color: var(--gray);
+  border-radius: 10px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 2.1rem;
+}
+
+.desc {
+  color: var(--blackiii);
+}
+
+.arrow {
+  margin-left: 0.5rem;
+  position: relative;
+  top: 3px;
+}
+
+@media screen and (max-width: 1068px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .bottomLeft {
+    display: none;
+  }
+
+  .bottomRight {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .bottomRight {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .bottomRight {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
