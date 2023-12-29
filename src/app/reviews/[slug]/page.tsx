@@ -13,6 +13,7 @@ import PageIntro from "@/components/PageIntro/PageIntro";
 import LayoutWrapper from "@/components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import SlugIntro from "@/components/SlugIntro/SlugIntro";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -72,11 +73,11 @@ export default function Page({ params }: any) {
 
   return (
     <main className={styles.bgColor}>
-      <PageIntro
-        // labelCopy={props.frontMatter.date}
+      <SlugIntro
         heading={props.frontMatter.title}
-        copy={props.frontMatter.description}
-        // src={props.frontMatter.thumbnaillUrl}
+        description={props.frontMatter.description}
+        date={props.frontMatter.date}
+        category={props.frontMatter.category}
       />
       <LayoutWrapper>
         <ContentPadding>
