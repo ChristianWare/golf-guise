@@ -1,0 +1,13 @@
+.imgContainer {
+  position: relative;
+  font-size: 0;
+  border-radius: 10px;
+  height: 350px;
+}
+
+.img {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 10px;
+  font-size: 0;
+}

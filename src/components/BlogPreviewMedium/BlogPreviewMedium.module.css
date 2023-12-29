@@ -65,7 +65,12 @@
 }
 
 .category {
+  padding: 0.3rem 1rem;
+  padding-top: 0.6rem;
+  border-radius: 20px;
   font-size: 1.1rem;
+  border: 1px solid var(--border);
+  text-transform: uppercase;
 }
 
 .title {
