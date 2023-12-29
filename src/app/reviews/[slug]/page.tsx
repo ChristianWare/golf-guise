@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import styles from "./SlugPage.module.css";
+import styles from "../../../styles/SlugPage.module.css";
 import SlugImage from "@/components/SlugImage/SlugImage";
 import SlugHeading from "@/components/SlugHeading/SlugHeading";
 import SlugConclusion from "@/components/SlugConclusion/SlugConclusion";
