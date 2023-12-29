@@ -6,14 +6,13 @@ import styles from "./SlugPage.module.css";
 import SlugImage from "@/components/SlugImage/SlugImage";
 import SlugHeading from "@/components/SlugHeading/SlugHeading";
 import SlugConclusion from "@/components/SlugConclusion/SlugConclusion";
-
 import { BlogData } from "@/lib/interface";
 import BlogPreview from "@/components/BlogPreview/BlogPreview";
-import PageIntro from "@/components/PageIntro/PageIntro";
 import LayoutWrapper from "@/components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import SlugIntro from "@/components/SlugIntro/SlugIntro";
+import BlogPreviewSmall from "@/components/BlogPreviewSmall/BlogPreviewSmall";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -50,7 +49,6 @@ const blogs = files.map((filename: any) => {
 
   const { data: frontMatter } = matter(fileContent);
 
-  // Define the properties within the `meta` object
   const meta = {
     category: frontMatter.category,
     thumbnaillUrl: frontMatter.thumbnaillUrl,
@@ -72,7 +70,7 @@ export default function Page({ params }: any) {
   const props = getPost(params);
 
   return (
-    <main className={styles.bgColor}>
+    <main>
       <SlugIntro
         heading={props.frontMatter.title}
         description={props.frontMatter.description}
@@ -95,10 +93,21 @@ export default function Page({ params }: any) {
             <div className={styles.mdxContent}>
               <MDXRemote source={props.content} components={components} />
             </div>
+            <div className={styles.right}>
+              <h4 className={styles.headingTitle}>You May Also Like</h4>
+              {blogs
+                .filter((y: any) => y.meta.category === "reviews")
+                .slice(0, 2)
+                .map((x: any, index: number) => (
+                  <div key={index} className={styles.previewContainer}>
+                    <BlogPreviewSmall key={index} mapData={x} />
+                  </div>
+                ))}
+            </div>
           </div>
           <h2 className={styles.relatedArticlesHeading}>Related Articles</h2>
           <div className={styles.relatedArticles}>
-            {blogs.slice(0, 3).map((x: BlogData, index: number) => (
+            {blogs.filter((y: any) => y.meta.category === "reviews").slice(0, 3).map((x: BlogData, index: number) => (
               <BlogPreview key={index} mapData={x} />
             ))}
           </div>

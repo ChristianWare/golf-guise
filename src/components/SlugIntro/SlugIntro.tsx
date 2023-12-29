@@ -27,7 +27,7 @@ const SlugIntro: FC<Props> = ({ heading, description, date, category }) => {
               </div>
               <div className={styles.box}>
                 <span className={styles.spanHeading}>Category</span>
-                <span className={styles.category}>{category}</span>
+                <span className={styles.span}>{category}</span>
               </div>
               <div className={styles.box}>
                 <span className={styles.spanHeading}>Share</span>
