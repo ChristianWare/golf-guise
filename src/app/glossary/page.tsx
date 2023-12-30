@@ -50,7 +50,7 @@ const GlossaryPage = () => {
                 >
                   <h2 className={styles.heading}>{x.letter}</h2>
                   <div className={styles.sBottom}>
-                    {x.section.map((y, inedx) => (
+                    {x.section.map((y, index) => (
                       <div key={index} className={styles.section} id={y.term}>
                         <h3 className={styles.title}>{y.term}</h3>
                         <p className={styles.desc}>{y.description}</p>

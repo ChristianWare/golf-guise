@@ -100,12 +100,26 @@ export const glossaryMenu = [
     letter: "B",
     section: [
       {
+        term: "Backswing",
+        description:
+          "The initial part of the golf swing where the club is moved away from the ball.",
+      },
+      {
+        term: "Ball Marker",
+        description:
+          "A small object used to mark the position of a golfer's ball on the green.",
+      },
+      {
         term: "Birdie",
         description: "Scoring one stroke under par on a hole.",
       },
       {
+        term: "Blow-up Hole",
+        description: "A hole where a golfer scores much higher than usual.",
+      },
+      {
         term: "Bunker",
-        description: "A sand trap on the golf course.",
+        description: "A hazard on the golf course filled with sand.",
       },
     ],
   },
@@ -113,13 +127,23 @@ export const glossaryMenu = [
     letter: "C",
     section: [
       {
-        term: "Caddie",
+        term: "Caddy",
         description:
           "A person who carries a golfer's clubs and provides assistance during a round.",
       },
       {
         term: "Chip Shot",
         description: "A short shot played near the green with a lofted club.",
+      },
+      {
+        term: "Cup",
+        description:
+          "The hole on the putting green where the ball is ultimately intended to go.",
+      },
+      {
+        term: "Cut Shot",
+        description:
+          "A shot intentionally shaped to move from left to right (for a right-handed golfer).",
       },
     ],
   },
@@ -134,6 +158,11 @@ export const glossaryMenu = [
         term: "Driver",
         description: "The club used for the longest shots from the tee.",
       },
+      {
+        term: "Draw",
+        description:
+          "A shot that curves gently from right to left (for a right-handed golfer).",
+      },
     ],
   },
   {
@@ -147,6 +176,11 @@ export const glossaryMenu = [
         term: "Etiquette",
         description: "The customary code of behavior on the golf course.",
       },
+      {
+        term: "Escape Shot",
+        description:
+          "A shot played from a difficult lie or situation to get out of trouble.",
+      },
     ],
   },
   {
@@ -157,8 +191,23 @@ export const glossaryMenu = [
         description: "The mowed area between the tee and the green.",
       },
       {
+        term: "Fade",
+        description:
+          "A controlled shot that moves from left to right (for a right-handed golfer).",
+      },
+      {
+        term: "Flagstick",
+        description:
+          "The marker, usually a pole with a flag, that indicates the location of the hole on the green.",
+      },
+      {
         term: "Fore",
         description: "A warning shout to alert others of an incoming ball.",
+      },
+      {
+        term: "Four-Ball",
+        description:
+          "A type of golf competition where two teams of two players compete, and the lower score of each team is used for each hole.",
       },
     ],
   },
@@ -172,6 +221,21 @@ export const glossaryMenu = [
       {
         term: "Grip",
         description: "The way a golfer holds the club.",
+      },
+      {
+        term: "Groove",
+        description:
+          "The indentations on the face of a golf club that affect ball spin and control.",
+      },
+      {
+        term: "Gimme",
+        description:
+          "An agreement between players to count a short putt as made without actually holing out.",
+      },
+      {
+        term: "Grain",
+        description:
+          "The direction in which the blades of grass on the putting green are growing, which can affect the roll of the ball.",
       },
     ],
   },
@@ -187,6 +251,21 @@ export const glossaryMenu = [
         description:
           "A general term for bunkers or water obstacles on the course.",
       },
+      {
+        term: "Hook",
+        description:
+          "A shot that curves sharply from right to left (for a right-handed golfer).",
+      },
+      {
+        term: "Hole-in-One",
+        description:
+          "A shot that goes directly into the hole from the tee, completing the hole in one stroke.",
+      },
+      {
+        term: "Hosel Rocket",
+        description:
+          "A shot where the ball is struck near the hosel of the club, often resulting in a poor outcome.",
+      },
     ],
   },
   {
@@ -200,6 +279,16 @@ export const glossaryMenu = [
         term: "In the Hole",
         description: "When the ball is successfully holed.",
       },
+      {
+        term: "Interlocking Grip",
+        description:
+          "A style of gripping the golf club where the little finger of the bottom hand is hooked around the index finger of the top hand.",
+      },
+      {
+        term: "Impact",
+        description:
+          "The moment when the clubface contacts the ball during the swing.",
+      },
     ],
   },
   {
@@ -208,6 +297,16 @@ export const glossaryMenu = [
       {
         term: "Jigger",
         description: "An obsolete term for a low-lofted iron club.",
+      },
+      {
+        term: "Jointed Club",
+        description:
+          "A type of golf club with a hinged or jointed shaft, designed to be collapsible for easy transport.",
+      },
+      {
+        term: "Jumping the Ball",
+        description:
+          "A shot where the ball is struck on the upswing, resulting in a higher trajectory and increased distance.",
       },
     ],
   },
@@ -219,6 +318,16 @@ export const glossaryMenu = [
         description:
           "A shot played with a lower trajectory to control distance and wind.",
       },
+      {
+        term: "Kick Point",
+        description:
+          "The point on the shaft of a golf club where it bends the most during the swing, influencing the trajectory of the shot.",
+      },
+      {
+        term: "Knee-Knocker",
+        description:
+          "A short putt, usually three feet or less, that is considered easy but can be missed if not focused on.",
+      },
     ],
   },
   {
@@ -227,6 +336,21 @@ export const glossaryMenu = [
       {
         term: "Lie",
         description: "The position of the ball on the ground.",
+      },
+      {
+        term: "Lag Putt",
+        description:
+          "A long putt played with the intention of leaving the ball close to the hole, rather than trying to make it.",
+      },
+      {
+        term: "Lob Shot",
+        description:
+          "A high, short shot typically played with a wedge, causing the ball to land softly on the green.",
+      },
+      {
+        term: "Local Rule",
+        description:
+          "A rule or condition set by a golf course that may differ from the official rules of golf.",
       },
     ],
   },
@@ -237,6 +361,20 @@ export const glossaryMenu = [
         term: "Mulligan",
         description: "A do-over, typically not allowed in official play.",
       },
+      {
+        term: "Mid-Iron",
+        description:
+          "A golf club with moderate loft, typically including clubs numbered 3 through 6.",
+      },
+      {
+        term: "Marker",
+        description:
+          "A device or object used to identify the location of a golfer's ball on the green.",
+      },
+      {
+        term: "Mashie",
+        description: "An obsolete term for a medium-lofted iron club.",
+      },
     ],
   },
   {
@@ -246,8 +384,14 @@ export const glossaryMenu = [
         term: "Nine Iron",
         description: "A type of iron club with a moderate loft.",
       },
+      {
+        term: "Nassau",
+        description:
+          "A type of golf betting game that is played over three separate matches: front nine, back nine, and overall 18 holes.",
+      },
     ],
   },
+
   {
     letter: "O",
     section: [
@@ -263,6 +407,7 @@ export const glossaryMenu = [
       },
     ],
   },
+
   {
     letter: "P",
     section: [
@@ -276,8 +421,14 @@ export const glossaryMenu = [
         description:
           "A shot played with a higher trajectory than a chip but lower than a full swing.",
       },
+      {
+        term: "Plugged Lie",
+        description:
+          "A ball that is partially or fully buried in its own pitch mark, often occurring in soft ground.",
+      },
     ],
   },
+
   {
     letter: "Q",
     section: [
@@ -288,6 +439,7 @@ export const glossaryMenu = [
       },
     ],
   },
+
   {
     letter: "R",
     section: [
@@ -295,8 +447,14 @@ export const glossaryMenu = [
         term: "Rough",
         description: "The longer grass on the sides of the fairway.",
       },
+      {
+        term: "Ryder Cup",
+        description:
+          "A biennial men's golf competition between teams from Europe and the United States.",
+      },
     ],
   },
+
   {
     letter: "S",
     section: [
@@ -316,6 +474,7 @@ export const glossaryMenu = [
       },
     ],
   },
+
   {
     letter: "T",
     section: [
@@ -328,8 +487,14 @@ export const glossaryMenu = [
         description:
           "Taking three strokes to complete a hole on the putting green.",
       },
+      {
+        term: "Topspin",
+        description:
+          "A type of spin applied to the golf ball that causes it to roll forward upon landing.",
+      },
     ],
   },
+
   {
     letter: "U",
     section: [
@@ -340,6 +505,7 @@ export const glossaryMenu = [
       },
     ],
   },
+
   {
     letter: "V",
     section: [
@@ -350,6 +516,7 @@ export const glossaryMenu = [
       },
     ],
   },
+
   {
     letter: "W",
     section: [
@@ -357,8 +524,14 @@ export const glossaryMenu = [
         term: "Wedge",
         description: "A type of club designed for short, high shots.",
       },
+      {
+        term: "Whiff",
+        description:
+          "A swing and miss, where the club fails to make contact with the ball.",
+      },
     ],
   },
+
   {
     letter: "X",
     section: [
@@ -368,6 +541,7 @@ export const glossaryMenu = [
       },
     ],
   },
+
   {
     letter: "Y",
     section: [
@@ -378,13 +552,14 @@ export const glossaryMenu = [
       },
     ],
   },
+
   {
     letter: "Z",
     section: [
       {
         term: "Zoomie",
         description:
-          "A drive that gos further than most drives ever hit by the golfer who smacked it.",
+          "A drive that goes further than most drives ever hit by the golfer who smacked it.",
       },
     ],
   },
