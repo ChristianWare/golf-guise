@@ -4,6 +4,10 @@ import styles from "./SlugIntro.module.css";
 import { FC } from "react";
 import Image from "next/image";
 import Img from "../../../public/images/img1.png";
+import Instagram from "../../../public/icons/instagram.svg";
+import Facebook from "../../../public/icons/facebook.svg";
+import Twitter from "../../../public/icons/twitter.svg";
+import LinkedIn from "../../../public/icons/linkedin.svg";
 
 interface Props {
   heading: string;
@@ -31,7 +35,20 @@ const SlugIntro: FC<Props> = ({ heading, description, date, category }) => {
               </div>
               <div className={styles.box}>
                 <span className={styles.spanHeading}>Share</span>
-                <span className={styles.shareContainer}>icons here </span>
+                <div className={styles.socialsContainer}>
+                  <div className={styles.iconContainer}>
+                    <Instagram className={styles.icon} width={15} height={15} />
+                  </div>
+                  <div className={styles.iconContainer}>
+                    <Facebook className={styles.icon} width={15} height={15} />
+                  </div>
+                  <div className={styles.iconContainer}>
+                    <Twitter className={styles.icon} width={15} height={15} />
+                  </div>
+                  <div className={styles.iconContainer}>
+                    <LinkedIn className={styles.icon} width={15} height={15} />
+                  </div>
+                </div>
               </div>
             </div>
             <div className={styles.right}>

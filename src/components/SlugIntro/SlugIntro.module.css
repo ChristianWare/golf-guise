@@ -42,6 +42,27 @@
   text-transform: uppercase;
 }
 
+.socialsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.iconContainer {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+
+.icon {
+  color: var(--green);
+}
+
 .imgContainer {
   position: relative;
   width: 100%;
