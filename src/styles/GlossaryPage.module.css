@@ -51,6 +51,11 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+  transition: all 0.3s ease-in;
+}
+
+.section:hover {
+  background-color: var(--grayiii);
 }
 
 .box {
