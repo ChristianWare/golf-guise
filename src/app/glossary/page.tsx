@@ -51,7 +51,14 @@ const GlossaryPage = () => {
                   <h2 className={styles.heading}>{x.letter}</h2>
                   <div className={styles.sBottom}>
                     {x.section.map((y, index) => (
-                      <Link href='/' key={index} className={styles.section} id={y.term}>
+                      <Link
+                        href={`/glossary/${y.term
+                          .toLowerCase()
+                          .replace(/\s+/g, "-")}`}
+                        key={index}
+                        className={styles.section}
+                        id={y.term}
+                      >
                         <h3 className={styles.title}>{y.term}</h3>
                         <p className={styles.desc}>{y.description}</p>
                       </Link>
