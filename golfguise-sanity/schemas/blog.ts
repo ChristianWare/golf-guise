@@ -2,19 +2,19 @@ import {Rule} from 'sanity'
 
 export default {
   name: 'blog',
-  type: 'document',
   title: 'Blog',
+  type: 'document',
   fields: [
     {
       name: 'title',
+      title: 'Title',
       type: 'string',
-      title: 'Title of blog article',
       validation: (Rule: Rule) => Rule.required().error('required'),
     },
     {
       name: 'slug',
+      title: 'Slug',
       type: 'slug',
-      title: 'Slug of your blog article',
       options: {source: 'title'},
       validation: (Rule: Rule) => Rule.required().error('required'),
     },
@@ -26,14 +26,14 @@ export default {
     },
     {
       name: 'titleImage',
-      type: 'image',
       title: 'Title Image',
+      type: 'image',
       validation: (Rule: Rule) => Rule.required().error('required'),
     },
     {
       name: 'smallDescription',
-      type: 'text',
       title: 'Small Description',
+      type: 'text',
       validation: (Rule: Rule) => Rule.max(200).error('Max 200 characters'),
     },
     {
@@ -52,7 +52,7 @@ export default {
     },
     {
       name: 'category',
-      title: 'Category',
+      title: 'Categories',
       type: 'array',
       of: [{type: 'reference', to: [{type: 'category'}]}],
     },
