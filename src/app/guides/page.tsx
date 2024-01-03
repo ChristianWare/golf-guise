@@ -14,24 +14,29 @@ export default function GuidesPage() {
   const path = require("path");
   const matter = require("gray-matter");
 
-  // Determine the correct path to the 'blogs' directory
   const blogsDirectory = path.join(process.cwd(), "blogs");
-
-  // Use readdirSync to list files in the 'blogs' directory
   const files = fs.readdirSync(blogsDirectory);
 
-  const blogs = files.map((filename: any) => {
-    const fileContent = fs.readFileSync(
-      path.join(blogsDirectory, filename),
-      "utf-8"
-    );
+  const guidesBlogs = files
+    .filter((filename: any) => filename.endsWith(".mdx"))
+    .map((filename: any) => {
+      const fileContent = fs.readFileSync(
+        path.join(blogsDirectory, filename),
+        "utf-8"
+      );
 
-    const { data: frontMatter } = matter(fileContent);
-    return {
-      meta: frontMatter,
-      slug: filename.replace(".mdx", ""),
-    };
-  });
+      const { data: frontMatter } = matter(fileContent);
+
+      if (frontMatter.category === "guides") {
+        return {
+          meta: frontMatter,
+          slug: filename.replace(".mdx", ""),
+        };
+      }
+
+      return null;
+    })
+    .filter(Boolean);
 
   return (
     <main>
@@ -42,23 +47,17 @@ export default function GuidesPage() {
       />
       <LayoutWrapper>
         <ContentPadding>
-          {blogs
-            .filter((y: any) => y.meta.category === "guides")
-            .slice(0, 1)
-            .map((x: any, index: number) => (
+          {guidesBlogs.slice(0, 1).map((x: any, index: number) => (
+            <div key={index}>
+              <BlogPreviewLarge key={index} mapData={x} />
+            </div>
+          ))}
+          <div className={styles.bottomii}>
+            {guidesBlogs.slice(1, 10).map((x: any, index: number) => (
               <div key={index}>
-                <BlogPreviewLarge key={index} mapData={x} />
+                <BlogPreviewSmall key={index} mapData={x} />
               </div>
             ))}
-          <div className={styles.bottomii}>
-            {blogs
-              .filter((y: any) => y.meta.category === "guides")
-              .slice(1, 10)
-              .map((x: any, index: number) => (
-                <div key={index}>
-                  <BlogPreviewSmall key={index} mapData={x} />
-                </div>
-              ))}
           </div>
         </ContentPadding>
       </LayoutWrapper>
