@@ -7,30 +7,8 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Gear from "@/components/Gear/Gear";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
 import Hero from "@/components/Hero/Hero";
-import { client } from "./lib/sanity";
-import { collectGenerateParams } from "next/dist/build/utils";
-import { simpleBlogCard } from "./lib/interface";
-import BlogPreviewLarge from "@/components/BlogPreviewLarge/BlogPreviewLarge";
 
-async function getData() {
-  const query = `
-    * [_type == 'blog'] | order(_createdAt desc) {
-  title,
-  slug, 
-  publishedAt,
-  smallDescription,
-  "currentSlug": slug.current,
-  titleImage, 
-  publishedAt
-}
-  `;
-
-  const data = await client.fetch(query);
-
-  return data;
-}
-
-export default async function Home() {
+export default function Home() {
   const fs = require("fs");
   const path = require("path");
   const matter = require("gray-matter");
@@ -54,13 +32,8 @@ export default async function Home() {
     };
   });
 
-  const data: simpleBlogCard[] = await getData();
-
   return (
     <main>
-      {/* {data.map((x, index) => (
-        <BlogPreviewLarge key={index} mapData={x} featured />
-      ))} */}
       <Hero />
       <FeaturedSection blogData={blogs} />
       <ReviewsSection blogData={blogs} />
