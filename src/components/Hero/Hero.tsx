@@ -6,6 +6,7 @@ import Instagram from "../../../public/icons/instagram.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import Twitter from "../../../public/icons/twitter.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
+import T2 from "../../../public/icons/twitterii.svg";
 
 const Hero = () => {
   return (
@@ -30,11 +31,12 @@ const Hero = () => {
                   <Facebook className={styles.icon} width={15} height={15} />
                 </div>
                 <div className={styles.iconContainer}>
-                  <Twitter className={styles.icon} width={15} height={15} />
+                  <T2 className={styles.icon} width={15} height={15} />
                 </div>
                 <div className={styles.iconContainer}>
                   <LinkedIn className={styles.icon} width={15} height={15} />
                 </div>
+                
               </div>
             </div>
           </div>
