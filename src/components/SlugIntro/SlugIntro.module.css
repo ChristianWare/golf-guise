@@ -10,6 +10,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
+  border: 1px solid var(--black);
+  background-color: var(--tan2);
+  border-radius: 10px;
+  padding: 3rem;
 }
 
 .heading {
@@ -66,7 +70,7 @@
 .imgContainer {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
 .img {
@@ -74,14 +78,13 @@
   border-radius: 10px;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1268px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-@media screen and (max-width: 768px) {
+  
   .imgContainer {
     height: 400px;
   }
 }
+
