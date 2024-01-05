@@ -13,8 +13,10 @@
   margin-top: 2rem;
 }
 
-.heading, .heading2, .heading3 {
-  border-bottom: thick double #06eec7;
+.heading,
+.heading2,
+.heading3 {
+  border-bottom: thick double #bcbcbc;
   padding-bottom: 1rem;
 }
 

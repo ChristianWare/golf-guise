@@ -26,7 +26,7 @@
 
 .tocHeadingTitle {
   font-size: 2.1rem;
-  border-bottom: thick double #06eec7;
+  border-bottom: thick double #bcbcbc;
   width: 100%;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
@@ -103,7 +103,7 @@
 }
 
 .relatedArticlesHeading {
-  border-bottom: thick double #06eec7;
+  border-bottom: thick double #bcbcbc;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   position: relative;

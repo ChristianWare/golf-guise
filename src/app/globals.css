@@ -2,6 +2,7 @@
   --black: #071952;
   --blackii: #262f4d;
   --blackiii: #45568e;
+  --blackiv: #212123;
   --borderii: #bcbcbc;
   --green: #06eec7;
   --greenii: #35a29f;
@@ -11,6 +12,7 @@
   --border: #cbcbcb;
   --darkGray: #f5f5f5;
   --purple: #466cfa;
+  --tan: #fbf7f1;
 }
 
 * {
@@ -20,7 +22,6 @@
   text-decoration: none;
   line-height: 120%;
   font-family: var(--aeonik);
-  overscroll-behavior: none;
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
   -webkit-tap-highlight-color: transparent;
@@ -53,9 +54,9 @@ span {
 }
 
 h1 {
-  font-size: 10rem;
-  line-height: 80%;
-  letter-spacing: -5px;
+  font-size: 7rem;
+  line-height: 100%;
+  letter-spacing: -3px;
 }
 
 h2 {

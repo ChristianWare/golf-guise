@@ -71,7 +71,7 @@
   color: var(--black);
   font-family: var(--ppMoriSemiBold);
   user-select: none;
-  border-bottom: thick double #06eec7;
+  border-bottom: thick double #bcbcbc;
 }
 
 .term {

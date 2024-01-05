@@ -6,7 +6,7 @@
 .greenTop {
   width: 100%;
   height: 3px;
-  border-bottom: thick double #06eec7;
+  border-bottom: thick double #bcbcbc;
 }
 
 .navTop {
@@ -39,7 +39,6 @@
   width: 100%;
   padding: 1rem 0rem;
   z-index: 1000;
-  padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
+import styles from './page.module.css'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} ${aeonik.variable} ${aeonikBold.variable} ${ppMoriRegualr.variable} ${ppMoriSemiBold.variable}`}
+        className={`${inter.className} ${aeonik.variable} ${aeonikBold.variable} ${ppMoriRegualr.variable} ${ppMoriSemiBold.variable} ${styles.bgColor}`}
       >
         <Nav />
         {children}

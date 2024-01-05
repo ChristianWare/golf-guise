@@ -68,7 +68,7 @@ function Nav() {
         <header className={styles.header}>
           <nav className={styles.navbar}>
             <Link href='/' className={styles.logo}>
-              GG
+              golf guise
             </Link>
             <ul
               className={
