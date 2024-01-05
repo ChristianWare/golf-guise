@@ -1,5 +1,5 @@
 .container {
-  /* border: 1px solid var(--borderii); */
+  border: 1px solid var(--black);
   background-color: var(--gray);
   border-radius: 10px;
   padding: 1rem;
@@ -66,14 +66,14 @@
   border: 1px solid var(--black);
 }
 
-.guide {
-  background-color: transparent;
-  color: var(--black);
+.guides {
+  background-color: var(--blue);
+  color: var(--tan);
 }
 
-.review {
-  background-color: transparent;
-  color: var(--gray);
+.reviews {
+  background-color: var(--yellow);
+  color: var(--black);
 }
 
 .tagsContainer {

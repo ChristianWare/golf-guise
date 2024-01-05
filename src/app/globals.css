@@ -4,8 +4,8 @@
   --blackiii: #45568e;
   --blackiv: #212123;
   --borderii: #bcbcbc;
-  --green: #06eec7;
-  --greenii: #35a29f;
+  --green: #439b66;
+  --blue: #70adbb;
   --gray: #f5f5f5;
   --grayii: #d8d9db;
   --grayiii: #e0e3e9;
@@ -13,6 +13,8 @@
   --darkGray: #f5f5f5;
   --purple: #466cfa;
   --tan: #fbf7f1;
+  --tan2: #f4e9da;
+  --yellow: #EFCD01;
 }
 
 * {

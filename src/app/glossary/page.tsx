@@ -19,7 +19,7 @@ const GlossaryPage = () => {
         <ContentPadding>
           <div className={styles.top}>
             {glossaryMenu.map((x, index) => (
-              <Link href={`#${x.letter}`} key={index} className={styles.letter}>
+              <Link href={`#${x.letter}`} key={index} className={styles.letter1}>
                 {x.letter}
               </Link>
             ))}

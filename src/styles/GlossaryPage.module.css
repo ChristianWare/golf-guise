@@ -4,6 +4,12 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  background-color: var(--green);
+  padding: 5rem;
+  border-radius: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom {
@@ -67,11 +73,17 @@
   gap: 1rem;
 }
 
-.letter {
+.letter,
+.letter1 {
   color: var(--black);
   font-family: var(--ppMoriSemiBold);
   user-select: none;
   border-bottom: thick double #bcbcbc;
+}
+
+.letter1 {
+  color: var(--tan);
+  border-bottom: thick double #fbf7f1;
 }
 
 .term {

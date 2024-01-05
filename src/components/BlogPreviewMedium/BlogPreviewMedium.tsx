@@ -9,8 +9,6 @@ const BlogPreviewMedium: FC<BlogPreviewProps> = ({
   mapData,
   key,
   featured,
-  guide,
-  review,
 }) => {
   return (
     <article key={key} className={styles.container}>
@@ -22,9 +20,11 @@ const BlogPreviewMedium: FC<BlogPreviewProps> = ({
       <div className={styles.right}>
         <span className={styles.tagsContainer}>
           {featured && <span className={styles.featured}>FEATURED</span>}
-          {guide && <span className={styles.guide}>GUIDE</span>}
-          {review && <span className={styles.review}>REVIEW</span>}
-          <span className={styles.category}>{mapData.meta.category}</span>
+          <span
+            className={`${styles[mapData?.meta?.category]} ${styles.category}`}
+          >
+            {mapData.meta.category}
+          </span>
         </span>
 
         <Link href={`/${mapData.meta.category}/${mapData.slug}`} passHref>

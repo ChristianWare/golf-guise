@@ -14,8 +14,6 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
   colPadding = "",
   colTitle = "",
   colImg = "",
-  guide,
-  review,
 }) => {
   return (
     <article key={key} className={`${styles.container} ${styles[column]}`}>
@@ -32,9 +30,11 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
       <div className={`${styles.right} ${styles[colPadding]}`}>
         <span className={styles.tagsContainer}>
           {featured && <span className={styles.featured}>FEATURED</span>}
-          {guide && <span className={styles.guide}>GUIDE</span>}
-          {review && <span className={styles.review}>GUIDE</span>}
-          <span className={styles.category}>{mapData.meta.category}</span>
+          <span
+            className={`${styles[mapData?.meta?.category]} ${styles.category}`}
+          >
+            {mapData.meta.category}
+          </span>
         </span>
 
         <Link href={`/${mapData.meta.category}/${mapData.slug}`} passHref>

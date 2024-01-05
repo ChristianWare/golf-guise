@@ -15,7 +15,7 @@
 .bottom {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   height: 100%;
   width: 100%;
 }
@@ -28,8 +28,8 @@
 .leftBottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  margin-top: 2rem;
+  grid-gap: 1rem;
+  margin-top: 1rem;
 }
 
 .right {
@@ -40,34 +40,19 @@
 .rightTop {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 2rem;
-  margin-bottom: 2rem;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .rightBottom {
   border-radius: 10px;
   padding: 3rem;
-  background: rgb(6, 238, 199);
-  background: -moz-linear-gradient(
-    -45deg,
-    rgba(6, 238, 199, 1) 0%,
-    rgba(7, 25, 82, 1) 91%
-  );
-  background: -webkit-linear-gradient(
-    -45deg,
-    rgba(6, 238, 199, 1) 0%,
-    rgba(7, 25, 82, 1) 91%
-  );
-  background: linear-gradient(
-    -45deg,
-    rgba(6, 238, 199, 1) 0%,
-    rgba(7, 25, 82, 1) 91%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#06eec7",endColorstr="#071952",GradientType=1);
+  background-color: var(--blue);
+  border: 1px solid var(--black);
 }
 
 .heading2 {
-  color: var(--gray);
+  color: var(--tan);
   text-align: left;
 }
 

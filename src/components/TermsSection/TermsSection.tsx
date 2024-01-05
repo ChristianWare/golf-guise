@@ -27,7 +27,7 @@ const TermsSection = () => {
             ))}
           </div>
           <div className={styles.btnContainer}>
-            <Button btnType='primary' text='View All' href='/' />
+            <Button btnType='primary' text='View All' href='/glossary' />
           </div>
         </ContentPadding>
       </LayoutWrapper>

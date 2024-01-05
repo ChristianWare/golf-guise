@@ -1,20 +1,15 @@
 .container {
-  background: linear-gradient(
-    257deg,
-    rgba(6, 238, 199, 1) 0%,
-    rgba(7, 25, 82, 1) 91%
-  );
+  background-color: var(--green);
   border-radius: 10px;
   padding: 10rem;
   margin-left: 15rem;
   margin-right: 15rem;
-  /* margin-top: 10rem; */
 }
 
 .heading,
 .copy {
   text-align: center;
-  color: var(--gray);
+  color: var(--tan);
   margin-bottom: 2rem;
 }
 

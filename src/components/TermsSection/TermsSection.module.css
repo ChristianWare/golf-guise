@@ -16,11 +16,12 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 .box {
   background-color: var(--gray);
+  border: 1px solid var(--black);
   border-radius: 10px;
   padding: 3rem;
   display: flex;

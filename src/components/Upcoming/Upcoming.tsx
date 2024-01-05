@@ -15,7 +15,7 @@ const Upcoming: FC<BlogSectionProps> = ({ blogData }) => {
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <h3 className={styles.heading2}>SCHEDULED <br /> ARTICLES</h3>
+              <h3 className={styles.heading2}>to be released this month ...</h3>
             </div>
             <div className={styles.right}>
               {blogData.slice(0,5).map((x: BlogData, index: number) => (

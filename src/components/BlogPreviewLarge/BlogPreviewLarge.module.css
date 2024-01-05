@@ -1,7 +1,8 @@
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: var(--gray);
+  background-color: var(--tan2);
+  border: 1px solid var(--black);
   border-radius: 10px;
   height: 100%;
   padding: 2rem;
@@ -67,13 +68,17 @@
   border: 1px solid var(--border);
 }
 
-.guide {
-  background-color: transparent;
-  color: var(--black);
+.featured {
+  color: var(--tan);
 }
 
-.review {
-  background-color: transparent;
+.guides {
+  background-color: var(--blue);
+  color: var(--tan);
+}
+
+.reviews {
+  background-color: var(--yellow);
   color: var(--black);
 }
 

@@ -46,6 +46,17 @@
   background-color: var(--blackii);
 }
 
+.tertiary {
+  background-color: var(--green);
+  color: var(--gray);
+  padding: 3px 25px;
+  padding-top: 5px;
+}
+
+.tertiary:hover {
+  background-color: var(--blackii);
+}
+
 .icon {
   position: relative;
   top: 1px;

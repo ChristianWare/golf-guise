@@ -9,22 +9,6 @@
   border-bottom: thick double #bcbcbc;
 }
 
-.navTop {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 5rem;
-  position: relative;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.socialsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
 
 .logo {
   font-size: 1.6rem;
