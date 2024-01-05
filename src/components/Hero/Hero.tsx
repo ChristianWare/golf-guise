@@ -56,7 +56,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.right}></div>
+              {/* <div className={styles.right}></div> */}
             </div>
           </div>
         </ContentPadding>

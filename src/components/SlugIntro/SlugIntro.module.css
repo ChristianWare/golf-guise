@@ -10,7 +10,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
-  border: 1px solid var(--borderii);
+  border: 1px solid var(--black);
   background-color: var(--tan2);
   border-radius: 10px;
   padding: 3rem;
@@ -82,9 +82,8 @@
   .content {
     grid-template-columns: repeat(1, 1fr);
   }
-  
+
   .imgContainer {
     height: 400px;
   }
 }
-

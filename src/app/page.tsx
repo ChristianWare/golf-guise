@@ -35,8 +35,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <FeaturedSection blogData={blogs} />
       <ReviewsSection blogData={blogs} />
+      <FeaturedSection blogData={blogs} />
       <GuidesSection blogData={blogs} />
       <Upcoming blogData={blogs} />
       <Gear />

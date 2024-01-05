@@ -13,7 +13,7 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Reviews</h2>
+            <h2 className={styles.heading}>Latest Reviews</h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
