@@ -1,6 +1,6 @@
 .container {
   border: 1px solid #dfdddd;
-  border-radius: 10px;
+  border-radius: 5px;
   background-image: repeating-linear-gradient(
     45deg,
     #edeaea 0,
@@ -14,7 +14,7 @@
 .top,
 .bottom {
   padding: 3rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .top {
@@ -146,7 +146,7 @@
   .brandInfoMobile {
     display: block;
     padding: 3rem;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;

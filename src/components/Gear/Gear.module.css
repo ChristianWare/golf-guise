@@ -13,7 +13,7 @@
 .box {
   background-color: var(--grayii);
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .imgContainer {
@@ -26,7 +26,7 @@
 .img {
   object-fit: contain;
   object-position: center;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 1rem;
   background-color: var(--gray);
 }

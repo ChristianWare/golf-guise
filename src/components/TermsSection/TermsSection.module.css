@@ -22,7 +22,7 @@
 .box {
   background-color: var(--gray);
   border: 1px solid var(--borderii);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 3rem;
   display: flex;
   flex-direction: column;

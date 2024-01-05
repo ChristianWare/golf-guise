@@ -15,7 +15,7 @@
   overflow: auto;
   border: 1px solid var(--black);
   background-color: var(--tan2);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -57,12 +57,12 @@
 .previewContainer {
   margin-bottom: 1rem;
   border: 1px solid var(--grayii);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .box {
   border: 2px solid var(--border);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2rem;
   margin-top: 1rem;
   margin-bottom: 2rem;

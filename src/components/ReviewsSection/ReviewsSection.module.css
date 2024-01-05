@@ -49,7 +49,7 @@
 }
 
 .rightBottom {
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 3rem;
   background-color: var(--green);
   border: 1px solid var(--black);

@@ -1,7 +1,15 @@
 .container {
   border: 1px solid var(--black);
   background-color: var(--gray);
-  border-radius: 10px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #edeaea 0,
+    #edeaea 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
+  border-radius: 5px;
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -17,11 +25,11 @@
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .img {
-  border-radius: 8px;
+  border-radius: 5px;
   object-fit: cover;
 }
 

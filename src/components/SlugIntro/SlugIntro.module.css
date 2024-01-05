@@ -12,7 +12,7 @@
   gap: 1rem;
   border: 1px solid var(--black);
   background-color: var(--tan2);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 3rem;
 }
 
@@ -75,7 +75,7 @@
 
 .img {
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 1268px) {

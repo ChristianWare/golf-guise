@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--tan2);
   border: 1px solid var(--black);
-  border-radius: 10px;
+  border-radius: 5px;
   height: 100%;
   padding: 2rem;
 }
@@ -34,11 +34,11 @@
 
 .img {
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .imgCol {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .right {

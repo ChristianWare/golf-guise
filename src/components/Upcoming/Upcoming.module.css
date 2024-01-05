@@ -1,5 +1,5 @@
 .article {
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 .top {
@@ -18,18 +18,18 @@
 }
 
 .left {
-  border-radius: 10px;
+  border-radius: 5px;
   height: 100%;
   display: flex;
   padding: 3rem;
   align-items: flex-end;
   justify-content: flex-start;
-  background-color: var(--tan2);
+  background-color: var(--green);
   border: 1px solid var(--black);
 }
 
 .heading2 {
-  color: var(--black);
+  color: var(--tan);
   text-align: left;
   text-transform: uppercase;
 }

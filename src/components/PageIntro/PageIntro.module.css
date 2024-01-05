@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #dfdddd;
   background-image: repeating-linear-gradient(
     45deg,
