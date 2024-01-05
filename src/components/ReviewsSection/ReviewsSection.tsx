@@ -19,13 +19,7 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
             <div className={styles.left}>
               <div className={styles.leftTop}>
                 {blogData.slice(0, 1).map((x: BlogData, index: number) => (
-                  <BlogPreviewLarge
-                    key={index}
-                    mapData={x}
-                    column='column'
-                    imgCol='imgCol'
-                    colPadding='colPadding'
-                  />
+                  <BlogPreviewLarge key={index} mapData={x} />
                 ))}
               </div>
               <div className={styles.leftBottom}>
@@ -48,7 +42,8 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
               </div>
               <div className={styles.rightBottom}>
                 <h3 className={styles.heading2}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptate! Inventore ut labore voluptatem ab.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, voluptate! Inventore ut labore voluptatem ab.
                 </h3>
               </div>
             </div>

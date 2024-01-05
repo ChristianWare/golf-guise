@@ -1,3 +1,7 @@
+.container {
+  margin-bottom: 5rem;
+}
+
 .top {
   margin-bottom: 1rem;
   display: grid;
