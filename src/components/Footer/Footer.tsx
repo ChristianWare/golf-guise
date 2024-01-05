@@ -108,7 +108,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.bottom}>
-            <div className={styles.logoii}>golf guise &#169; 2023</div>
+            <div className={styles.logoii}>golf guise &#169; 2024</div>
             <ul className={styles.disclosures}>
               <li className={styles.disc}>TERMS</li>
               <li className={styles.disc}>PRIVACY</li>
