@@ -7,7 +7,32 @@ import Link from "next/link";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
 
-const GlossaryPage = () => {
+export default function GlossaryPage() {
+  const fs = require("fs");
+  const path = require("path");
+  const matter = require("gray-matter");
+
+  // Determine the correct path to the 'blogs' directory
+  const glossaryDirectory = path.join(process.cwd(), "glossary");
+
+  // Use readdirSync to list files in the 'glossary' directory
+  const files = fs.readdirSync(glossaryDirectory);
+
+  const glossaryTerms = files.map((filename: any) => {
+    const fileContent = fs.readFileSync(
+      path.join(glossaryDirectory, filename),
+      "utf-8"
+    );
+
+    const { data: frontMatter } = matter(fileContent);
+    return {
+      meta: frontMatter,
+      slug: filename.replace(".mdx", ""),
+    };
+  });
+
+  console.log(glossaryTerms);
+
   return (
     <main>
       <PageIntro
@@ -19,7 +44,11 @@ const GlossaryPage = () => {
         <ContentPadding>
           <div className={styles.top}>
             {glossaryMenu.map((x, index) => (
-              <Link href={`#${x.letter}`} key={index} className={styles.letter1}>
+              <Link
+                href={`#${x.letter}`}
+                key={index}
+                className={styles.letter1}
+              >
                 {x.letter}
               </Link>
             ))}
@@ -74,5 +103,4 @@ const GlossaryPage = () => {
       <FinalCTA />
     </main>
   );
-};
-export default GlossaryPage;
+}
