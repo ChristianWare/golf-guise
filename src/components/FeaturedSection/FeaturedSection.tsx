@@ -34,7 +34,7 @@ const Featured: FC<BlogSectionProps> = ({ blogData }) => {
               </div>
             </div>
             <div className={styles.right}>
-              <h2 className={styles.heading3}>Latest</h2>
+              {/* <h2 className={styles.heading3}>Latest</h2> */}
               {blogData.map((x: BlogData, index: number) => (
                 <BlogPreviewSmall key={index} mapData={x}  />
               ))}
