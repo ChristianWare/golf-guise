@@ -48,8 +48,8 @@ const Footer = () => {
             <div className={styles.logoBox}>
               <h6 className={styles.logo}>golf guise</h6>
               <p className={styles.copy}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis, mollitia!
+                Explore our fairway treasures, refine your swing, and dive deep
+                into the world of golf – where passion meets precision.
               </p>
               <div className={styles.socials}>
                 <div className={styles.socialContainer}>

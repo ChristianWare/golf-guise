@@ -125,6 +125,7 @@
 
   .navItem {
     font-size: 2.4rem;
+    color: var(--tan);
   }
 
   .navMenu.active {
@@ -140,7 +141,7 @@
   .hamburger.active .whiteBar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
-    background-color: var(--black);
+    background-color: var(--tan);
   }
 
   .hamburger.active .whiteBar:nth-child(2) {
@@ -150,7 +151,7 @@
   .hamburger.active .whiteBar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
-    background-color: var(--black);
+    background-color: var(--tan);
   }
 }
 
