@@ -83,11 +83,11 @@ export default function Page({ params }: any) {
             <div className={styles.left}>
               <div className={styles.tocContainer}>
                 <span className={styles.tocHeadingTitle}>In This Article</span>
-                {props.frontMatter.toc.map((x: any, index: number) => (
+                {/* {props.frontMatter.toc.map((x: any, index: number) => (
                   <div key={index}>
                     <p className={styles.heading}>{x.heading}</p>
                   </div>
-                ))}
+                ))} */}
               </div>
             </div>
             <div className={styles.mdxContent}>

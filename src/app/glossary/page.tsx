@@ -8,30 +8,7 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
 
 export default function GlossaryPage() {
-  const fs = require("fs");
-  const path = require("path");
-  const matter = require("gray-matter");
 
-  // Determine the correct path to the 'blogs' directory
-  const glossaryDirectory = path.join(process.cwd(), "glossary");
-
-  // Use readdirSync to list files in the 'glossary' directory
-  const files = fs.readdirSync(glossaryDirectory);
-
-  const glossaryTerms = files.map((filename: any) => {
-    const fileContent = fs.readFileSync(
-      path.join(glossaryDirectory, filename),
-      "utf-8"
-    );
-
-    const { data: frontMatter } = matter(fileContent);
-    return {
-      meta: frontMatter,
-      slug: filename.replace(".mdx", ""),
-    };
-  });
-
-  console.log(glossaryTerms);
 
   return (
     <main>
@@ -69,7 +46,7 @@ export default function GlossaryPage() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> 
             <div className={styles.bottomRight}>
               {glossaryMenu.map((x, index) => (
                 <div

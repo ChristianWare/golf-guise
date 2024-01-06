@@ -39,21 +39,14 @@
   grid-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 10rem;
-  background-image: repeating-linear-gradient(
-    45deg,
-    #edeaea 0,
-    #edeaea 1px,
-    transparent 0,
-    transparent 50%
-  );
   background-size: 10px 10px;
   border-radius: 5px;
   padding: 3rem;
-  border: 1px solid #dfdddd;
+  border: 1px solid var(--borderii);
 }
 
 .section {
-  border: 1px solid #dfdddd;
+  border: 1px solid var(--borderii);
   background-color: var(--gray);
   border-radius: 5px;
   padding: 2rem;
