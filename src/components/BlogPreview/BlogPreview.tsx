@@ -9,9 +9,10 @@ const BlogPreview: FC<BlogPreviewProps> = ({
   mapData,
   key,
   featured,
+  tan2 = "",
 }) => {
   return (
-    <article key={key} className={styles.container}>
+    <article key={key} className={`${styles.container} ${styles[tan2]}`}>
       <div className={styles.top}>
         <div className={styles.imgContainer}>
           <Image src={Img} alt='image' fill className={styles.img} />

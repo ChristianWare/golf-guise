@@ -6,7 +6,7 @@
   margin-bottom: 1rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .bottom {

@@ -51,4 +51,5 @@ export interface BlogPreviewProps {
   colPadding?: string;
   colTitle?: string;
   colImg?: string;
+  tan2?: string;
 }

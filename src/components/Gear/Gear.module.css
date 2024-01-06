@@ -12,6 +12,7 @@
 
 .box {
   background-color: var(--grayii);
+  border: 1px solid var(--black);
   padding: 2rem;
   border-radius: 5px;
 }
@@ -29,6 +30,7 @@
   border-radius: 5px;
   padding: 1rem;
   background-color: var(--gray);
+  
 }
 
 .title {

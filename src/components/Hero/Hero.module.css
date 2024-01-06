@@ -13,6 +13,14 @@
   border-radius: 5px;
   height: 80vh;
   border: 1px solid var(--blackiv);
+  /* background-image: repeating-linear-gradient(
+    45deg,
+    #5d5d5d 0,
+    #5d5d5d 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px; */
 }
 
 .video {
@@ -35,14 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 3rem; */
 }
-
-/* .left,
-.right {
-  width: 100%;
-  flex: 1;
-} */
 
 .heading {
   color: var(--tan);
@@ -73,19 +74,20 @@
 .socialsContainer {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 3rem;
 }
 
 .iconContainer {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--tan);
+  border: 2px solid var(--tan);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .icon {

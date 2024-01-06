@@ -5,6 +5,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./GuidesSection.module.css";
 import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
 import BlogPreviewMedium from "../BlogPreviewMedium/BlogPreviewMedium";
+import BlogPreview from "../BlogPreview/BlogPreview";
 
 const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
   return (
@@ -22,13 +23,7 @@ const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
             </div>
             <div className={styles.right}>
               {blogData.slice(0, 1).map((x: BlogData, index: number) => (
-                <BlogPreviewLarge
-                  key={index}
-                  mapData={x}
-                  column='column'
-                  imgCol='imgCol'
-                  colPadding='colPadding'
-                />
+                <BlogPreview key={index} mapData={x} tan2='tan2' />
               ))}
             </div>
           </div>

@@ -14,7 +14,7 @@
   --purple: #466cfa;
   --tan: #fbf7f1;
   --tan2: #f4e9da;
-  --yellow: #EFCD01;
+  --yellow: #efcd01;
 }
 
 * {
@@ -25,7 +25,7 @@
   line-height: 120%;
   font-family: var(--aeonik);
   scroll-behavior: smooth;
-  scroll-margin-top: 40px;
+  scroll-margin-top: 170px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -109,8 +109,8 @@ input:focus {
   font-size: 1.6rem;
 }
 
-/* ::-webkit-scrollbar-thumb {
-  border-radius: 5px; 
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
   background: var(--secondary);
 }
 
@@ -119,11 +119,13 @@ input:focus {
 }
 
 ::selection {
-  background: var(--secondary);
+  background: var(--green);
+  color: var(--tan);
 }
 ::-moz-selection {
-  background: var(--secondary);
-} */
+  background: var(--green);
+  color: var(--tan);
+}
 
 @media screen and (max-width: 768px) {
   html {
@@ -149,9 +151,6 @@ input:focus {
     font-size: 110%;
   }
 }
-
-/* .toastFont {
-} */
 
 /* Only use in production */
 /* @media screen and (max-width: 480px) {

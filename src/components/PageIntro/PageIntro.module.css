@@ -4,15 +4,16 @@
   justify-content: center;
   gap: 3rem;
   border-radius: 5px;
-  border: 1px solid #dfdddd;
-  background-image: repeating-linear-gradient(
+  border: 1px solid var(--black);
+  /* background-image: repeating-linear-gradient(
     45deg,
     #edeaea 0,
     #edeaea 1px,
     transparent 0,
     transparent 50%
   );
-  background-size: 10px 10px;
+  background-size: 10px 10px; */
+  background-color: var(--tan);
   padding: 5rem;
 }
 

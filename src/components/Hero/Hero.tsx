@@ -20,7 +20,7 @@ const Hero = () => {
             <div className={styles.content}>
               <div className={styles.left}>
                 <h1 className={styles.heading}>
-                  Swing into Success: Your Ultimate Golf Guide
+                  Swing into Success: Your Ultimate Golf Guidebook
                 </h1>
                 <p className={styles.copy}>
                   Explore our fairway treasures, refine your swing, and dive
@@ -32,31 +32,30 @@ const Hero = () => {
                     <div className={styles.iconContainer}>
                       <Instagram
                         className={styles.icon}
-                        width={15}
-                        height={15}
+                        width={20}
+                        height={20}
                       />
                     </div>
                     <div className={styles.iconContainer}>
                       <Facebook
                         className={styles.icon}
-                        width={15}
-                        height={15}
+                        width={20}
+                        height={20}
                       />
                     </div>
                     <div className={styles.iconContainer}>
-                      <T2 className={styles.icon} width={15} height={15} />
+                      <T2 className={styles.icon} width={20} height={20} />
                     </div>
                     <div className={styles.iconContainer}>
                       <LinkedIn
                         className={styles.icon}
-                        width={15}
-                        height={15}
+                        width={20}
+                        height={20}
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <div className={styles.right}></div> */}
             </div>
           </div>
         </ContentPadding>
@@ -65,32 +64,3 @@ const Hero = () => {
   );
 };
 export default Hero;
-
-{
-  /* <div className={styles.content}>
-  <div className={styles.left}>
-    <h1 className={styles.heading}>golf guise</h1>
-    <p className={styles.copy}>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ex aliquid,
-      repudiandae non illo quibusdam?
-    </p>
-  </div>
-  <div className={styles.searchContainer}>
-    <Search />
-    <div className={styles.socialsContainer}>
-      <div className={styles.iconContainer}>
-        <Instagram className={styles.icon} width={15} height={15} />
-      </div>
-      <div className={styles.iconContainer}>
-        <Facebook className={styles.icon} width={15} height={15} />
-      </div>
-      <div className={styles.iconContainer}>
-        <T2 className={styles.icon} width={15} height={15} />
-      </div>
-      <div className={styles.iconContainer}>
-        <LinkedIn className={styles.icon} width={15} height={15} />
-      </div>
-    </div>
-  </div>
-</div>; */
-}

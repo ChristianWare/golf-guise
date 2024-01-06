@@ -1,3 +1,11 @@
 .bgColor {
   background-color: var(--tan);
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f1f1f1 0,
+    #f1f1f1 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
 }

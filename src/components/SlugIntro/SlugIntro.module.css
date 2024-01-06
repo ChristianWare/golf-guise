@@ -20,13 +20,13 @@
   font-size: 4.5rem;
   letter-spacing: -3px;
   line-height: 120%;
-  border-bottom: 1px solid var(--grayii);
+  border-bottom: 1px solid var(--borderii);
   padding-bottom: 1rem;
 }
 
 .copy,
 .box {
-  border-bottom: 1px solid var(--grayii);
+  border-bottom: 1px solid var(--borderii);
   padding: 1rem 0rem;
   width: 100%;
 }

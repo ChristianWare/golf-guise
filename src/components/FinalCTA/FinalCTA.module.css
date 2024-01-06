@@ -1,5 +1,6 @@
 .container {
   background-color: var(--green);
+  border: 1px solid var(--black);
   border-radius: 5px;
   padding: 10rem;
   margin-left: 15rem;
