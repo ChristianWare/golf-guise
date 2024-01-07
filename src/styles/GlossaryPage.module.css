@@ -59,9 +59,15 @@
   transition: all 0.3s ease-in;
 }
 
-/* .section:hover {
-  background-color: var(--grayiii);
-} */
+.section:hover {
+  background-color: var(--green);
+}
+
+.section:hover,
+.section:hover .title,
+.section:hover .desc {
+  color: var(--tan);
+}
 
 .box {
   margin-bottom: 3rem;
@@ -95,12 +101,6 @@
 
 .desc {
   color: var(--blackiii);
-}
-
-.arrow {
-  margin-left: 0.5rem;
-  position: relative;
-  top: 3px;
 }
 
 @media screen and (max-width: 1068px) {

@@ -20,7 +20,7 @@ const Hero = () => {
             <div className={styles.content}>
               <div className={styles.left}>
                 <h1 className={styles.heading}>
-                  Swing into Success: Your Ultimate Golf Guidebook
+                  The Ultimate Golf Guidebook
                 </h1>
                 <p className={styles.copy}>
                   Explore our fairway treasures, refine your swing, and dive

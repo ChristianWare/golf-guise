@@ -51,8 +51,8 @@
 .rightBottom {
   border-radius: 5px;
   padding: 3rem;
-  background-color: var(--green);
   border: 1px solid var(--black);
+  background-color: var(--green);
 }
 
 .heading2 {

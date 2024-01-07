@@ -10,7 +10,7 @@ const InstaFeed = () => {
       <ContentPadding>
         <section className={styles.container}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Lates from Instagram</h2>
+            <h2 className={styles.heading}>Instagram</h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.imgContainer}>

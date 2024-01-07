@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
-import styles from './page.module.css'
+import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +31,12 @@ const ppMoriSemiBold = localFont({
   display: "swap",
 });
 
+const tuskerGrotesk = localFont({
+  src: "../../public/fonts/tuskerGrotesk.ttf",
+  variable: "--tuskerGrotesk",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -39,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} ${aeonik.variable} ${aeonikBold.variable} ${ppMoriRegualr.variable} ${ppMoriSemiBold.variable} ${styles.bgColor}`}
+        className={`${inter.className} ${aeonik.variable} ${aeonikBold.variable} ${ppMoriRegualr.variable} ${ppMoriSemiBold.variable} ${styles.bgColor} ${tuskerGrotesk.variable}`}
       >
         <Nav />
         {children}

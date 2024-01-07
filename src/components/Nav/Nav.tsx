@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../ContentPadding/ContentPadding";
+import Golf from "../../../public/icons/golfball.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,7 +69,10 @@ function Nav() {
         <header className={styles.header}>
           <nav className={styles.navbar}>
             <Link href='/' className={styles.logo}>
-              golf guise
+              <span>
+                <Golf width={23} height={23} className={styles.icon} />
+              </span>
+              Golf guise
             </Link>
             <ul
               className={

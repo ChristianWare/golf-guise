@@ -42,8 +42,8 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
               </div>
               <div className={styles.rightBottom}>
                 <h3 className={styles.heading2}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat, voluptate! Inventore ut labore voluptatem ab.
+                  every post is a strategic swing toward unlocking your
+                  full potential on the course
                 </h3>
               </div>
             </div>

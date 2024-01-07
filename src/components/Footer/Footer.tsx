@@ -7,6 +7,7 @@ import LinkedIn from "../../../public/icons/linkedin.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import Twitter from "../../../public/icons/twitter.svg";
 import Email from "../../../public/icons/email.svg";
+import Golf from "../../../public/icons/golfball.svg";
 
 const navItems = [
   {
@@ -46,7 +47,7 @@ const Footer = () => {
         <footer className={styles.container}>
           <div className={styles.brandInfoMobile}>
             <div className={styles.logoBox}>
-              <h6 className={styles.logo}>golf guise</h6>
+              <h6 className={styles.logo}>Golf guise</h6>
               <p className={styles.copy}>
                 Explore our fairway treasures, refine your swing, and dive deep
                 into the world of golf – where passion meets precision.
@@ -64,14 +65,19 @@ const Footer = () => {
           <div className={styles.top}>
             <div className={styles.brandInfo}>
               <div className={styles.logoBox}>
-                <h6 className={styles.logo}>golf guise</h6>
+                <h6 className={styles.logo}>
+                  <span>
+                    <Golf width={40} height={40} classname={styles.icon} />
+                  </span>
+                  Golf guise
+                </h6>
                 <p className={styles.copy}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Blanditiis, mollitia!
                 </p>
                 <div className={styles.socials}>
                   <div className={styles.socialContainer}>
-                    <Instagram width={15} height={15} className={styles.icon} />
+                    <Instagram width={20} height={20} className={styles.icon} />
                   </div>
                   <div className={styles.socialContainer}>
                     <LinkedIn width={15} height={15} className={styles.icon} />
