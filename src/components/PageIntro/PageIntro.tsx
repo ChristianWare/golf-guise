@@ -16,7 +16,9 @@ const PageIntro: FC<Props> = ({ heading, copy, center = "" }) => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <h1 className={`${styles.heading} ${styles[center]}`}>{heading}</h1>
+              <h1 className={`${styles.heading} ${styles[center]}`}>
+                {heading}
+              </h1>
               <p className={`${styles.copy} ${styles[center]}`}>{copy}</p>
             </div>
           </div>

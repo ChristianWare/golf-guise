@@ -19,12 +19,14 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
     <article key={key} className={`${styles.container} ${styles[column]}`}>
       <div className={styles.left}>
         <div className={`${styles.imgContainer} ${styles[colImg]}`}>
-          <Image
-            src={Img}
-            alt='image'
-            fill
-            className={`${styles.img} ${styles[imgCol]}`}
-          />
+          <Link href={`/${mapData.meta.category}/${mapData.slug}`} passHref>
+            <Image
+              src={Img}
+              alt='image'
+              fill
+              className={`${styles.img} ${styles[imgCol]}`}
+            />
+          </Link>
         </div>
       </div>
       <div className={`${styles.right} ${styles[colPadding]}`}>
@@ -41,8 +43,8 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
           <h2 className={`${styles.title} ${styles[colTitle]}`}>
             {mapData.meta.title}
           </h2>
-          <p className={styles.desc}>{mapData.meta.description}</p>
         </Link>
+        <p className={styles.desc}>{mapData.meta.description}</p>
         <time dateTime='2023-02-02' className={styles.date}>
           {mapData.meta.date}
         </time>

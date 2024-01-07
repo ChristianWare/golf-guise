@@ -15,6 +15,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
+  z-index: 999;
 }
 
 .bottom {
@@ -58,9 +59,9 @@
   transition: all 0.3s ease-in;
 }
 
-.section:hover {
+/* .section:hover {
   background-color: var(--grayiii);
-}
+} */
 
 .box {
   margin-bottom: 3rem;

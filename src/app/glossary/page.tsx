@@ -6,10 +6,9 @@ import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
+import Button from "@/components/Button/Button";
 
 export default function GlossaryPage() {
-
-
   return (
     <main>
       <PageIntro
@@ -46,7 +45,7 @@ export default function GlossaryPage() {
                   </div>
                 </div>
               ))}
-            </div> 
+            </div>
             <div className={styles.bottomRight}>
               {glossaryMenu.map((x, index) => (
                 <div
@@ -57,17 +56,18 @@ export default function GlossaryPage() {
                   <h2 className={styles.heading}>{x.letter}</h2>
                   <div className={styles.sBottom}>
                     {x.section.map((y, index) => (
-                      <Link
-                        href={`/glossary/${y.term
-                          .toLowerCase()
-                          .replace(/\s+/g, "-")}`}
-                        key={index}
-                        className={styles.section}
-                        id={y.term}
-                      >
+                      <div key={index} className={styles.section}>
                         <h3 className={styles.title}>{y.term}</h3>
                         <p className={styles.desc}>{y.description}</p>
-                      </Link>
+                        <Button
+                          text='word details'
+                          btnType='tertiary'
+                          iconColor='white'
+                          href={`/glossary/${y.term
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}`}
+                        />
+                      </div>
                     ))}
                   </div>
                 </div>

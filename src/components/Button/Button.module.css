@@ -49,12 +49,14 @@
 .tertiary {
   background-color: var(--green);
   color: var(--gray);
-  padding: 3px 25px;
+  padding: 3px 20px;
   padding-top: 5px;
+  border: 1px solid var(--black);
+  font-size: 1.4rem;
 }
 
 .tertiary:hover {
-  background-color: var(--blackii);
+  background-color: var(--greenii);
 }
 
 .icon {
