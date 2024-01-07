@@ -17,7 +17,7 @@ const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              {blogData.slice(0, 3).map((x: BlogData, index: number) => (
+              {blogData.slice(0, 2).map((x: BlogData, index: number) => (
                 <BlogPreviewMedium key={index} mapData={x} />
               ))}
             </div>
