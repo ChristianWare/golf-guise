@@ -23,6 +23,10 @@
   padding-bottom: 1rem;
 }
 
+.left {
+  height: 100%;
+}
+
 .right {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -42,6 +46,7 @@
   background-color: var(--green);
   border: 1px solid var(--black);
   padding: 10rem;
+  
 }
 
 .ctaHeading {
@@ -50,6 +55,7 @@
   width: 70%;
   text-align: right;
   margin-left: auto;
+  font-size: 2.6rem;
 }
 
 @media screen and (max-width: 1068px) {
@@ -57,7 +63,6 @@
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }
-
 
 }
 
