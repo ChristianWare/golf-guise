@@ -45,4 +45,8 @@
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .heading {
+    text-align: center;
+  }
 }

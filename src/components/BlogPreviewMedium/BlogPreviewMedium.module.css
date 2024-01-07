@@ -3,14 +3,6 @@
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid var(--black);
   background-color: var(--gray);
-  /* background-image: repeating-linear-gradient(
-    45deg,
-    #edeaea 0,
-    #edeaea 1px,
-    transparent 0,
-    transparent 50%
-  );
-  background-size: 10px 10px; */
   border-radius: 5px;
   height: 100%;
 }
@@ -93,4 +85,10 @@
 .date {
   font-size: 1.4rem;
   color: var(--black);
+}
+
+@media screen and (max-width: 568px) {
+  .title {
+    font-size: 2.2rem;
+  }
 }

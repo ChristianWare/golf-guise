@@ -47,7 +47,12 @@ const Footer = () => {
         <footer className={styles.container}>
           <div className={styles.brandInfoMobile}>
             <div className={styles.logoBox}>
-              <h6 className={styles.logo}>Golf guise</h6>
+              <h6 className={styles.logo}>
+                <span>
+                  <Golf width={40} height={40} classname={styles.icon} />
+                </span>
+                Golf guise
+              </h6>
               <p className={styles.copy}>
                 Explore our fairway treasures, refine your swing, and dive deep
                 into the world of golf – where passion meets precision.

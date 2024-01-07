@@ -33,7 +33,7 @@
   font-size: 5rem;
   font-family: var(--tuskerGrotesk);
   color: var(--black);
-  letter-spacing: -3px;
+  /* letter-spacing: -3px; */
 }
 
 .copy {
@@ -118,6 +118,7 @@
 .logoii {
   color: var(--black);
   font-family: var(--ppMoriSemiBold);
+  font-size: 1.2rem;
 }
 
 .disclosures {
@@ -133,6 +134,7 @@
 
 .disc {
   font-family: var(--ppMoriSemiBold);
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 968px) {
