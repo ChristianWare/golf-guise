@@ -143,6 +143,10 @@ input:focus {
   h1 {
     font-size: 7.5rem;
   }
+  
+  h2 {
+    font-size: 5.5rem;
+  }
 
   p,
   label {

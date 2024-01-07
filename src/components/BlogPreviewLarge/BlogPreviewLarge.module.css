@@ -145,4 +145,25 @@
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .right {
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 1rem;
+  }
+
+  .title, .desc {
+    text-align: center;
+  }
+
+  .title {
+    margin-top: 1rem;
+    font-size:  3rem;
+  }
+
+  .desc {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
