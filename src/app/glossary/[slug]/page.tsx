@@ -68,6 +68,8 @@ const components = { SlugImage, SlugHeading, SlugConclusion };
 export default function Page({ params }: any) {
   const props = getPost(params);
 
+  const selectedLetter = props.slug.charAt(0).toUpperCase();
+
   return (
     <main>
       <GlossarySlugIntro
@@ -96,7 +98,10 @@ export default function Page({ params }: any) {
               <div className={styles.tocContainer}>
                 <span className={styles.tocHeadingTitle}>Similar Words</span>
                 {glossaryMenu
-                  .filter((x) => x.letter.toUpperCase() === "A")
+                  .filter(
+                    (x) =>
+                      x.letter.toUpperCase() === selectedLetter.toUpperCase()
+                  )
                   .map((x: any, index: number) => (
                     <div key={index}>
                       {x.section.map((y: any, index: number) => (

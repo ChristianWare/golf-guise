@@ -63,16 +63,16 @@ export const gear = [
 ];
 
 export const glossaryMenu = [
-  {
-    letter: "#",
-    section: [
-      {
-        term: "19th Hole",
-        description:
-          "A slang term referring to the clubhouse or bar where golfers gather after a round to socialize and relax. It's a symbolic 'hole' that comes after the 18 holes on the golf course.",
-      },
-    ],
-  },
+  // {
+  //   letter: "#",
+  //   section: [
+  //     {
+  //       term: "19th Hole",
+  //       description:
+  //         "A slang term referring to the clubhouse or bar where golfers gather after a round to socialize and relax. It's a symbolic 'hole' that comes after the 18 holes on the golf course.",
+  //     },
+  //   ],
+  // },
   {
     letter: "A",
     section: [
