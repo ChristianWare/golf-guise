@@ -25,16 +25,20 @@
   background-color: var(--blue);
 }
 
+.green {
+  background-color: var(--green);
+}
+
+.tan {
+  color: var(--tan);
+}
+
 .left {
   flex: 2;
 }
 
 .right {
   flex: 1;
-}
-
-.heading {
-  /* text-transform: lowercase; */
 }
 
 .copy {

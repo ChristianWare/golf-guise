@@ -12,31 +12,23 @@ import Golf from "../../../public/icons/golfball.svg";
 const navItems = [
   {
     text: "Home",
-    href: "#",
+    href: "/",
   },
   {
     text: "Reviews",
-    href: "#",
+    href: "/reviews",
   },
   {
     text: "Guides",
-    href: "#",
+    href: "/guides",
   },
   {
     text: "Gear",
-    href: "#",
+    href: "/gear",
   },
   {
-    text: "Terms",
-    href: "#",
-  },
-  {
-    text: "About",
-    href: "#",
-  },
-  {
-    text: "All Articles",
-    href: "#",
+    text: "Glossary",
+    href: "/glossary",
   },
 ];
 
@@ -77,8 +69,8 @@ const Footer = () => {
                   Golf guise
                 </h6>
                 <p className={styles.copy}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Blanditiis, mollitia!
+                  Explore our fairway treasures, refine your swing, and dive
+                  deep into the world of golf – where passion meets precision.
                 </p>
                 <div className={styles.socials}>
                   <div className={styles.socialContainer}>

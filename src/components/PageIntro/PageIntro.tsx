@@ -8,19 +8,26 @@ interface Props {
   copy: string;
   center?: string;
   color?: string
+  textColor?: string
 }
 
-const PageIntro: FC<Props> = ({ heading, copy, center = "", color='' }) => {
+const PageIntro: FC<Props> = ({ heading, copy, center = "", color='', textColor=''}) => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
           <div className={`${styles.content} ${styles[color]}`}>
             <div className={styles.left}>
-              <h1 className={`${styles.heading} ${styles[center]}`}>
+              <h1
+                className={`${styles.heading} ${styles[center]} ${styles[textColor]}`}
+              >
                 {heading}
               </h1>
-              <p className={`${styles.copy} ${styles[center]}`}>{copy}</p>
+              <p
+                className={`${styles.copy} ${styles[center]} ${styles[textColor]}`}
+              >
+                {copy}
+              </p>
             </div>
           </div>
         </ContentPadding>

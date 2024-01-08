@@ -3,9 +3,9 @@ import { BlogData, BlogSectionProps } from "@/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./GuidesSection.module.css";
-import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
 import BlogPreviewMedium from "../BlogPreviewMedium/BlogPreviewMedium";
 import BlogPreview from "../BlogPreview/BlogPreview";
+import Button from "../Button/Button";
 
 const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
   return (
@@ -26,6 +26,9 @@ const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
                 <BlogPreview key={index} mapData={x} tan2='tan2' />
               ))}
             </div>
+          </div>
+          <div className={styles.btnContainer}>
+            <Button btnType='primary' text='see all guides' href='/guides' />
           </div>
         </ContentPadding>
       </LayoutWrapper>

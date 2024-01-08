@@ -11,7 +11,7 @@
   white-space: nowrap;
   border-radius: 50px;
   user-select: none;
-  transition: all 0.1s ease-in;
+  transition: all 0.3s ease-in;
   display: inline-block;
   padding: 8px 25px;
   padding-top: 10px;
@@ -33,6 +33,11 @@
 
 .primary:hover {
   background-color: var(--green);
+}
+
+.primary:hover,
+.primary:hover .icon {
+  color: var(--tan);
 }
 
 .secondary {
@@ -64,6 +69,7 @@
   top: 1px;
   margin-left: 1rem;
   color: var(--black);
+  transition: all 0.3s ease-in;
 }
 
 .white {

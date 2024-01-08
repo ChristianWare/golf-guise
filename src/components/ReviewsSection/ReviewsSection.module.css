@@ -60,6 +60,13 @@
   text-align: left;
 }
 
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
 @media screen and (max-width: 1068px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
@@ -81,6 +88,10 @@
 
   .rightTop {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btnContainer {
+    justify-content: center;
   }
 }
 

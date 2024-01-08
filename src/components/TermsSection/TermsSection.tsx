@@ -7,27 +7,41 @@ import Button from "../Button/Button";
 import Link from "next/link";
 
 const TermsSection = () => {
+  function shuffleArray(array: number[]) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  const termIndices = terms.map((_, index) => index);
+  shuffleArray(termIndices);
+
+  const randomIndices = termIndices.slice(0, 6);
+
   return (
-    <section className={styles.contianer}>
+    <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
             <h2 className={styles.heading}>Golf terms to know</h2>
           </div>
           <div className={styles.bottom}>
-            {terms.slice(0, 6).map((x, index) => (
+            {randomIndices.map((index) => (
               <Link
-                href={`/glossary/${x.title.toLowerCase().replace(/\s+/g, "-")}`}
+                href={`/glossary/${terms[index].title
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")}`}
                 className={styles.box}
                 key={index}
               >
                 <h3 className={styles.title}>
-                  {x.title}
+                  {terms[index].title}
                   <span className={styles.arrow}>
                     <Arrow width={25} height={25} className={styles.arrow} />
                   </span>
                 </h3>
-                <p className={styles.desc}>{x.description}</p>
+                <p className={styles.desc}>{terms[index].description}</p>
               </Link>
             ))}
           </div>

@@ -32,8 +32,33 @@
   padding-bottom: 1rem;
 }
 
+.similarContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  height: 100%;
+}
+
+.similar {
+  color: var(--black);
+  font-family: var(--ppMoriSemiBold);
+  border: 1px solid var(--black);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  padding-top: 0.8rem;
+  margin-bottom: 10rem;
+  height: 100%;
+  transition: all 0.2s ease-in;
+}
+
+.similar:hover {
+  background-color: var(--green);
+  color: var(--tan);
+}
+
 .heading {
-  /* line-height: 0.8; */
   color: var(--black);
   font-family: var(--ppMoriSemiBold);
 }

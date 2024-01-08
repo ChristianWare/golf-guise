@@ -1,3 +1,7 @@
+.container {
+  margin-bottom: 5rem;
+}
+
 .top {
   margin-bottom: 3rem;
   display: flex;
@@ -29,20 +33,35 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+  transition: all 0.3s ease-in;
+}
+
+.box:hover {
+  background-color: var(--green);
+}
+
+.box:hover,
+.box:hover .title,
+.box:hover .desc,
+.box:hover .arrow {
+  color: var(--tan);
 }
 
 .title {
   font-size: 2.1rem;
+  transition: all 0.3s ease-in;
 }
 
 .desc {
   color: var(--blackiii);
+  transition: all 0.3s ease-in;
 }
 
 .arrow {
   margin-left: 0.5rem;
   position: relative;
   top: 3px;
+  transition: all 0.3s ease-in;
 }
 
 .btnContainer {

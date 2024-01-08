@@ -6,6 +6,7 @@ import styles from "./ReviewsSection.module.css";
 import BlogPreviewLarge from "../BlogPreviewLarge/BlogPreviewLarge";
 import BlogPreviewMedium from "../BlogPreviewMedium/BlogPreviewMedium";
 import BlogPreviewSmall from "../BlogPreviewSmall/BlogPreviewSmall";
+import Button from "../Button/Button";
 
 const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
   return (
@@ -42,11 +43,14 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
               </div>
               <div className={styles.rightBottom}>
                 <h3 className={styles.heading2}>
-                  every post is a strategic swing toward unlocking your
-                  full potential on the course
+                  every post is a strategic swing toward unlocking your full
+                  potential on the course
                 </h3>
               </div>
             </div>
+          </div>
+          <div className={styles.btnContainer}>
+            <Button btnType='primary' text='see all reviews' href='/reviews' />
           </div>
         </ContentPadding>
       </LayoutWrapper>

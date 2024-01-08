@@ -34,7 +34,7 @@ const Gear = () => {
             ))}
           </div>
           <div className={styles.btnContainerii}>
-            <Button btnType='primary' text='View All' href='/' />
+            <Button btnType='primary' text='View All' href='/gear' />
           </div>
         </ContentPadding>
       </LayoutWrapper>

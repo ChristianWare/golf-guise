@@ -9,9 +9,9 @@ import SlugConclusion from "@/components/SlugConclusion/SlugConclusion";
 import LayoutWrapper from "@/components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
-import SlugIntro from "@/components/SlugIntro/SlugIntro";
 import GlossarySlugIntro from "@/components/GlossarySlugIntro/GlossarySlugIntro";
 import { glossaryMenu } from "@/lib/data";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("glossary"));
@@ -103,12 +103,21 @@ export default function Page({ params }: any) {
                       x.letter.toUpperCase() === selectedLetter.toUpperCase()
                   )
                   .map((x: any, index: number) => (
-                    <div key={index}>
-                      {x.section.map((y: any, index: number) => (
-                        <div key={index}>
-                          <p className={styles.heading}>{y.term}</p>
-                        </div>
-                      ))}
+                    <div key={index} className={styles.similarContainer}>
+                      {x.section
+                        .filter((y: any) => y.term !== props.frontMatter.title)
+                        .map((y: any, index: number) => (
+                          <div key={index}>
+                            <Link
+                              href={`/glossary/${y.term
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")}`}
+                              className={styles.similar}
+                            >
+                              {y.term}
+                            </Link>
+                          </div>
+                        ))}
                     </div>
                   ))}
               </div>

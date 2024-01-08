@@ -6,7 +6,7 @@ import Image from "next/image";
 import Img from "../../../public/images/img1.png";
 import Instagram from "../../../public/icons/instagram.svg";
 import Facebook from "../../../public/icons/facebook.svg";
-import Twitter from "../../../public/icons/twitter.svg";
+import Twitter from "../../../public/icons/twitterii.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
 
 interface Props {
