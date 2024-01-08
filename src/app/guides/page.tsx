@@ -44,6 +44,7 @@ export default function GuidesPage() {
         heading='Guides'
         copy='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                 ex aliquid, repudiandae non illo quibusdam?'
+        color='blue'
       />
       <LayoutWrapper>
         <ContentPadding>

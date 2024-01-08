@@ -97,10 +97,12 @@
 
 .title {
   font-size: 2.1rem;
+  transition: all 0.3s ease-in;
 }
 
 .desc {
   color: var(--blackiii);
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (max-width: 1068px) {

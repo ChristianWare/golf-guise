@@ -4,6 +4,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./TermsSection.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 const TermsSection = () => {
   return (
@@ -15,7 +16,11 @@ const TermsSection = () => {
           </div>
           <div className={styles.bottom}>
             {terms.slice(0, 6).map((x, index) => (
-              <div className={styles.box} key={index}>
+              <Link
+                href={`/glossary/${x.title.toLowerCase().replace(/\s+/g, "-")}`}
+                className={styles.box}
+                key={index}
+              >
                 <h3 className={styles.title}>
                   {x.title}
                   <span className={styles.arrow}>
@@ -23,7 +28,7 @@ const TermsSection = () => {
                   </span>
                 </h3>
                 <p className={styles.desc}>{x.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
           <div className={styles.btnContainer}>

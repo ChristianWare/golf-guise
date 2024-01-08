@@ -7,14 +7,15 @@ interface Props {
   heading: string;
   copy: string;
   center?: string;
+  color?: string
 }
 
-const PageIntro: FC<Props> = ({ heading, copy, center = "" }) => {
+const PageIntro: FC<Props> = ({ heading, copy, center = "", color='' }) => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
-          <div className={styles.content}>
+          <div className={`${styles.content} ${styles[color]}`}>
             <div className={styles.left}>
               <h1 className={`${styles.heading} ${styles[center]}`}>
                 {heading}

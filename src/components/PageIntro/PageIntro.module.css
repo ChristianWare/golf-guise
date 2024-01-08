@@ -17,6 +17,14 @@
   padding: 5rem;
 }
 
+.yellow {
+  background-color: var(--yellow);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
 .left {
   flex: 2;
 }

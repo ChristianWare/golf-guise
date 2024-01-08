@@ -44,6 +44,7 @@ export default function ReviewsPage() {
         heading='Reviews'
         copy='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                 ex aliquid, repudiandae non illo quibusdam?'
+        color='yellow'
       />
       <LayoutWrapper>
         <ContentPadding>

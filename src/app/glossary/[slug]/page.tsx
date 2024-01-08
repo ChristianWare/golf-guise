@@ -2,17 +2,16 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import styles from "../../../styles/SlugPage.module.css";
+import styles from "./GlossarySlugPage.module.css";
 import SlugImage from "@/components/SlugImage/SlugImage";
 import SlugHeading from "@/components/SlugHeading/SlugHeading";
 import SlugConclusion from "@/components/SlugConclusion/SlugConclusion";
-import { BlogData } from "@/lib/interface";
-import BlogPreview from "@/components/BlogPreview/BlogPreview";
 import LayoutWrapper from "@/components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import SlugIntro from "@/components/SlugIntro/SlugIntro";
-import BlogPreviewSmall from "@/components/BlogPreviewSmall/BlogPreviewSmall";
+import GlossarySlugIntro from "@/components/GlossarySlugIntro/GlossarySlugIntro";
+import { glossaryMenu } from "@/lib/data";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("glossary"));
@@ -71,7 +70,7 @@ export default function Page({ params }: any) {
 
   return (
     <main>
-      <SlugIntro
+      <GlossarySlugIntro
         heading={props.frontMatter.title}
         description={props.frontMatter.description}
         date={props.frontMatter.date}
@@ -93,9 +92,23 @@ export default function Page({ params }: any) {
             <div className={styles.mdxContent}>
               <MDXRemote source={props.content} components={components} />
             </div>
-            
+            <div className={styles.farRight}>
+              <div className={styles.tocContainer}>
+                <span className={styles.tocHeadingTitle}>Similar Words</span>
+                {glossaryMenu
+                  .filter((x) => x.letter.toUpperCase() === "A")
+                  .map((x: any, index: number) => (
+                    <div key={index}>
+                      {x.section.map((y: any, index: number) => (
+                        <div key={index}>
+                          <p className={styles.heading}>{y.term}</p>
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+              </div>
+            </div>
           </div>
-         
         </ContentPadding>
       </LayoutWrapper>
       <FinalCTA />

@@ -82,9 +82,11 @@
 
 .guides {
   color: var(--black);
+  background-color: var(--blue);
 }
 
 .reviews {
+  background-color: var(--yellow);
   color: var(--black);
   border: 1px solid var(--black);
 }
@@ -153,13 +155,14 @@
     gap: 1rem;
   }
 
-  .title, .desc {
+  .title,
+  .desc {
     text-align: center;
   }
 
   .title {
     margin-top: 1rem;
-    font-size:  3rem;
+    font-size: 3rem;
   }
 
   .desc {
