@@ -8,6 +8,11 @@ import InstaFeed from "@/components/InstaFeed/InstaFeed";
 import TermsSection from "@/components/TermsSection/TermsSection";
 import Gear from "@/components/Gear/Gear";
 import BlogPreview from "@/components/BlogPreview/BlogPreview";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Reviews",
+};
 
 export default function ReviewsPage() {
   const fs = require("fs");

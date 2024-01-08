@@ -8,6 +8,11 @@ import InstaFeed from "@/components/InstaFeed/InstaFeed";
 import TermsSection from "@/components/TermsSection/TermsSection";
 import Gear from "@/components/Gear/Gear";
 import BlogPreviewSmall from "@/components/BlogPreviewSmall/BlogPreviewSmall";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Guides",
+};
 
 export default function GuidesPage() {
   const fs = require("fs");

@@ -7,9 +7,15 @@ import Footer from "@/components/Footer/Footer";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Golf Guise: Your Ultimate Golf Guidebook",
+  title: {
+    default: "Golf Guise: Your Ultimate Golf Guidebook",
+    template: "Golf Guise | %s",
+  },
   description:
     "Elevate your golfing experience with Golf Guise! Discover in-depth reviews of the latest golf products, expert guides to enhance your game, and exclusive tips to perfect your swing. Unleash your potential on the course with our comprehensive insights. Your journey to golfing excellence starts here!",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 const inter = Inter({ subsets: ["latin"] });

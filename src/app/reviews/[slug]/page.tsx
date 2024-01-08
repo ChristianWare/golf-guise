@@ -13,6 +13,13 @@ import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import SlugIntro from "@/components/SlugIntro/SlugIntro";
 import BlogPreviewSmall from "@/components/BlogPreviewSmall/BlogPreviewSmall";
+import { Metadata } from "next";
+
+// export async function generateMetadata(): Promise<Metadata> {
+//   return {
+//     title: 
+//   }
+// }
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -65,6 +72,26 @@ const blogs = files.map((filename: any) => {
 });
 
 const components = { SlugImage, SlugHeading, SlugConclusion };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const dynamicTitle = fetchDynamicTitle(params.slug);
+
+  return {
+    title: dynamicTitle,
+  };
+}
+
+function fetchDynamicTitle(slug: string): string {
+  const slugWithoutDashes = slug
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+
+  return slugWithoutDashes;
+}
 
 export default function Page({ params }: any) {
   const props = getPost(params);

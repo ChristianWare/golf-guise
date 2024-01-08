@@ -8,6 +8,7 @@ import Instagram from "../../../public/icons/instagram.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import Twitter from "../../../public/icons/twitterii.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
+import { Metadata } from "next";
 
 interface Props {
   heading: string;
