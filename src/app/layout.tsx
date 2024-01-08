@@ -9,7 +9,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: {
     default: "Golf Guise: Your Ultimate Golf Guidebook",
-    template: "Golf Guise | %s",
+    template: "%s - Golf Guise",
   },
   description:
     "Elevate your golfing experience with Golf Guise! Discover in-depth reviews of the latest golf products, expert guides to enhance your game, and exclusive tips to perfect your swing. Unleash your potential on the course with our comprehensive insights. Your journey to golfing excellence starts here!",
