@@ -78,20 +78,14 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const dynamicTitle = fetchDynamicTitle(params.slug);
+  const { frontMatter } = getPost(params);
 
   return {
-    title: dynamicTitle,
+    title: frontMatter.title,
+    description: frontMatter.description,
   };
 }
 
-function fetchDynamicTitle(slug: string): string {
-  const slugWithoutDashes = slug
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (char) => char.toUpperCase());
-
-  return slugWithoutDashes;
-}
 
 export default function Page({ params }: any) {
   const props = getPost(params);
