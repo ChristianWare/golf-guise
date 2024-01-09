@@ -13,6 +13,7 @@ import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import SlugIntro from "@/components/SlugIntro/SlugIntro";
 import BlogPreviewSmall from "@/components/BlogPreviewSmall/BlogPreviewSmall";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -63,6 +64,19 @@ const blogs = files.map((filename: any) => {
     slug: filename.replace(".mdx", ""),
   };
 });
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const { frontMatter } = getPost(params);
+
+  return {
+    title: frontMatter.title,
+    description: frontMatter.description,
+  };
+}
 
 const components = { SlugImage, SlugHeading, SlugConclusion };
 

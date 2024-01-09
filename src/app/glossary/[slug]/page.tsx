@@ -12,6 +12,7 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import GlossarySlugIntro from "@/components/GlossarySlugIntro/GlossarySlugIntro";
 import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("glossary"));
@@ -62,6 +63,19 @@ const glossary = files.map((filename: any) => {
     slug: filename.replace(".mdx", ""),
   };
 });
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const { frontMatter } = getPost(params);
+
+  return {
+    title: frontMatter.title,
+    description: frontMatter.description,
+  };
+}
 
 const components = { SlugImage, SlugHeading, SlugConclusion };
 
