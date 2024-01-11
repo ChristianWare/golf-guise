@@ -14,14 +14,12 @@ const Hero = () => {
         <ContentPadding>
           <div className={styles.container}>
             <div className={styles.imgOverlay}></div>
-            <video autoPlay muted loop className={styles.video}>
+            <video preload='auto' autoPlay muted loop className={styles.video}>
               <source src='./videos/video2.mp4' />
             </video>
             <div className={styles.content}>
               <div className={styles.left}>
-                <h1 className={styles.heading}>
-                  The Ultimate Golf Guidebook
-                </h1>
+                <h1 className={styles.heading}>The Ultimate Golf Guidebook</h1>
                 <p className={styles.copy}>
                   Explore our fairway treasures, refine your swing, and dive
                   deep into the world of golf – where passion meets precision.
