@@ -31,13 +31,10 @@
   background-color: var(--gray);
 }
 
-.primary:hover {
-  background-color: var(--green);
-}
-
-.primary:hover,
-.primary:hover .icon {
-  color: var(--tan);
+.primaryii {
+  color: var(--gray);
+  border: 2px solid var(--gray);
+  background-color: transparent;
 }
 
 .secondary {
@@ -45,10 +42,6 @@
   color: var(--gray);
   padding: 3px 25px;
   padding-top: 5px;
-}
-
-.secondary:hover {
-  background-color: var(--blackii);
 }
 
 .tertiary {
@@ -60,16 +53,16 @@
   font-size: 1.4rem;
 }
 
-.tertiary:hover {
-  background-color: var(--greenii);
-}
-
 .icon {
   position: relative;
   top: 1px;
   margin-left: 1rem;
   color: var(--black);
   transition: all 0.3s ease-in;
+}
+
+.gray {
+  color: var(--gray);
 }
 
 .white {

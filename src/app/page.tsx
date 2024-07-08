@@ -7,6 +7,7 @@ import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Gear from "@/components/Gear/Gear";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
 import Hero from "@/components/Hero/Hero";
+import PostHero from "@/components/PostHero/PostHero";
 
 export default function Home() {
   const fs = require("fs");
@@ -35,12 +36,13 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <PostHero />
       <ReviewsSection blogData={blogs} />
-      <FeaturedSection blogData={blogs} />
-      <GuidesSection blogData={blogs} />
-      <Upcoming blogData={blogs} />
+      {/* <FeaturedSection blogData={blogs} /> */}
+      {/* <GuidesSection blogData={blogs} />
+      <Upcoming blogData={blogs} /> */}
       <Gear />
-      <TermsSection />
+      {/* <TermsSection /> */}
       <InstaFeed />
       <FinalCTA />
     </main>

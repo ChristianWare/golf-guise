@@ -6,6 +6,7 @@ import Instagram from "../../../public/icons/instagram.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
 import T2 from "../../../public/icons/twitterii.svg";
+import Button from "../Button/Button";
 
 const Hero = () => {
   return (
@@ -19,13 +20,24 @@ const Hero = () => {
             </video>
             <div className={styles.content}>
               <div className={styles.left}>
-                <h1 className={styles.heading}>The Ultimate Golf Guidebook</h1>
+                <h1 className={styles.heading}>
+                  arizona stay and play golf packages
+                </h1>
                 <p className={styles.copy}>
-                  Explore our fairway treasures, refine your swing, and dive
-                  deep into the world of golf – where passion meets precision.
+                  Book your next golf vacation with us! Explore top packages and
+                  destinations. Contact us or request a quote to get started.
                 </p>
                 <div className={styles.searchContainer}>
-                  <Search />
+                  {/* <Search /> */}
+                  <div className={styles.btnContainer}>
+                    <Button btnType='primary' text='Current Offers' href='/' />
+                    <Button
+                      btnType='primaryii'
+                      text='Contact Us'
+                      href='/'
+                      iconColor='gray'
+                    />
+                  </div>
                   <div className={styles.socialsContainer}>
                     <div className={styles.iconContainer}>
                       <Instagram

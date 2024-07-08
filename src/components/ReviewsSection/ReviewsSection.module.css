@@ -1,4 +1,5 @@
 .container {
+  margin-top: 10rem;
   margin-bottom: 5rem;
 }
 
@@ -27,6 +28,11 @@
 .left,
 .right {
   height: 100%;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .leftBottom {

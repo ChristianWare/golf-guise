@@ -14,7 +14,7 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Latest Reviews</h2>
+            <h2 className={styles.heading}>Our Packages</h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
@@ -24,7 +24,7 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
                 ))}
               </div>
               <div className={styles.leftBottom}>
-                {blogData.slice(0, 2).map((x: BlogData, index: number) => (
+                {blogData.slice(1, 3).map((x: BlogData, index: number) => (
                   <BlogPreviewSmall
                     key={index}
                     mapData={x}
@@ -37,7 +37,7 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
             </div>
             <div className={styles.right}>
               <div className={styles.rightTop}>
-                {blogData.slice(0, 2).map((x: BlogData, index: number) => (
+                {blogData.slice(3, 5).map((x: BlogData, index: number) => (
                   <BlogPreviewMedium key={index} mapData={x} />
                 ))}
               </div>

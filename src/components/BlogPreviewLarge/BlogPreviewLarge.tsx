@@ -45,9 +45,6 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
           </h2>
         </Link>
         <p className={styles.desc}>{mapData.meta.description}</p>
-        <time dateTime='2023-02-02' className={styles.date}>
-          {mapData.meta.date}
-        </time>
       </div>
     </article>
   );

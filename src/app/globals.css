@@ -24,7 +24,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  font-family: var(--aeonik);
+  font-family: var(--inter);
   scroll-behavior: smooth;
   scroll-margin-top: 170px;
   -webkit-tap-highlight-color: transparent;
@@ -143,7 +143,7 @@ input:focus {
   h1 {
     font-size: 7.5rem;
   }
-  
+
   h2 {
     font-size: 4.5rem;
   }

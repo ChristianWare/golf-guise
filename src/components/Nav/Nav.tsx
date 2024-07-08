@@ -46,20 +46,12 @@ function Nav() {
       href: "/",
     },
     {
-      text: "Reviews",
-      href: "/reviews",
-    },
-    {
-      text: "Guides",
-      href: "/guides",
+      text: "Packages",
+      href: "#",
     },
     {
       text: "Gear",
-      href: "/gear",
-    },
-    {
-      text: "Glossary",
-      href: "/glossary",
+      href: "#",
     },
   ];
 
@@ -72,7 +64,7 @@ function Nav() {
               <span>
                 <Golf width={23} height={23} className={styles.icon} />
               </span>
-              Golf guise
+              AZ Golf
             </Link>
             <ul
               className={
