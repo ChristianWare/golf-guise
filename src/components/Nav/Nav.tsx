@@ -53,6 +53,10 @@ function Nav() {
       text: "Gear",
       href: "#",
     },
+    {
+      text: "Contact",
+      href: "#",
+    },
   ];
 
   return (

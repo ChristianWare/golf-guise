@@ -47,7 +47,7 @@ const PostHero = () => {
               </div>
             ))}
           </div>
-          <h2 className={styles.heading}>Golf Courses </h2>
+          <h2 className={styles.headingii}>Golf Courses </h2>
           <ImageGrid />
         </ContentPadding>
       </LayoutWrapper>

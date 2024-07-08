@@ -1,4 +1,3 @@
-
 .boxContainer {
   display: grid;
   grid-gap: 1rem;
@@ -34,6 +33,7 @@
 .box5B {
   position: relative;
   border-radius: 10px;
+  border: 1px solid var(--border);
 }
 
 .img {
@@ -43,7 +43,7 @@
 .box3,
 .box4B,
 .box2B {
-  color: var(--purple);
+  color: var(--gray);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,17 +52,17 @@
 }
 
 .box3 {
-  background-color: var(--yellow);
+  background-color: var(--green);
 }
 
 .box4 h5,
 .box2B h5 {
-  color: var(--yellow);
+  color: var(--gray);
 }
 
 .box4 {
-  background-color: var(--purple);
-  color: var(--purple);
+  background-color: var(--green);
+  color: var(--gray);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +86,7 @@
 }
 .box2B {
   grid-area: oneB;
-  background-color: var(--purple);
+  background-color: var(--green);
 }
 .box3B {
   grid-area: threeB;
@@ -95,7 +95,7 @@
 }
 .box4B {
   grid-area: fiveB;
-  background-color: var(--yellow);
+  background-color: var(--green);
 }
 .box5B {
   grid-area: fourB;
@@ -104,6 +104,14 @@
 .btnContainer {
   display: flex;
   margin-top: 3rem;
+}
+
+.boxContainer h5 {
+  color: var(--gray) !important;
+}
+
+.golfCourse {
+  color: var(--gray) !important;
 }
 
 @media screen and (max-width: 868px) {

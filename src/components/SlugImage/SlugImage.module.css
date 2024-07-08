@@ -9,5 +9,6 @@
   position: absolute;
   object-fit: cover;
   border-radius: 5px;
+  border: 1px solid var(--border);
   font-size: 0;
 }

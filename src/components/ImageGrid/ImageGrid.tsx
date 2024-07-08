@@ -66,7 +66,7 @@ const ImageGrid = () => {
           />
         </div>
         <div className={styles.box4B}>
-          <h5>Golf Course</h5>
+          <h5 className={styles.golfCourse}>Golf Course</h5>
         </div>
         <div className={styles.box5B}>
           <Image
