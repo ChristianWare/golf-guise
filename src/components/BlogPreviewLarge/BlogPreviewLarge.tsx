@@ -4,6 +4,7 @@ import styles from "./BlogPreviewLarge.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/img1.png";
 import Link from "next/link";
+import Button from "../Button/Button";
 
 const BlogPreviewLarge: FC<BlogPreviewProps> = ({
   mapData,
@@ -45,6 +46,9 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
           </h2>
         </Link>
         <p className={styles.desc}>{mapData.meta.description}</p>
+        <div className={styles.btnContainer}>
+          <Button btnType='primary' text='Explore Package' href='/' />
+        </div>
       </div>
     </article>
   );

@@ -18,12 +18,12 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <div className={styles.leftTop}>
-                {blogData.slice(0, 1).map((x: BlogData, index: number) => (
+              {/* <div className={styles.leftTop}> */}
+                {blogData.slice(0, 3).map((x: BlogData, index: number) => (
                   <BlogPreviewLarge key={index} mapData={x} />
                 ))}
-              </div>
-              <div className={styles.leftBottom}>
+              {/* </div> */}
+              {/* <div className={styles.leftBottom}>
                 {blogData.slice(1, 3).map((x: BlogData, index: number) => (
                   <BlogPreviewSmall
                     key={index}
@@ -33,12 +33,12 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
                     colPadding='colPadding'
                   />
                 ))}
-              </div>
+              </div> */}
             </div>
             <div className={styles.right}>
-              <div className={styles.rightTop}>
+              {/* <div className={styles.rightTop}>
                 {blogData.slice(3, 5).map((x: BlogData, index: number) => (
-                  <BlogPreviewMedium key={index} mapData={x} />
+                  <BlogPreviewSmall key={index} mapData={x} />
                 ))}
               </div>
               <div className={styles.rightBottom}>
@@ -46,7 +46,7 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
                   every post is a strategic swing toward unlocking your full
                   potential on the course
                 </h3>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={styles.btnContainer}>

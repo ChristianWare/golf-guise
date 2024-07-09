@@ -4,12 +4,9 @@ import Image from "next/image";
 import Img from "../../../public/images/img1.png";
 import { BlogPreviewProps } from "@/lib/interface";
 import { FC } from "react";
+import Button from "../Button/Button";
 
-const BlogPreviewSmall: FC<BlogPreviewProps> = ({
-  mapData,
-  key,
-  featured,
-}) => {
+const BlogPreviewSmall: FC<BlogPreviewProps> = ({ mapData, key, featured }) => {
   return (
     <article key={key} className={styles.container}>
       <div className={styles.left}>
@@ -29,9 +26,9 @@ const BlogPreviewSmall: FC<BlogPreviewProps> = ({
         <Link href={`/${mapData.meta.category}/${mapData.slug}`} passHref>
           <h2 className={styles.title}>{mapData.meta.title}</h2>
         </Link>
-        <time dateTime='2023-02-02' className={styles.date}>
-          {mapData.meta.date}
-        </time>
+        <div className={styles.btnContainer}>
+          <Button btnType='primary' text='Explore Package' href='/' />
+        </div>
       </div>
     </article>
   );

@@ -4,9 +4,9 @@
   grid-template-areas:
     "one two three"
     "one four five";
-  grid-template-columns: 50% 30% 20%;
+  grid-template-columns: 2.5fr 1fr 1fr;
   padding-bottom: 1rem;
-  max-width: 1150px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -76,8 +76,8 @@
   grid-template-areas:
     "oneB twoB threeB"
     "fourB fiveB threeB";
-  grid-template-columns: 30% 30% 40%;
-  max-width: 1150px;
+  grid-template-columns: 1fr 1fr 2.5fr;
+  width: 100%;
   margin: 0 auto;
 }
 
