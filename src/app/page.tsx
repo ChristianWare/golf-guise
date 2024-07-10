@@ -8,6 +8,7 @@ import Gear from "@/components/Gear/Gear";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
 import Hero from "@/components/Hero/Hero";
 import PostHero from "@/components/PostHero/PostHero";
+import What from "@/components/What/What";
 
 export default function Home() {
   const fs = require("fs");
@@ -36,8 +37,10 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <PostHero />
+      <What />
+      {/* <PostHero /> */}
       <ReviewsSection blogData={blogs} />
+      {/* What is a Golf Stay and Play Package? */}
       {/* <FeaturedSection blogData={blogs} /> */}
       {/* <GuidesSection blogData={blogs} />
       <Upcoming blogData={blogs} /> */}
