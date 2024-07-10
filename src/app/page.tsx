@@ -38,19 +38,19 @@ export default function Home() {
 
   return (
     <main>
-      {/* <Hero />
+      <Hero />
       <What />
-      <PostHero /> */}
+      <PostHero />
       <Featured />
-      {/* <ImageGrid />
-      <ReviewsSection blogData={blogs} /> */}
+      <ImageGrid />
+      <ReviewsSection blogData={blogs} />
       {/* What is a Golf Stay and Play Package? */}
       {/* <FeaturedSection blogData={blogs} /> */}
       {/* <GuidesSection blogData={blogs} />
       <Upcoming blogData={blogs} /> */}
-      {/* <Gear /> */}
+      <Gear />
       {/* <TermsSection /> */}
-      {/* <InstaFeed /> */}
+      <InstaFeed />
       <FinalCTA />
     </main>
   );
