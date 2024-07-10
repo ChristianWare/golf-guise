@@ -6,6 +6,7 @@
     "one four five";
   grid-template-columns: 2.5fr 1fr 1fr;
   padding-bottom: 1rem;
+  max-width: 1150px;
   width: 100%;
   margin: 0 auto;
 }
@@ -32,12 +33,12 @@
 .box4B,
 .box5B {
   position: relative;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid var(--border);
 }
 
 .img {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .box3,
@@ -77,6 +78,7 @@
     "oneB twoB threeB"
     "fourB fiveB threeB";
   grid-template-columns: 1fr 1fr 2.5fr;
+  max-width: 1150px;
   width: 100%;
   margin: 0 auto;
 }

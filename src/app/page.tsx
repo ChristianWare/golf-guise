@@ -38,7 +38,7 @@ export default function Home() {
     <main>
       <Hero />
       <What />
-      {/* <PostHero /> */}
+      <PostHero />
       <ReviewsSection blogData={blogs} />
       {/* What is a Golf Stay and Play Package? */}
       {/* <FeaturedSection blogData={blogs} /> */}

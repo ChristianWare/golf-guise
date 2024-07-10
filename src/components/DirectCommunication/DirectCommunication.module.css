@@ -1,0 +1,83 @@
+.container {
+  /* border-radius: 20px; */
+  /* border: 1px solid var(--borderii); */
+  /* background-color: var(--tan); */
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.top {
+  padding-top: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.copy {
+  width: 60%;
+  text-align: center;
+}
+
+.bottom {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.card {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background-color: var(--tan);
+}
+
+
+.iconContainer {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.icon {
+  color: var(--black);
+  transition: all 0.4s ease-in-out;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+}
+
+.desc {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .copy {
+    width: 100%;
+  }
+
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+  }
+
+}
