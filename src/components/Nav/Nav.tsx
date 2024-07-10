@@ -68,7 +68,7 @@ function Nav() {
               <span>
                 <Golf width={23} height={23} className={styles.icon} />
               </span>
-              AZ Golf
+              AZ Golf Whisperer
             </Link>
             <ul
               className={

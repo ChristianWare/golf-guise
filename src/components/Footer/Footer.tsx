@@ -43,7 +43,7 @@ const Footer = () => {
                 <span>
                   <Golf width={40} height={40} classname={styles.icon} />
                 </span>
-                AZ Golf
+                AZ Golf Whisperer
               </h6>
               <p className={styles.copy}>
                 Explore our fairway treasures, refine your swing, and dive deep
@@ -69,7 +69,8 @@ const Footer = () => {
                   AZ Golf
                 </h6>
                 <p className={styles.copy}>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, atque.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere, atque.
                 </p>
                 <div className={styles.socials}>
                   <div className={styles.socialContainer}>
