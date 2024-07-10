@@ -9,6 +9,8 @@ import InstaFeed from "@/components/InstaFeed/InstaFeed";
 import Hero from "@/components/Hero/Hero";
 import PostHero from "@/components/PostHero/PostHero";
 import What from "@/components/What/What";
+import ImageGrid from "@/components/ImageGrid/ImageGrid";
+import Featured from "@/components/Featured/Featured";
 
 export default function Home() {
   const fs = require("fs");
@@ -36,17 +38,19 @@ export default function Home() {
 
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <What />
-      <PostHero />
-      <ReviewsSection blogData={blogs} />
+      <PostHero /> */}
+      <Featured />
+      {/* <ImageGrid />
+      <ReviewsSection blogData={blogs} /> */}
       {/* What is a Golf Stay and Play Package? */}
       {/* <FeaturedSection blogData={blogs} /> */}
       {/* <GuidesSection blogData={blogs} />
       <Upcoming blogData={blogs} /> */}
-      <Gear />
+      {/* <Gear /> */}
       {/* <TermsSection /> */}
-      <InstaFeed />
+      {/* <InstaFeed /> */}
       <FinalCTA />
     </main>
   );

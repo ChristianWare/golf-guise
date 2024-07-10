@@ -46,9 +46,9 @@ const BlogPreviewLarge: FC<BlogPreviewProps> = ({
           </h2>
         </Link>
         <p className={styles.desc}>{mapData.meta.description}</p>
-        <div className={styles.btnContainer}>
+        {/* <div className={styles.btnContainer}>
           <Button btnType='primary' text='Explore Package' href='/' />
-        </div>
+        </div> */}
       </div>
     </article>
   );

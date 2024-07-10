@@ -7,58 +7,60 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 const DirectCommunication = () => {
   const data = [
     {
-      title: "Personalized Guest Experience",
+      title: "Benefit 1",
       description:
         "Personalize the guest experience by addressing individual preferences, special requests, and inquiries promptly.",
     },
     {
-      title: "Building Relationships",
+      title: "Benefit 2",
       description:
-        "Foster relationships with guests by creating a sense of trust and rapport, encouraging repeat bookings, referrals, and positive reviews.",
+        "Personalize the guest experience by addressing individual preferences, special requests, and inquiries promptly.",
     },
     {
-      title: "Clarifying Expectations",
+      title: "Benefit 3",
       description:
-        "Eliminate misunderstandings by clearly communicating booking policies, house rules, check-in/check-out procedures, and property details.",
+        "Personalize the guest experience by addressing individual preferences, special requests, and inquiries promptly.",
     },
     {
-      title: "Handling Guest Feedback",
+      title: "Benefit 4",
       description:
-        "Get feedback directly from guests during their stay or post-stay. Address concerns promptly, and demonstrate responsiveness.",
+        "Personalize the guest experience by addressing individual preferences, special requests, and inquiries promptly.",
     },
     {
-      title: "Upselling Opportunities",
+      title: "Benefit 5",
       description:
-        "Upsell additional services, upgrades, or experiences directly to guests through personalized communication, thus increasing revenue per booking.",
+        "Personalize the guest experience by addressing individual preferences, special requests, and inquiries promptly.",
     },
     {
-      title: "Resolving Issues",
+      title: "Benefit 6",
       description:
         "In the event of emergencies, maintenance issues, or unforeseen circumstances, direct communication enables owners to respond quickly, mitigate problems, and ensure guest comfort and safety.",
     },
   ] as const;
   return (
-      <section className={styles.container}>
-        <div className={styles.top}>
-          <h2 className={styles.heading}>Benefits</h2>
-          <p className={styles.copy}>
-            Choosing a golf stay and play package comes with several benefits.
-          </p>
-        </div>
-        <div className={styles.bottom}>
-          {data.map((x, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.iconContainer}>
-                <Arrow className={styles.icon} width={25} height={25} />
-              </div>
-              <div>
-                <h3 className={styles.title}>{x.title}</h3>
-                <p className={styles.desc}>{x.description}</p>
-              </div>
+    <section className={styles.container}>
+      <div className={styles.top}>
+        <h3 className={styles.heading}>
+          Benefits of a Golf Stay and Play package
+        </h3>
+        <p className={styles.copy}>
+          Choosing a golf stay and play package comes with several benefits.
+        </p>
+      </div>
+      <div className={styles.bottom}>
+        {data.map((x, index) => (
+          <div key={index} className={styles.card}>
+            <div className={styles.iconContainer}>
+              <Arrow className={styles.icon} width={25} height={25} />
             </div>
-          ))}
-        </div>
-      </section>
+            <div>
+              <h3 className={styles.title}>{x.title}</h3>
+              <p className={styles.desc}>{x.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 export default DirectCommunication;

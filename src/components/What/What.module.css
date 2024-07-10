@@ -18,16 +18,6 @@
   gap: 2rem;
 }
 
-.featured {
-  background-color: var(--green);
-  color: var(--gray);
-  padding: 0.3rem 1rem;
-  padding-top: 0.6rem;
-  border-radius: 20px;
-  font-size: 1.1rem;
-  border: 1px solid var(--black);
-}
-
 .heading {
   width: 50%;
   text-align: center;
@@ -36,7 +26,6 @@
 }
 
 .copy {
-  /* font-size: 2rem; */
   font-variant-ligatures: none;
   width: 50%;
   opacity: 0.8;
@@ -61,14 +50,14 @@
 
 .img {
   object-fit: cover;
-  border-radius: 20px;
-  border: 1px solid var(--borderii);
+  border-radius: 5px;
+  border: 1px solid var(--black);
 }
 
 .box1,
 .box2 {
-  border-radius: 20px;
-  border: 1px solid var(--borderii);
+  border-radius: 5px;
+  border: 1px solid var(--black);
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -82,9 +71,13 @@
   background-color: var(--green);
 }
 
+.box2 {
+  background-color: var(--white);
+}
+
 .box1 h3,
 .box1Copy {
-  color: var(--gray);
+  color: var(--white);
 }
 
 .box1 h3,

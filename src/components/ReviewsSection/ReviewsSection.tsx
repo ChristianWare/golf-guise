@@ -14,14 +14,14 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Our Packages</h2>
+            <h2 className={styles.heading}>Other Packages</h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
               {/* <div className={styles.leftTop}> */}
-                {blogData.slice(0, 3).map((x: BlogData, index: number) => (
-                  <BlogPreviewLarge key={index} mapData={x} />
-                ))}
+              {blogData.slice(0, 3).map((x: BlogData, index: number) => (
+                <BlogPreviewLarge key={index} mapData={x} />
+              ))}
               {/* </div> */}
               {/* <div className={styles.leftBottom}>
                 {blogData.slice(1, 3).map((x: BlogData, index: number) => (

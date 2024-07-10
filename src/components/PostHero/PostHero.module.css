@@ -2,15 +2,23 @@
   padding-top: 10rem;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
 .contentTop {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 2rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 3rem;
   margin-bottom: 3rem;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
 }
 
 .left,
@@ -18,41 +26,43 @@
   flex: 1;
 }
 
-.heading,
-.headingii {
+.heading {
   color: var(--black);
-  text-align: center;
-  width: 100%;
-  margin-top: 5rem;
+  width: 90%;
+  border-bottom: thick double #bcbcbc;
+  padding-bottom: 1rem;
 }
 .headingii {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 3rem;
+  border-bottom: thick double #bcbcbc;
+  padding-bottom: 1rem;
   margin-bottom: 3rem;
+  margin-top: 5rem;
 }
 
 .copy {
-  text-align: center;
   width: 60%;
-  font-weight: 600;
 }
 
 .contentBottom {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   margin-bottom: 10rem;
 }
 
 .box {
-  background-color: var(--gray);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 2rem;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
 }
 
 .icon {
@@ -70,23 +80,41 @@
 
 .description {
   color: var(--blackii);
-  /* font-weight: 500; */
   opacity: 0.8;
   text-align: center;
 }
 
-@media screen and (max-width: 1068px) {
-  .contentBottom {
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1268px) {
+  .heading,
+  .copy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0rem;
+  }
+
+  .contentTop {
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3rem;
+    align-self: auto;
+    position: static;
+    top: 90px;
+  }
+
+  .heading {
+    text-align: center;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .contentTop {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .heading,
   .copy {
     width: 100%;

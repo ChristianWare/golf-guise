@@ -26,6 +26,11 @@
   line-height: 1;
 }
 
+.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+
 .primary {
   color: var(--black);
   background-color: var(--gray);
@@ -63,6 +68,10 @@
 
 .gray {
   color: var(--gray);
+}
+
+.white {
+  color: var(--white);
 }
 
 .white {

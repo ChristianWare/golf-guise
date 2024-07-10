@@ -6,6 +6,7 @@ import Golf from "../../../public/icons/golf.svg";
 import Golfii from "../../../public/icons/golfii.svg";
 import ImageGrid from "../ImageGrid/ImageGrid";
 import ContentPadding from "../ContentPadding/ContentPadding";
+import Tab from "../Tab/Tab";
 
 const preHero = [
   {
@@ -35,20 +36,29 @@ const PostHero = () => {
     <div className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
-          <div className={styles.contentTop}>
-            <h2 className={styles.heading}>All Packages Include...</h2>
+          <div className={styles.content}>
+            <div className={styles.contentTop}>
+              <Tab text="What's Included" />
+              <h2 className={styles.heading}>Our Golf Packages Include...</h2>
+              <p className={styles.copy}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                ipsam, tempora alias debitis veritatis repellat et aspernatur
+                voluptates temporibus, distinctio dignissimos laboriosam velit
+                minus! Facere provident earum soluta consequatur labore!
+              </p>
+            </div>
+            <div className={styles.contentBottom}>
+              {preHero.map((x, index) => (
+                <div key={index} className={styles.box}>
+                  {x.icon}
+                  <h3 className={styles.value}>{x.feature}</h3>
+                  <p className={styles.description}>{x.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className={styles.contentBottom}>
-            {preHero.map((x, index) => (
-              <div key={index} className={styles.box}>
-                {x.icon}
-                <h3 className={styles.value}>{x.feature}</h3>
-                <p className={styles.description}>{x.desc}</p>
-              </div>
-            ))}
-          </div>
-          <h2 className={styles.headingii}>Golf Courses </h2>
-          <ImageGrid />
+          {/* <h2 className={styles.headingii}>Our Golf Courses </h2> */}
+          {/* <ImageGrid /> */}
         </ContentPadding>
       </LayoutWrapper>
     </div>

@@ -4,6 +4,8 @@
   /* background-color: var(--tan); */
   margin-top: 5rem;
   padding: 3rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 .top {
@@ -18,6 +20,9 @@
 
 .heading {
   text-align: center;
+  font-family: var(--tuskerGrotesk);
+  font-size: 5rem;
+  width: 50%;
 }
 
 .copy {
@@ -36,11 +41,10 @@
   display: flex;
   gap: 3rem;
   padding: 3rem;
-  border: 1px solid var(--border);
-  border-radius: 20px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
   background-color: var(--tan);
 }
-
 
 .iconContainer {
   width: 35px;
@@ -70,7 +74,34 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1268px) {
+  .container {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .heading {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
   .copy {
     width: 100%;
   }
@@ -79,5 +110,4 @@
     grid-template-columns: repeat(1, 1fr);
     margin-top: 3rem;
   }
-
 }
