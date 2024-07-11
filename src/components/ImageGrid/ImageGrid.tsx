@@ -1,11 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./ImageGrid.module.css";
 import Img from "../../../public/images/img1.png";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Tab from "../Tab/Tab";
+import { usePathname } from "next/navigation";
+import Button from "../Button/Button";
 
 const ImageGrid = () => {
+  const pathname = usePathname();
+
   return (
     <LayoutWrapper>
       <ContentPadding>
@@ -87,6 +93,13 @@ const ImageGrid = () => {
               />
             </div>
           </div>
+            <div className={styles.btnContainerii}>
+              <Button
+                btnType='primary'
+                text='More Course Details'
+                href='/courses'
+              />
+            </div>
         </div>
       </ContentPadding>
     </LayoutWrapper>

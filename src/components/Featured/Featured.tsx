@@ -88,15 +88,15 @@ const Featured = () => {
                 </div>
               </div>
             </div>
-              {pathname === "/" && (
-                <div className={styles.btnContainerii}>
-                  <Button
-                    btnType='green'
-                    text='See all packages'
-                    href='/packages'
-                  />
-                </div>
-              )}
+            {pathname === "/" && (
+              <div className={styles.btnContainerii}>
+                <Button
+                  btnType='primary'
+                  text='See all packages'
+                  href='/packages'
+                />
+              </div>
+            )}
           </div>
         </ContentPadding>
       </LayoutWrapper>

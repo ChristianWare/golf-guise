@@ -47,8 +47,12 @@ function Nav() {
       href: "/packages",
     },
     {
-      text: "Gear",
-      href: "#",
+      text: "Courses",
+      href: "/courses",
+    },
+    {
+      text: "About Us",
+      href: "/about",
     },
     {
       text: "Glossary",
@@ -56,11 +60,11 @@ function Nav() {
     },
     {
       text: "Blog",
-      href: "#",
+      href: "#/blog",
     },
     {
       text: "Contact",
-      href: "#",
+      href: "contact",
     },
   ];
 

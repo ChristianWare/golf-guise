@@ -6,7 +6,6 @@
 .btn {
   text-align: center;
   font-size: 1.6rem;
-  font-family: var(--ppMoriSemiBold);
   text-transform: uppercase;
   white-space: nowrap;
   border-radius: 50px;
@@ -15,7 +14,7 @@
   display: inline-block;
   padding: 8px 25px;
   padding-top: 10px;
-  border: 1px solid var(--borderii);
+  border: 1px solid var(--black);
   display: flex;
   align-items: center;
   justify-content: center;

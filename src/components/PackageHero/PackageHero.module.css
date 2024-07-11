@@ -104,6 +104,10 @@
 }
 
 @media screen and (max-width: 968px) {
+  .container {
+    margin-top: 13rem;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -126,10 +130,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    margin-top: 13rem;
-  }
-
   .searchContainer,
   .copy {
     width: 100%;
