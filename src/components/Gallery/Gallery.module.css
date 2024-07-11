@@ -1,0 +1,86 @@
+.container {
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.heading {
+  border-bottom: thick double #bcbcbc;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.copy {
+  width: 50%;
+  opacity: 0.8;
+  margin-bottom: 5rem;
+}
+
+.gallery {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  max-width: 1250px;
+}
+
+.imgContainer {
+  position: relative;
+  height: 100%;
+}
+
+.img {
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+
+.vStretch {
+  grid-row: span 2;
+}
+
+.hStretch {
+  grid-column: span 2;
+}
+
+.bigStretch {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 1068px) {
+  .heading,
+  .copy {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .gallery {
+    padding: 5rem;
+  }
+} */
+
+@media screen and (max-width: 668px) {
+  .copy {
+    margin-bottom: 0rem;
+  }
+
+  .gallery {
+    padding: 5rem 0rem;
+  }
+
+  .vStretch {
+    grid-row: span 1;
+  }
+
+  .hStretch {
+    grid-column: span 1;
+  }
+
+  .bigStretch {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+}

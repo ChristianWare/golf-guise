@@ -13,6 +13,7 @@ import ImageGrid from "@/components/ImageGrid/ImageGrid";
 import Featured from "@/components/Featured/Featured";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import Gallery from "@/components/Gallery/Gallery";
 
 export default function Home() {
   const fs = require("fs");
@@ -53,7 +54,8 @@ export default function Home() {
       <Gear />
       <Faqsiii />
       {/* <TermsSection /> */}
-      <InstaFeed />
+      {/* <InstaFeed /> */}
+      <Gallery />
       <FinalCTA />
       <ContactForm />
     </main>
