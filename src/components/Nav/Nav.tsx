@@ -55,6 +55,10 @@ function Nav() {
       href: "/glossary",
     },
     {
+      text: "Blog",
+      href: "#",
+    },
+    {
       text: "Contact",
       href: "#",
     },
