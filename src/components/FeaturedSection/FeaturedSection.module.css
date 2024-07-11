@@ -46,7 +46,6 @@
   background-color: var(--green);
   border: 1px solid var(--black);
   padding: 10rem;
-  
 }
 
 .ctaHeading {
@@ -63,7 +62,6 @@
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }
-
 }
 
 @media screen and (max-width: 768px) {

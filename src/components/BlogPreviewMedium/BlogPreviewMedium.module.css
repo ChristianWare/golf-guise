@@ -37,7 +37,7 @@
   color: var(--black);
   padding: 0.3rem 1rem;
   padding-top: 0.6rem;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 1.1rem;
   border: 1px solid var(--border);
 }
@@ -65,7 +65,7 @@
 .category {
   padding: 0.3rem 1rem;
   padding-top: 0.6rem;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 1.1rem;
   border: 1px solid var(--black);
   text-transform: uppercase;
@@ -80,7 +80,6 @@
   font-size: 1.4rem;
   color: var(--black);
 }
-
 
 .btnContainer {
   display: grid;

@@ -51,7 +51,7 @@
 }
 
 .box {
-  background-color: var(--green);
+  background-color: var(--tan2);
   border: 1px solid var(--black);
   border-radius: 5px;
   padding: 5rem;
@@ -67,12 +67,12 @@
 
 .icon {
   margin-bottom: 1rem;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 2rem;
 }
 
 .value {
-  color: var(--white);
+  color: var(--black);
   font-size: 1.8rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
@@ -80,9 +80,10 @@
 }
 
 .description {
-  color: var(--white);
+  color: var(--black);
   opacity: 0.8;
   text-align: center;
+  width: 80%;
 }
 
 @media screen and (max-width: 1268px) {

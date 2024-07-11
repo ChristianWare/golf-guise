@@ -41,7 +41,7 @@
   color: var(--black);
   padding: 0.3rem 1rem;
   padding-top: 0.6rem;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 1.1rem;
   border: 1px solid var(--border);
 }
@@ -65,7 +65,7 @@
 .category {
   padding: 0.3rem 1rem;
   padding-top: 0.6rem;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 1.1rem;
   border: 1px solid var(--black);
   text-transform: uppercase;
@@ -89,7 +89,6 @@
   color: var(--black);
 }
 
-
 @media screen and (max-width: 568px) {
   .bottom {
     align-items: center;
@@ -98,13 +97,14 @@
     gap: 1rem;
   }
 
-  .title, .desc {
+  .title,
+  .desc {
     text-align: center;
   }
 
   .title {
     margin-top: 1rem;
-    font-size:  3rem;
+    font-size: 3rem;
   }
 
   .desc {
