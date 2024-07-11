@@ -25,35 +25,18 @@
   width: 60%;
 }
 
-.bottom {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-gap: 3rem;
-}
-
-.imgContainer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.img {
-  object-fit: cover;
-  border-radius: 5px;
-  border: 1px solid var(--black);
-}
-
 .right {
   padding: 3rem;
   border: 1px solid var(--black);
   border-radius: 5px;
+  background-color: var(--tan2);
 }
 
 .rightTop {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 5rem;
 }
@@ -75,7 +58,7 @@
 
 .copyii {
   opacity: 0.8;
-  width: 70%;
+  text-align: center;
 }
 
 .btnContainer {
@@ -101,26 +84,36 @@
   opacity: 0.8;
   color: var(--black);
   font-weight: 600;
+  text-align: center;
 }
 
 .rightBottom {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 3rem;
-  padding: 3rem;
-  background-color: var(--white);
   margin-top: 3rem;
-  border-radius: 5px;
-  border: 1px solid var(--black);
 }
 
 .rb1,
 .rb2 {
+  padding: 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+  background-color: var(--tan);
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f1f1f1 0,
+    #f1f1f1 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
 }
 
 .icon {
@@ -134,13 +127,6 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-}
-
-.btnContainerii {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: 3rem;
 }
 
 @media screen and (max-width: 1268px) {

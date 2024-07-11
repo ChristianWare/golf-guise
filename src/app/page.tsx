@@ -43,11 +43,7 @@ export default function Home() {
       <PostHero />
       <Featured />
       <ImageGrid />
-      <ReviewsSection blogData={blogs} />
-      {/* What is a Golf Stay and Play Package? */}
-      {/* <FeaturedSection blogData={blogs} /> */}
-      {/* <GuidesSection blogData={blogs} />
-      <Upcoming blogData={blogs} /> */}
+      {/* <ReviewsSection blogData={blogs} /> */}
       <Gear />
       <Faqsiii />
       {/* <TermsSection /> */}

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
@@ -6,8 +8,11 @@ import Img1 from "../../../public/images/img1.png";
 import Button from "../Button/Button";
 import Arrow from "../../../public/icons/arrow.svg";
 import Tab from "../Tab/Tab";
+import { usePathname } from "next/navigation";
 
 const Featured = () => {
+  const pathname = usePathname();
+
   return (
     <section>
       <LayoutWrapper>
@@ -34,7 +39,6 @@ const Featured = () => {
                     Package 1{" "}
                     <span className={styles.priceii}> - $250 / Day</span>
                   </h3>
-                  {/* <div className={styles.price}>$250 / Day</div> */}
                   <p className={styles.copyii}>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Aspernatur vel dolores aliquid voluptatum iure? Quidem
@@ -84,6 +88,15 @@ const Featured = () => {
                 </div>
               </div>
             </div>
+              {pathname === "/" && (
+                <div className={styles.btnContainerii}>
+                  <Button
+                    btnType='green'
+                    text='See all packages'
+                    href='/packages'
+                  />
+                </div>
+              )}
           </div>
         </ContentPadding>
       </LayoutWrapper>
