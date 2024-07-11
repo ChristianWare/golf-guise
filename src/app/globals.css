@@ -159,11 +159,8 @@ input:focus {
 /* Only use in production */
 @media screen and (max-width: 480px) {
   h1,
-  h2 {
-    letter-spacing: -3px;
-  }
-
+  h2,
   h3 {
-    letter-spacing: -2px;
+    letter-spacing: -1px;
   }
 }
