@@ -1,3 +1,4 @@
+import CourseCollection from "@/components/CourseCollection/CourseCollection";
 import PageIntro from "@/components/PageIntro/PageIntro";
 
 export default function CoursesPage() {
@@ -9,6 +10,7 @@ export default function CoursesPage() {
         videoSrc='./videos/video6.mp4'
         textAlign='center'
       />
+      <CourseCollection />
     </main>
   );
 }

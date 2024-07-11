@@ -9,8 +9,7 @@ const NotFound = () => {
       <PageIntro
         heading='404 Error'
         copy="Sorry, the page you're looking for doesn't exist or has been removed."
-        center='center'
-        searchBox
+        textAlign='center'
       />
       <Gear />
       <TermsSection />
