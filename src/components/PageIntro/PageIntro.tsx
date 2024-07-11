@@ -1,58 +1,40 @@
-import Button from "../Button/Button";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import Search from "../Search/Search";
 import styles from "./PageIntro.module.css";
 import { FC } from "react";
 
 interface Props {
   heading: string;
   copy: string;
-  center?: string;
+  textAlign?: string;
   color?: string;
   textColor?: string;
-  searchBox?: boolean;
+  videoSrc?: any;
 }
 
-const PageIntro: FC<Props> = ({
-  heading,
-  copy,
-  center = "",
-  color = "",
-  textColor = "",
-  searchBox,
-}) => {
+const PageIntro: FC<Props> = ({ heading, copy, textAlign = "", videoSrc }) => {
   return (
-    <section className={styles.container}>
-      <LayoutWrapper>
-        <ContentPadding>
-          <div className={`${styles.content} ${styles[color]}`}>
-            <div className={styles.left}>
-              <h1
-                className={`${styles.heading} ${styles[center]} ${styles[textColor]}`}
-              >
-                {heading}
-              </h1>
-              <p
-                className={`${styles.copy} ${styles[center]} ${styles[textColor]}`}
-              >
-                {copy}
-              </p>
-              {searchBox && (
-                <div className={styles.searchContainer}>
-                  <Search />
-                  <div className={styles.btnContainer}>
-                    <Button btnType='primary' text='Go back home' href='/' />
-                    <Button btnType='primary' text='Reviews' href='/reviews' />
-                    <Button btnType='primary' text='Guides' href='/guides' />
-                  </div>
-                </div>
-              )}
+    <LayoutWrapper>
+      <ContentPadding>
+        <section className={styles.container}>
+          <div className={styles.container}>
+            <div className={styles.imgOverlay}></div>
+            <video preload='auto' autoPlay muted loop className={styles.video}>
+              <source src={videoSrc} />
+            </video>
+            <div className={styles.content}>
+              <div className={styles.left}>
+                <h1 className={`${styles.heading} ${styles[textAlign]}`}>
+                  {heading}{" "}
+                </h1>{" "}
+                <p className={`${styles.copy} ${styles[textAlign]}`}>{copy}</p>
+              </div>
+              {/* <div className={styles.searchContainer}></div> */}
             </div>
           </div>
-        </ContentPadding>
-      </LayoutWrapper>
-    </section>
+        </section>
+      </ContentPadding>
+    </LayoutWrapper>
   );
 };
 export default PageIntro;
