@@ -18,7 +18,7 @@
   align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
-  top: 90px;
+  top: 120px;
 }
 
 .left,
@@ -62,7 +62,7 @@
   align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
-  top: 90px;
+  top: 120px;
 }
 
 .icon {
@@ -105,7 +105,7 @@
     margin-right: auto;
     gap: 3rem;
     align-self: auto;
-    position: static;
+    /* position: static; */
     top: 90px;
   }
 

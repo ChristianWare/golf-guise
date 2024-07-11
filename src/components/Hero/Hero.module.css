@@ -123,6 +123,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    margin-top: 13rem;
+  }
+
   .searchContainer,
   .copy {
     width: 100%;
@@ -137,6 +141,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    margin-top: 12rem;
+  }
+  
   .content {
     padding: 3rem;
   }
