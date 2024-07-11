@@ -12,6 +12,7 @@ import What from "@/components/What/What";
 import ImageGrid from "@/components/ImageGrid/ImageGrid";
 import Featured from "@/components/Featured/Featured";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
+import ContactForm from "@/components/ContactForm/ContactForm";
 
 export default function Home() {
   const fs = require("fs");
@@ -54,6 +55,7 @@ export default function Home() {
       {/* <TermsSection /> */}
       <InstaFeed />
       <FinalCTA />
+      <ContactForm />
     </main>
   );
 }
