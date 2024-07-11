@@ -13,9 +13,7 @@ export default function GlossaryPage() {
       <PageIntro
         heading='Glossary'
         copy='Read up on golf terms, acronyms, and the industry jargon you need to know in our glossary of golf lingo.'
-        center='center'
         color='green'
-        textColor='tan'
       />
       <LayoutWrapper>
         <ContentPadding>

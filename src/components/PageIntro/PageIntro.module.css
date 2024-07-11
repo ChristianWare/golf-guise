@@ -5,6 +5,10 @@
   margin-bottom: 20rem;
 }
 
+.green {
+  background-color: var(--green);
+}
+
 .imgOverlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;

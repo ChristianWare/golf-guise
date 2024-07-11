@@ -12,11 +12,17 @@ interface Props {
   videoSrc?: any;
 }
 
-const PageIntro: FC<Props> = ({ heading, copy, textAlign = "", videoSrc }) => {
+const PageIntro: FC<Props> = ({
+  heading,
+  copy,
+  textAlign = "",
+  videoSrc,
+  color = "",
+}) => {
   return (
     <LayoutWrapper>
       <ContentPadding>
-        <section className={styles.container}>
+        <section className={`${styles.container} ${styles[color]}`}>
           <div className={styles.container}>
             <div className={styles.imgOverlay}></div>
             <video preload='auto' autoPlay muted loop className={styles.video}>
