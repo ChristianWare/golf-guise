@@ -1,11 +1,17 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1000; /* Ensure header is on top */
+  padding: 1rem 3rem;
+  max-width: 1440px;
 }
 
 .greenTop {
   width: 100%;
   height: 3px;
-  border-bottom: thick double #bcbcbc;
 }
 
 .logo {
@@ -13,7 +19,7 @@
   color: var(--black);
   font-family: var(--tuskerGrotesk);
   text-transform: uppercase;
-  z-index: 998;
+  transition: color 0.3s ease;
 }
 
 .icon {
@@ -22,14 +28,19 @@
 }
 
 .navbar {
-  margin-right: auto;
-  margin-left: auto;
   width: 100%;
-  padding: 1rem 0rem;
-  z-index: 1000;
+  padding: 1rem 0;
+  z-index: 1000; /* Ensure navbar is on top */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--white);
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .logo,
@@ -44,6 +55,11 @@
   gap: 2rem;
   list-style: none;
   width: 100%;
+  z-index: 998; /* Ensure navMenu is behind navbar */
+}
+
+.navMenu.active ~ .logo {
+  color: var(--white);
 }
 
 .navItem {
@@ -61,13 +77,11 @@
 
 .hamburger {
   display: none;
-  z-index: 999;
+  z-index: 1001; /* Ensure hamburger is on top */
   position: relative;
 }
 
 .whiteBar {
-  position: relative;
-  z-index: 9999;
   display: block;
   width: 55px;
   height: 3px;
@@ -101,13 +115,13 @@
   }
 
   .navbar {
-    border: none;
     position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     gap: 3rem;
     margin-top: 1rem;
+    z-index: 1000; /* Ensure navbar is on top */
   }
 
   .navMenu {
@@ -121,31 +135,34 @@
     width: 100%;
     height: 100%;
     transition: 0.3s all ease-in;
-    z-index: 999;
+    z-index: 998; /* Ensure navMenu is behind navbar */
     background-color: var(--green);
+    border: 1px solid var(--black);
     padding: 1rem;
     padding-left: 2rem;
     transform-origin: top;
   }
 
   .navItem {
-    font-size: 2.4rem;
+    font-size: 6rem;
+    color: var(--white);
+    font-family: var(--tuskerGrotesk);
   }
 
   .navMenu.active {
-    right: -35%;
+    right: 0%;
+    height: 100vh;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 1001; /* Ensure hamburger is on top */
   }
 
   .hamburger.active .whiteBar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
-    background-color: var(--black);
+    background-color: var(--white);
   }
 
   .hamburger.active .whiteBar:nth-child(2) {
@@ -153,9 +170,8 @@
   }
 
   .hamburger.active .whiteBar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
-    background-color: var(--black);
+    background-color: var(--white);
   }
 }
 

@@ -49,9 +49,9 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
               </div> */}
             </div>
           </div>
-          <div className={styles.btnContainer}>
+          {/* <div className={styles.btnContainer}>
             <Button btnType='primary' text='see all reviews' href='/reviews' />
-          </div>
+          </div> */}
         </ContentPadding>
       </LayoutWrapper>
     </section>

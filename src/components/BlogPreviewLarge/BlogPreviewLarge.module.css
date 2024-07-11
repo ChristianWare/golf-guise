@@ -3,15 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid var(--black);
   background-color: var(--tan2);
-  grid-gap: 3rem;
-  /* background-image: repeating-linear-gradient(
-    45deg,
-    #c8c7c7 0,
-    #edeaea 1px,
-    transparent 0,
-    transparent 50%
-  );
-  background-size: 10px 10px; */
+  grid-gap: 2rem;
   border-radius: 5px;
   height: 100%;
   padding: 2rem;
@@ -112,7 +104,7 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .desc {

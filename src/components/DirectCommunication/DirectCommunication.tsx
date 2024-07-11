@@ -2,7 +2,6 @@
 
 import styles from "./DirectCommunication.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
-import ContentPadding from "../ContentPadding/ContentPadding";
 
 const DirectCommunication = () => {
   const data = [

@@ -73,10 +73,6 @@
   font-family: var(--tuskerGrotesk);
 }
 
-/* .priceii {
-  display: none;
-} */
-
 .copyii {
   opacity: 0.8;
   width: 70%;
@@ -129,7 +125,7 @@
 
 @media screen and (max-width: 1268px) {
   .bottom {
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .title,
@@ -151,20 +147,15 @@
   .rightBottom {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-@media screen and (max-width: 1068px) {
-    .content {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-  .bottom {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
   .imgContainer {
     height: 250px;
   }
+}
 
+@media screen and (max-width: 1068px) {
+  .content {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }

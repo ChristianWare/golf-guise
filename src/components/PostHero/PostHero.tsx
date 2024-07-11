@@ -57,8 +57,6 @@ const PostHero = () => {
               ))}
             </div>
           </div>
-          {/* <h2 className={styles.headingii}>Our Golf Courses </h2> */}
-          {/* <ImageGrid /> */}
         </ContentPadding>
       </LayoutWrapper>
     </div>

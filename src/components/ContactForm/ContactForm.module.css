@@ -1,0 +1,246 @@
+.content {
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid var(--gray2);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  flex: 1;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.heading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.copy {
+  opacity: 0.7;
+  font-weight: 400;
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+
+.circleContainer {
+  margin-left: 8rem;
+}
+
+.checkContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.featureText {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.icon {
+  border: 3px solid var(--border);
+  border-radius: 50%;
+  color: black;
+}
+
+.form {
+  width: 100%;
+}
+
+.namesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+
+.labelInputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 3rem;
+  flex: 1;
+  width: 100%;
+}
+
+.labelInputBox label {
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.labelInputBox input,
+.labelInputBox textarea {
+  border-radius: 16px;
+  border: none;
+  height: 40px;
+  width: 100%;
+  background-color: var(--tan);
+  border: 1px solid var(--gray2);
+
+  color: var(--text);
+  padding: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+  font-weight: 400;
+  inset: none;
+}
+
+.fieldErrors {
+  background-color: red;
+}
+
+.labelInputBox textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.required {
+  color: var(--green) !important;
+}
+
+.btnBtnContainer {
+  margin-top: 3rem;
+}
+
+.btnContainer {
+  display: grid;
+  width: 100%;
+}
+
+.btn {
+  font-family: var(--oswald);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-transform: uppercase;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  gap: 2rem;
+  border-radius: 50px;
+  padding: 12px;
+  padding-left: 15px;
+  padding-right: 45px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  line-height: 107%;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  color: var(--green);
+  background-color: var(--green3);
+  border: 1px solid var(--green2);
+  cursor: pointer;
+}
+
+.icon2 {
+  width: 30px;
+  height: 30px;
+  background-color: var(--green3);
+  border-radius: 50%;
+  border: 1px solid var(--green2);
+  padding: 5px;
+  color: var(--green);
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover .icon2 {
+  transform: rotate(-45deg);
+}
+
+.btn:hover {
+  background-color: var(--green);
+  color: var(--green3);
+  border: 1px solid var(--green3);
+}
+
+.error {
+  color: var(--green3);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.success {
+  color: var(--green3);
+}
+
+@media screen and (max-width: 1100px) {
+  .left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circleContainer {
+    margin-left: 0rem;
+  }
+
+  .copy {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rtContainer {
+    margin-top: 5rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container::after {
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent2);
+    z-index: -1;
+  }
+
+  .container::before {
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent1);
+  }
+
+  .namesContainer {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .btnBtnContainer {
+    display: grid;
+    width: 100%;
+  }
+}

@@ -1,6 +1,8 @@
 .container {
   border-bottom: thick double #bcbcbc;
+  padding-top: 15rem;
   padding-bottom: 2rem;
+  margin-bottom: 15rem;
 }
 
 .heading {

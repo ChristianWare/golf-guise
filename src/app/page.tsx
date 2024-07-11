@@ -11,6 +11,7 @@ import PostHero from "@/components/PostHero/PostHero";
 import What from "@/components/What/What";
 import ImageGrid from "@/components/ImageGrid/ImageGrid";
 import Featured from "@/components/Featured/Featured";
+import Faqsiii from "@/components/Faqsiii/Faqsiii";
 
 export default function Home() {
   const fs = require("fs");
@@ -49,6 +50,7 @@ export default function Home() {
       {/* <GuidesSection blogData={blogs} />
       <Upcoming blogData={blogs} /> */}
       <Gear />
+      <Faqsiii />
       {/* <TermsSection /> */}
       <InstaFeed />
       <FinalCTA />

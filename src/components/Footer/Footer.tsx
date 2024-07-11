@@ -66,7 +66,7 @@ const Footer = () => {
                   <span>
                     <Golf width={40} height={40} classname={styles.icon} />
                   </span>
-                  AZ Golf
+                  AZ Golf Whisperer
                 </h6>
                 <p className={styles.copy}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

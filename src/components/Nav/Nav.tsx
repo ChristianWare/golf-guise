@@ -3,9 +3,6 @@
 import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
-import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import ContentPadding from "../ContentPadding/ContentPadding";
 import Golf from "../../../public/icons/golfball.svg";
 
 function Nav() {
@@ -60,63 +57,65 @@ function Nav() {
   ];
 
   return (
-    <LayoutWrapper>
-      <ContentPadding>
-        <header className={styles.header}>
-          <nav className={styles.navbar}>
-            <Link href='/' className={styles.logo}>
-              <span>
-                <Golf width={23} height={23} className={styles.icon} />
-              </span>
-              AZ Golf Whisperer
-            </Link>
-            <ul
-              className={
-                isOpen === false
-                  ? styles.navMenu
-                  : `${styles.navMenu} ${styles.active}`
-              }
-            >
-              {navItems.map((navItem, index) => (
-                <li
-                  key={index}
-                  className={styles.navItem}
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Link href={navItem.href} className={styles.navItem}>
-                    {navItem.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            {isOpen && (
-              <div
-                className={`${styles.overlay} ${
-                  isOverlayVisible ? styles.visible : ""
-                }`}
-                onClick={() => {
-                  setIsOpen(false);
-                  setIsOverlayVisible(false);
-                }}
-              ></div>
-            )}
-            <span
-              className={
-                isOpen === false
-                  ? styles.hamburger
-                  : `${styles.hamburger} ${styles.active}`
-              }
-              onClick={openMenu}
-            >
-              <span className={styles.whiteBar}></span>
-              <span className={styles.whiteBar}></span>
-              <span className={styles.whiteBar}></span>
+    <>
+      <header className={styles.header}>
+        <nav className={styles.navbar}>
+          <Link
+            href='/'
+            className={`${styles.logo} ${isOpen ? styles.active : ""}`}
+          >
+            <span>
+              <Golf width={23} height={23} className={styles.icon} />
             </span>
-          </nav>
-        </header>
-        <div className={styles.greenTop}></div>
-      </ContentPadding>
-    </LayoutWrapper>
+            AZ Golf Whisperer
+          </Link>
+          <ul
+            className={
+              isOpen === false
+                ? styles.navMenu
+                : `${styles.navMenu} ${styles.active}`
+            }
+          >
+            {navItems.map((navItem, index) => (
+              <li
+                key={index}
+                className={styles.navItem}
+                onClick={() => setIsOpen(false)}
+              >
+                <Link href={navItem.href} className={styles.navItem}>
+                  {navItem.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          {isOpen && (
+            <div
+              className={`${styles.overlay} ${
+                isOverlayVisible ? styles.visible : ""
+              }`}
+              onClick={() => {
+                setIsOpen(false);
+                setIsOverlayVisible(false);
+              }}
+            ></div>
+          )}
+          <span
+            className={
+              isOpen === false
+                ? styles.hamburger
+                : `${styles.hamburger} ${styles.active}`
+            }
+            onClick={openMenu}
+          >
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+          </span>
+        </nav>
+      </header>
+      <div className={styles.greenTop}></div>
+    </>
   );
 }
+
 export default Nav;

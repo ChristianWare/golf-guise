@@ -1,7 +1,4 @@
 .container {
-  /* border-radius: 20px; */
-  /* border: 1px solid var(--borderii); */
-  /* background-color: var(--tan); */
   margin-top: 5rem;
   padding: 3rem;
   margin-left: 20rem;
@@ -46,19 +43,20 @@
   background-color: var(--tan);
 }
 
-.iconContainer {
-  width: 35px;
-  height: 35px;
+.icon {
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   border: 1px solid var(--black);
+  background-color: var(--green);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .icon {
-  color: var(--black);
   transition: all 0.4s ease-in-out;
 }
 

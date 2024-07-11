@@ -1,0 +1,164 @@
+.container {
+  background-color: var(--green);
+  border-top: 1px solid var(--green2);
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+  padding: 15rem 5rem;
+}
+
+.top {
+  flex: 1;
+}
+
+.sectionIntroContainer {
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  color: var(--white);
+}
+
+.copy {
+  font-weight: 700;
+  color: var(--white);
+
+  opacity: 0.8;
+  width: 80%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex: 1;
+}
+
+.qaContainer,
+.active {
+  padding: 3rem;
+  padding-right: 4rem;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in;
+}
+
+.active {
+  background-color: var(--white);
+}
+
+.answerContainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.answerContainer.show {
+  max-height: 350px;
+}
+
+.headingArrowContainer {
+  display: grid;
+  grid-template-columns: 0.6fr 5fr;
+  gap: 2rem;
+}
+
+.icon,
+.iconFlip {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 45px;
+  height: 45px;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--gray2);
+  background-color: var(--green3);
+  color: var(--white);
+}
+
+.iconFlip {
+  transform: rotate(135deg);
+  color: var(--black);
+}
+
+.question {
+  color: var(--white);
+  font-size: 2.4rem;
+  letter-spacing: -0.5px;
+  text-transform: none;
+}
+
+.active .question {
+  color: var(--black);
+}
+
+.answerbox {
+  display: grid;
+  grid-template-columns: 0.6fr 5fr;
+  gap: 2rem;
+}
+
+.answer {
+  color: var(--green2);
+  font-weight: 500;
+  margin-top: 1.5rem;
+  hyphens: auto;
+  opacity: 0.8;
+}
+
+.active .answer {
+  color: var(--black);
+}
+
+.btnContainer {
+  display: grid;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .heading,
+  .copy {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .bottom {
+    gap: 2rem;
+  }
+}
