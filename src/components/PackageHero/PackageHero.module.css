@@ -1,0 +1,158 @@
+.container {
+  position: relative;
+  font-size: 0;
+  margin-top: 9.2rem;
+}
+
+.imgOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  height: 80vh;
+  border: 1px solid var(--blackiv);
+}
+
+.video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  color: var(--tan);
+  /* text-align: center; */
+  width: 70%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.copy {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  width: 50%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  color: var(--tan);
+  /* text-align: center; */
+}
+
+.searchContainer {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socialsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.iconContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--tan);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon {
+  color: var(--tan);
+}
+
+@media screen and (max-width: 1068px) {
+  .content {
+    padding: 4rem;
+  }
+
+  .heading {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading,
+  .copy,
+  .searchContainer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 13rem;
+  }
+
+  .searchContainer,
+  .copy {
+    width: 100%;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    margin-top: 12rem;
+  }
+
+  .content {
+    padding: 3rem;
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+}

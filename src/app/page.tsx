@@ -1,7 +1,4 @@
 import ReviewsSection from "@/components/ReviewsSection/ReviewsSection";
-import FeaturedSection from "@/components/FeaturedSection/FeaturedSection";
-import GuidesSection from "@/components/GuidesSection/GuidesSection";
-import Upcoming from "@/components/Upcoming/Upcoming";
 import TermsSection from "@/components/TermsSection/TermsSection";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import Gear from "@/components/Gear/Gear";
@@ -55,6 +52,7 @@ export default function Home() {
       <Faqsiii />
       {/* <TermsSection /> */}
       {/* <InstaFeed /> */}
+      <TermsSection />
       <Gallery />
       <FinalCTA />
       <ContactForm />

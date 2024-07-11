@@ -44,7 +44,7 @@ function Nav() {
     },
     {
       text: "Packages",
-      href: "#",
+      href: "/packages",
     },
     {
       text: "Gear",
