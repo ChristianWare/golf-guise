@@ -66,7 +66,7 @@ const Featured = () => {
                 </ul>
                 <div className={styles.rightBottom}>
                   <div className={styles.rb1}>
-                    <Arrow width={25} height={25} className={styles.arrow} />
+                    <Arrow width={25} height={25} className={styles.icon} />
                     <h4>Unlimted Recharge</h4>
                     <p className={styles.copyiii}>
                       Just reserve an electric vehicle when you need it, and you
@@ -74,7 +74,7 @@ const Featured = () => {
                     </p>
                   </div>
                   <div className={styles.rb2}>
-                    <Arrow width={25} height={25} className={styles.arrow} />
+                    <Arrow width={25} height={25} className={styles.icon} />
                     <h4>Unlimted Recharge</h4>
                     <p className={styles.copyiii}>
                       Just reserve an electric vehicle when you need it, and you

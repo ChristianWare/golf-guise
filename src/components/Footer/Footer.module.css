@@ -1,7 +1,7 @@
 .container {
   border: 1px solid var(--black);
   border-radius: 5px;
-  background-color: var(--tan);
+  background-color: var(--green);
   /* background-image: repeating-linear-gradient(
     45deg,
     #edeaea 0,
@@ -32,16 +32,14 @@
 .logo {
   font-size: 5rem;
   font-family: var(--tuskerGrotesk);
-  color: var(--black);
-  /* letter-spacing: -3px; */
+  color: var(--white);
 }
 
 .copy {
   font-size: 1.3rem;
   width: 60%;
   margin-top: 1rem;
-  color: var(--black);
-  font-family: var(--ppMoriSemiBold);
+  color: var(--white);
 }
 
 .socials {
@@ -52,7 +50,7 @@
 }
 
 .socialContainer {
-  background-color: var(--black);
+  background-color: var(--white);
   width: 30px;
   height: 30px;
   display: flex;
@@ -62,7 +60,7 @@
 }
 
 .icon {
-  color: var(--gray);
+  color: var(--black);
 }
 
 .links {
@@ -70,12 +68,11 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  color: var(--black);
+  color: var(--white);
 }
 
 .heading {
-  color: var(--black);
-  font-family: var(--ppMoriSemiBold);
+  color: var(--white);
   text-transform: uppercase;
   border-bottom: 1px solid var(--border);
   width: 90%;
@@ -85,7 +82,6 @@
 
 .link {
   text-transform: uppercase;
-  font-family: var(--ppMoriSemiBold);
   font-size: 1.2rem;
 }
 
@@ -100,13 +96,12 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: var(--black);
+  color: var(--white);
   font-size: 1.2rem;
-  font-family: var(--ppMoriSemiBold);
 }
 
 .iconii {
-  color: var(--black);
+  color: var(--white);
 }
 
 .bottom {
@@ -116,8 +111,7 @@
 }
 
 .logoii {
-  color: var(--black);
-  font-family: var(--ppMoriSemiBold);
+  color: var(--white);
   font-size: 1.2rem;
 }
 
@@ -128,12 +122,11 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  color: var(--black);
+  color: var(--white);
   font-size: 1.2rem;
 }
 
 .disc {
-  font-family: var(--ppMoriSemiBold);
   font-size: 1.2rem;
 }
 

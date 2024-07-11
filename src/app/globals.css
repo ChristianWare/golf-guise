@@ -110,7 +110,7 @@ textarea:focus {
   font-size: 1.6rem;
 }
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: var(--secondary);
 }
@@ -126,7 +126,7 @@ textarea:focus {
 ::-moz-selection {
   background: var(--green);
   color: var(--tan);
-}
+} */
 
 @media screen and (max-width: 768px) {
   html {

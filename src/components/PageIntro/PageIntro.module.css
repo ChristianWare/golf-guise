@@ -7,6 +7,7 @@
   border: 1px solid var(--black);
   background-color: var(--tan);
   padding: 5rem;
+  margin-top: 10rem;
 }
 
 .yellow {
@@ -93,5 +94,6 @@
 @media screen and (max-width: 568px) {
   .content {
     padding: 3rem;
+    margin-top: 12rem;
   }
 }

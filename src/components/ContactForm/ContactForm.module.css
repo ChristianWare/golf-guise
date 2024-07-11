@@ -180,12 +180,6 @@
   transform: rotate(-45deg);
 }
 
-.btn:hover {
-  background-color: var(--green);
-  color: var(--green3);
-  border: 1px solid var(--green3);
-}
-
 .error {
   color: var(--green3);
   font-size: 1.4rem;

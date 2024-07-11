@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5rem;
+  margin-top: 10rem;
 }
 
 .left {
@@ -85,5 +86,11 @@
 
   .imgContainer {
     height: 400px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    margin-top: 12rem;
   }
 }

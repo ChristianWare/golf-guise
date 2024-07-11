@@ -41,7 +41,7 @@ const Footer = () => {
             <div className={styles.logoBox}>
               <h6 className={styles.logo}>
                 <span>
-                  <Golf width={40} height={40} classname={styles.icon} />
+                  <Golf width={40} height={40} classname={styles.iconGolf} />
                 </span>
                 AZ Golf Whisperer
               </h6>
@@ -64,7 +64,7 @@ const Footer = () => {
               <div className={styles.logoBox}>
                 <h6 className={styles.logo}>
                   <span>
-                    <Golf width={40} height={40} classname={styles.icon} />
+                    <Golf width={50} height={50} classname={styles.icon} />
                   </span>
                   AZ Golf Whisperer
                 </h6>
