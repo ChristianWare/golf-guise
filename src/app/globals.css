@@ -1,5 +1,10 @@
 :root {
-  --black: #071952;
+  --orange: #fc6719;
+  --green: #1c4f4a;
+  --yellow: #ffb130;
+  --white: #ffffff;
+  --tan: #f5f3ee;
+  /* --black: #071952;
   --blackii: #262f4d;
   --blackiii: #45568e;
   --blackiv: #212123;
@@ -16,7 +21,7 @@
   --tan: #fbf7f1;
   --tan2: #f4e9da;
   --yellow: #efcd01;
-  --white: #ffffff;
+  --white: #ffffff; */
 }
 
 * {
@@ -25,7 +30,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  font-family: var(--inter);
+  font-family: var(--sharpGrotesk);
   scroll-behavior: smooth;
   scroll-margin-top: 170px;
   -webkit-tap-highlight-color: transparent;
@@ -96,8 +101,8 @@ input,
 textarea {
   font-weight: 400;
   hyphens: auto;
-  font-size: 1.6rem;
-  line-height: 120%;
+  font-size: 1.8rem;
+  line-height: 150%;
   color: var(--black);
 }
 

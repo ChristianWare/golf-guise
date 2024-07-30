@@ -2,7 +2,6 @@ import { FC } from "react";
 import Link from "next/link";
 import { ButtonProps } from "@/lib/interface";
 import Arrow from "../../../public/icons/arrow.svg";
-
 import styles from "./Button.module.css";
 
 const Button: FC<ButtonProps> = ({

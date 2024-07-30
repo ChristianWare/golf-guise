@@ -12,8 +12,7 @@
   user-select: none;
   transition: all 0.3s ease-in;
   display: inline-block;
-  padding: 8px 25px;
-  padding-top: 10px;
+  padding: 10px 25px;
   border: 1px solid var(--black);
   display: flex;
   align-items: center;
@@ -23,6 +22,7 @@
   z-index: 1;
   width: 100%;
   line-height: 100%;
+  font-family: var(--sharpGroteskSemiBold);
 }
 
 .green {
@@ -32,14 +32,13 @@
 }
 
 .primary {
-  color: var(--black);
-  background-color: var(--gray);
+  color: var(--tan);
+  background-color: var(--orange);
 }
 
 .primaryii {
-  color: var(--gray);
-  border: 2px solid var(--gray);
-  background-color: transparent;
+  color: var(--green);
+  background-color: var(--tan);
 }
 
 .secondary {

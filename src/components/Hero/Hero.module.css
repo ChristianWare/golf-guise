@@ -11,7 +11,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 5px;
+  border-radius: 20px;
   height: 80vh;
   border: 1px solid var(--blackiv);
 }
@@ -20,7 +20,7 @@
   width: 100%;
   height: 80vh;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .content {
@@ -47,13 +47,11 @@
 
 .copy {
   margin-top: 1rem;
-  font-size: 1.8rem;
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   color: var(--tan);
   text-align: center;
-  font-family: var(--ppMoriSemiBold);
 }
 
 .searchContainer {

@@ -38,6 +38,18 @@ const tuskerGrotesk = localFont({
   display: "swap",
 });
 
+const sharpGrotesk = localFont({
+  src: "../../public/fonts/SharpGroteskBook20.otf",
+  variable: "--sharpGrotesk",
+  display: "swap",
+});
+
+const sharpGroteskSemiBold = localFont({
+  src: "../../public/fonts/SharpGroteskSemiBold20.otf",
+  variable: "--sharpGroteskSemiBold",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -46,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} ${ppMoriRegualr.variable} ${ppMoriSemiBold.variable} ${styles.bgColor} ${tuskerGrotesk.variable}`}
+        className={`${inter.className} ${ppMoriRegualr.variable} ${ppMoriSemiBold.variable} ${styles.bgColor} ${tuskerGrotesk.variable} ${sharpGrotesk.variable} ${sharpGroteskSemiBold.variable}`}
       >
         <Nav />
         {children}

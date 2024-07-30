@@ -50,13 +50,13 @@
 
 .img {
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid var(--black);
 }
 
 .box1,
 .box2 {
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid var(--black);
   padding: 3rem;
   display: flex;
