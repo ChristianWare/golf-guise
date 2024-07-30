@@ -14,7 +14,7 @@ const Featured = () => {
   const pathname = usePathname();
 
   return (
-    <section>
+    <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
@@ -45,33 +45,22 @@ const Featured = () => {
                     pariatur id sunt ab temporibus repellat quia dolor! Quas,
                     quibusdam!
                   </p>
-                  <div className={styles.btnContainer}>
-                    <Button
-                      btnType='green'
-                      text='Get Started Now'
-                      href='/'
-                      iconColor='white'
-                    />
-                  </div>
+                  <ul className={styles.list}>
+                    <li className={styles.listItem}>
+                      Access to all vehicle categories
+                    </li>
+                    <li className={styles.listItem}>
+                      Access to all vehicle categories
+                    </li>
+                    <li className={styles.listItem}>
+                      Access to all vehicle categories
+                    </li>
+                  </ul>
                 </div>
-                <ul className={styles.list}>
-                  <li className={styles.listItem}>
-                    Access to all vehicle categories
-                  </li>
-                  <li className={styles.listItem}>
-                    Access to all vehicle categories
-                  </li>
-                  <li className={styles.listItem}>
-                    Access to all vehicle categories
-                  </li>
-                  <li className={styles.listItem}>
-                    Access to all vehicle categories
-                  </li>
-                </ul>
                 <div className={styles.rightBottom}>
                   <div className={styles.rb1}>
                     <Arrow width={25} height={25} className={styles.icon} />
-                    <h4>Unlimted Recharge</h4>
+                    <h4 className={styles.h4}>Unlimted Recharge</h4>
                     <p className={styles.copyiii}>
                       Just reserve an electric vehicle when you need it, and you
                       are ready to go. Simple, convenient and hassle-free.
@@ -79,24 +68,33 @@ const Featured = () => {
                   </div>
                   <div className={styles.rb2}>
                     <Arrow width={25} height={25} className={styles.icon} />
-                    <h4>Unlimted Recharge</h4>
+                    <h4 className={styles.h4}>Unlimted Recharge</h4>
                     <p className={styles.copyiii}>
                       Just reserve an electric vehicle when you need it, and you
                       are ready to go. Simple, convenient and hassle-free.
                     </p>
                   </div>
                 </div>
+                <div className={styles.btnContainer}>
+                  <Button
+                    btnType='primaryiii'
+                    text='More Details'
+                    href='/'
+                    iconColor='white'
+                  />
+                </div>
               </div>
             </div>
-            {pathname === "/" && (
+            {/* {pathname === "/" && (
               <div className={styles.btnContainerii}>
                 <Button
                   btnType='primary'
                   text='See all packages'
                   href='/packages'
+                  iconColor='white'
                 />
               </div>
-            )}
+            )} */}
           </div>
         </ContentPadding>
       </LayoutWrapper>

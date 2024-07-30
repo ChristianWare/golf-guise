@@ -4,6 +4,8 @@
   --yellow: #ffb130;
   --white: #ffffff;
   --tan: #f5f3ee;
+  --lightGreen: #dfe3de;
+  --gray: #bcbcbc;
   /* --black: #071952;
   --blackii: #262f4d;
   --blackiii: #45568e;
@@ -59,7 +61,7 @@ h6,
 span {
   font-family: var(--tuskerGrotesk);
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--green);
   hyphens: auto;
 }
 
@@ -69,13 +71,14 @@ h1 {
 }
 
 h2 {
-  font-size: 6.5rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   line-height: 130%;
   font-family: var(--inter);
+  text-transform: none;
 }
 
 h4 {
@@ -101,9 +104,9 @@ input,
 textarea {
   font-weight: 400;
   hyphens: auto;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 150%;
-  color: var(--black);
+  color: var(--green);
 }
 
 input:focus,
@@ -156,10 +159,10 @@ textarea:focus {
     font-size: 4.5rem;
   }
 
-  p,
+  /* p,
   label {
     font-size: 110%;
-  }
+  } */
 }
 
 /* Only use in production */

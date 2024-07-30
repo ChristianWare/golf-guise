@@ -8,7 +8,7 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   white-space: nowrap;
-  border-radius: 50px;
+  border-radius: 10px;
   user-select: none;
   transition: all 0.3s ease-in;
   display: inline-block;
@@ -26,9 +26,7 @@
 }
 
 .green {
-  background-color: var(--green);
-  color: var(--white);
-  border: 1px solid var(--black);
+  color: var(--green);
 }
 
 .primary {
@@ -39,6 +37,11 @@
 .primaryii {
   color: var(--green);
   background-color: var(--tan);
+}
+
+.primaryiii {
+  color: var(--white);
+  background-color: var(--green);
 }
 
 .secondary {
@@ -63,6 +66,7 @@
   margin-left: 1rem;
   color: var(--black);
   transition: all 0.3s ease-in;
+  transform: rotate(45deg);
 }
 
 .gray {

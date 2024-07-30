@@ -11,6 +11,7 @@ import Featured from "@/components/Featured/Featured";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Gallery from "@/components/Gallery/Gallery";
+import FeaturedPackages from "@/components/FeaturedPackages/FeaturedPackages";
 
 export default function Home() {
   const fs = require("fs");
@@ -39,19 +40,18 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <What />
-      <PostHero />
+      <Featured />
+
+      {/* <What /> */}
+      {/* <PostHero />
       <Featured />
       <ImageGrid />
-      {/* <ReviewsSection blogData={blogs} /> */}
       <Gear />
       <Faqsiii />
-      {/* <TermsSection /> */}
-      {/* <InstaFeed /> */}
       <TermsSection />
       <Gallery />
       <FinalCTA />
-      <ContactForm />
+      <ContactForm /> */}
     </main>
   );
 }
