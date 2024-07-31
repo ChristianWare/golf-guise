@@ -34,7 +34,7 @@ const What = () => {
               </p>
             </div>
             <div className={styles.box2}>
-              <h3>experiences</h3>
+              <h3>Variety</h3>
               <p className={styles.box2Copy}>
                 They also offer a variety of golfing experiences. From
                 championship courses to beginner-friendly greens, there&apos;s

@@ -1,11 +1,8 @@
 .container {
-  background-color: var(--green);
-  border: 1px solid var(--black);
-  border-radius: 5px;
+  background-color: var(--orange);
+  border-radius: 20px;
   padding: 10rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
-  margin-bottom: 15rem;
+  margin: 15rem;
 }
 
 .heading,
@@ -13,19 +10,35 @@
   text-align: center;
   color: var(--tan);
   margin-bottom: 2rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btnContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 1068px) {
+  .heading,
+  .copy {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 968px) {
   .container {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .heading,
+  .copy {
+    width: 100%;
   }
 }
 

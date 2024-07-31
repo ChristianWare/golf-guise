@@ -1,0 +1,53 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* padding: 5rem 0rem; */
+  background-color: var(--green3);
+  padding-bottom: 2rem;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(200%);
+  animation: scroll 20s linear infinite;
+  gap: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  color: var(--black);
+}
+
+.item {
+  height: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.imgContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.img {
+  border-radius: 15px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slider:hover .track {
+  animation-play-state: paused !important;
+}

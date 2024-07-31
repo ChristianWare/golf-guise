@@ -24,9 +24,9 @@
 }
 
 .box {
-  background-color: var(--gray);
+  background-color: var(--lightGreen);
   border: 1px solid var(--borderii);
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -48,12 +48,12 @@
 }
 
 .title {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
   transition: all 0.3s ease-in;
 }
 
 .desc {
-  color: var(--blackiii);
   transition: all 0.3s ease-in;
 }
 
@@ -75,6 +75,10 @@
 @media screen and (max-width: 968px) {
   .bottom {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    text-align: center;
   }
 }
 

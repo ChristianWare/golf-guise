@@ -1,8 +1,8 @@
-import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Gallery.module.css";
 import Img1 from "../../../public/images/img1.png";
 import Image from "next/image";
+import Slider from "../Slider/Slider";
 
 const images = [
   { src: Img1, class: "" },
@@ -31,11 +31,11 @@ const images = [
 const Gallery = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper>
+      {/* <LayoutWrapper> */}
         <h2 className={styles.heading}>Gallery</h2>
 
         <div className={styles.gallery}>
-          {images.map((image, index) => (
+          {/* {images.map((image, index) => (
             <div
               key={index}
               className={`${styles.imgContainer} ${image.class}`}
@@ -48,9 +48,10 @@ const Gallery = () => {
                 className={styles.img}
               />
             </div>
-          ))}
+          ))} */}
         </div>
-      </LayoutWrapper>
+      {/* </LayoutWrapper> */}
+        <Slider />
     </section>
   );
 };

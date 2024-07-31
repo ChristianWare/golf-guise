@@ -1,21 +1,33 @@
 import Button from "../Button/Button";
-import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./FinalCTA.module.css";
 
 const FinalCTA = () => {
   return (
     <LayoutWrapper>
-        <section className={styles.container}>
-          <h2 className={styles.heading}>Final Call to Action</h2>
-          <p className={styles.copy}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos fuga
-            id culpa accusamus eos veritatis.
-          </p>
-          <div className={styles.btnContainer}>
-            <Button btnType='primary' text='Current Offers' href='/' />
-          </div>
-        </section>
+      <section className={styles.container}>
+        <h2 className={styles.heading}>
+          Discover Unforgettable Golf Vacations in Arizona
+        </h2>
+        <p className={styles.copy}>
+          Experience world-class golf courses with our tailored vacation
+          packages.
+        </p>
+        <div className={styles.btnContainer}>
+          <Button
+            btnType='primaryiii'
+            text='Current Offers'
+            href='/'
+            iconColor='white'
+          />
+          <Button
+            btnType='primaryii'
+            text='Contact Us'
+            href='/'
+            iconColor='green'
+          />
+        </div>
+      </section>
     </LayoutWrapper>
   );
 };
