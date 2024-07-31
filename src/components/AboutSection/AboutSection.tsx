@@ -2,6 +2,7 @@ import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./AboutSection.module.css";
 import Img from "../../../public/images/img1.png";
+import Button from "../Button/Button";
 
 const AboutSection = () => {
   const data = [
@@ -66,6 +67,14 @@ const AboutSection = () => {
               ))}
             </div>
           </div>
+        </div>
+        <div className={styles.btnContainer}>
+          <Button
+            btnType='primary'
+            href='/about'
+            text='more about us'
+            iconColor='white'
+          />
         </div>
       </LayoutWrapper>
     </section>

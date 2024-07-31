@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./ImageGrid.module.css";
 import Img from "../../../public/images/img1.png";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import ContentPadding from "../ContentPadding/ContentPadding";
 import { usePathname } from "next/navigation";
 import Button from "../Button/Button";
 

@@ -121,10 +121,6 @@
   grid-area: fourB;
 }
 
-/* .boxContainer h5 {
-  color: var(--tan);
-} */
-
 .golfCourse {
   color: var(--tan);
 }
@@ -181,9 +177,9 @@
 }
 
 @media screen and (max-width: 568px) {
-  .content {
+  /* .content {
     padding: 2rem;
-  }
+  } */
 
   .btnContainerii {
     display: grid;
