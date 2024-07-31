@@ -44,11 +44,11 @@ const ContactForm = () => {
 
   return (
     <LayoutWrapper>
-      <div className={styles.content}>
-        <div className={styles.bottom}>
           <div className={styles.left}>
             <h2 className={styles.heading}>Drop us a line</h2>
           </div>
+      <div className={styles.content}>
+        <div className={styles.bottom}>
           <div className={styles.right}>
             {/* <form onSubmit={handleSubmit(onSubmit)} className={styles.form}> */}
             <form className={styles.form}>
