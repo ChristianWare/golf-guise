@@ -1,5 +1,6 @@
 .container {
   background-color: var(--green);
+  border-radius: 30px;
 }
 
 .content {
@@ -151,7 +152,7 @@
   .heading {
     text-align: center;
   }
-  
+
   .copy {
     width: 80%;
     text-align: center;
