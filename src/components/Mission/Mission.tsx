@@ -5,40 +5,11 @@ import Design from "../../../public/icons/arrow.svg";
 import Reminders from "../../../public/icons/arrow.svg";
 import Clock from "../../../public/icons/arrow.svg";
 import Card from "../../../public/icons/arrow.svg";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../../../animation/variants";
 import Image from "next/image";
 import Img1 from "../../../public/images/img1.png";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 
 const Mission = () => {
-  // const data = [
-  //   {
-  //     icon: <Clock width={25} height={25} className={styles.icon} />,
-  //     title: "Real-Time Availability",
-  //     description:
-  //       "Clients can view real-time availability and book appointments instantly.",
-  //   },
-  //   {
-  //     icon: <Reminders width={25} height={25} className={styles.icon} />,
-  //     title: "Automated Reminders",
-  //     description:
-  //       "Automated email and SMS reminders reduce no-shows and keep clients informed.",
-  //   },
-  //   {
-  //     icon: <Design width={25} height={25} className={styles.icon} />,
-  //     title: "Intuitive Interface",
-  //     description:
-  //       "A simple and intuitive interface makes it easy for clients to navigate and book services.",
-  //   },
-  //   {
-  //     icon: <Card width={25} height={25} className={styles.icon} />,
-  //     title: "Integrated Payment Systems",
-  //     description:
-  //       "Accept payments from any major credit card with our payment services.",
-  //   },
-  // ];
-
   const data = [
     {
       id: 1,
@@ -79,7 +50,6 @@ const Mission = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={styles.heading}>Course Details</h2>
-          
         </div>
         <div className={styles.bottom}>
           <div className={styles.left}>

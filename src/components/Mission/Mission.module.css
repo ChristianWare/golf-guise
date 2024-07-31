@@ -62,10 +62,20 @@
 .card:nth-child(4) {
   border: 1px solid var(--green);
   border-radius: 15px;
+  background-color: var(--orange);
 }
 
 .card:nth-child(1) {
   border-bottom-right-radius: 0px;
+}
+
+.card:nth-child(1) .title,
+.card:nth-child(4) .title,
+.card:nth-child(1) .description,
+.card:nth-child(4) .description,
+.card:nth-child(1) .icon,
+.card:nth-child(4) .icon {
+  color: var(--white);
 }
 
 .card:nth-child(4) {
