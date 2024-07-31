@@ -13,8 +13,7 @@
 }
 
 .heading {
-  color: var(--white);
-  border-bottom: 4px solid var(--red);
+  color: var(--green);
   text-align: center;
   width: fit-content;
   margin-left: auto;
@@ -22,11 +21,11 @@
 }
 
 .copy {
-  color: var(--white);
+  color: var(--green);
   opacity: 0.8;
   text-align: center;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .bottom {
@@ -38,7 +37,8 @@
 .card {
   padding: 2rem;
   background-color: var(--white);
-  border-radius: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +57,7 @@
 }
 
 .icon {
-  color: var(--black);
+  color: var(--green);
   margin-top: 1rem;
   width: 3.5rem;
   height: 3.5rem;

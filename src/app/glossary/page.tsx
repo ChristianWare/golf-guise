@@ -1,6 +1,5 @@
 import LayoutWrapper from "@/components/LayoutWrapper/LayoutWrapper";
 import styles from "../../styles/GlossaryPage.module.css";
-import ContentPadding from "@/components/ContentPadding/ContentPadding";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";

@@ -1,28 +1,27 @@
 import styles from "./Usp.module.css";
-import Track from "../../../public/icons/track.svg";
-import Solutions from "../../../public/icons/solutions.svg";
-import Attention from "../../../public/icons/attention.svg";
-import Team from "../../../public/icons/team.svg";
-import LayoutWrapper from "../LayoutWrapper";
-import ScrollHorizontalText from "../ScrollHorizontalText/ScrollHorizontalText";
+import Track from "../../../public/icons/arrow.svg";
+import Solutions from "../../../public/icons/arrow.svg";
+import Attention from "../../../public/icons/arrow.svg";
+import Team from "../../../public/icons/arrow.svg";
+import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 
 const data = [
   {
     id: 1,
-    usp: "Expert Team of Developers",
-    desc: "Skilled professionals with a passion for web design and development.",
+    usp: "Personalized Service",
+    desc: "We tailor every package to meet your specific needs.",
     icon: <Team className={styles.icon} width={60} height={60} />,
   },
   {
     id: 2,
-    usp: "Personalized Attention",
-    desc: "Building strong relationships with clients to understand their business, goals, and audience.",
+    usp: "Exclusive Partnerships",
+    desc: "Enjoy access to the best golf courses in Arizona.",
     icon: <Attention className={styles.icon} width={60} height={60} />,
   },
   {
     id: 3,
-    usp: "Innovative & Effective Solutions",
-    desc: "Combining the latest technology with creative ideas for top-notch results.",
+    usp: "Expert Knowledge",
+    desc: "Our team has extensive experience in the golf and travel industries.",
     icon: <Solutions className={styles.icon} width={60} height={60} />,
   },
   {
