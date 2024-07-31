@@ -4,12 +4,12 @@
 
 @media screen and (max-width: 870px) {
   .container {
-    padding: 7rem 3rem;
+    padding: 10rem 3rem;
   }
 }
 
 @media screen and (max-width: 568px) {
   .container {
-    padding: 3rem 2rem;
+    padding: 10rem 2rem;
   }
 }

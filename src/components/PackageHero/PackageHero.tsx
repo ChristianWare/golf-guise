@@ -1,5 +1,3 @@
-import Button from "../Button/Button";
-import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./PackageHero.module.css";
 

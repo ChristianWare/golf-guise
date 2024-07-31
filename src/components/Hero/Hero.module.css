@@ -1,7 +1,3 @@
-.parent {
-  /* margin-top: 4rem; */
-}
-
 .container {
   position: relative;
   font-size: 0;
@@ -95,11 +91,6 @@
   color: var(--tan);
 }
 
-@media screen and (max-width: 1068px) {
-  /* .content {
-    padding: 4rem;
-  } */
-}
 
 @media screen and (max-width: 968px) {
   .parent {

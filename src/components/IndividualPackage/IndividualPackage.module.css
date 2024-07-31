@@ -26,10 +26,10 @@
 }
 
 .right {
-  padding: 3rem;
-  border: 1px solid var(--black);
-  border-radius: 5px;
-  background-color: var(--tan2);
+  padding: 2rem;
+  border: 1px solid var(--green);
+  border-radius: 15px;
+  background-color: var(--lightGreen);
 }
 
 .rightTop {
@@ -38,34 +38,38 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .title {
   font-family: var(--tuskerGrotesk);
-  border-bottom: thick double #bcbcbc;
-  padding-bottom: 1rem;
-  font-size: 4rem;
-  width: fit-content;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  padding-top: 1.3rem;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  width: 100%;
 }
 
 .price {
   font-size: 3rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--green);
   font-family: var(--tuskerGrotesk);
 }
 
 .copyii {
   opacity: 0.8;
-  text-align: center;
+  font-size: 1.4rem;
 }
 
 .btnContainer {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(1, 1fr);
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .list {
@@ -78,13 +82,13 @@
 }
 
 .listItem {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--green);
   padding-bottom: 1rem;
   width: 100%;
   opacity: 0.8;
-  color: var(--black);
-  font-weight: 600;
+  color: var(--green);
   text-align: center;
+  font-size: 1.4rem;
 }
 
 .rightBottom {
@@ -97,7 +101,7 @@
 .rb1,
 .rb2 {
   padding: 3rem;
-  border-radius: 5px;
+  border-radius: 15px;
   border: 1px solid var(--black);
   background-color: var(--white);
   display: flex;

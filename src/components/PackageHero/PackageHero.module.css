@@ -1,7 +1,6 @@
 .container {
   position: relative;
   font-size: 0;
-  margin-top: 9.2rem;
 }
 
 .imgOverlay {
@@ -11,7 +10,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 5px;
+  border-radius: 20px;
   height: 80vh;
   border: 1px solid var(--blackiv);
 }
@@ -20,7 +19,7 @@
   width: 100%;
   height: 80vh;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .content {
@@ -105,7 +104,7 @@
 
 @media screen and (max-width: 968px) {
   .container {
-    margin-top: 13rem;
+    margin-top: 1rem;
   }
 
   .content {
@@ -129,6 +128,12 @@
   }
 }
 
+@media screen and (max-width: 870px) {
+  .container {
+    margin-top: 4rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .searchContainer,
   .copy {
@@ -145,7 +150,7 @@
 
 @media screen and (max-width: 568px) {
   .container {
-    margin-top: 12rem;
+    margin-top: 8rem;
   }
 
   .content {

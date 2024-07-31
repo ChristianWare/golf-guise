@@ -7,7 +7,7 @@ const Section = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-          <h2 className={styles.heading}>Other Package</h2>
+          <h2 className={styles.heading}>Other Packages</h2>
           <div className={styles.bottom}>
             <IndividualPackage />
             <IndividualPackage />
