@@ -9,6 +9,7 @@ import Featured from "@/components/Featured/Featured";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Gallery from "@/components/Gallery/Gallery";
+import AboutSection from "@/components/AboutSection/AboutSection";
 
 export default function Home() {
   const fs = require("fs");
@@ -39,6 +40,7 @@ export default function Home() {
       <Hero />
       <What />
       <Featured />
+      <AboutSection />
       <ImageGrid />
       <Gallery />
       <TermsSection />

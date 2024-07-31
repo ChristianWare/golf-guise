@@ -25,6 +25,7 @@
 
 .heading {
   color: var(--white);
+  line-height: 100%;
 }
 
 .copy {
@@ -69,7 +70,7 @@
 }
 
 .active {
-  background-color: var(--tan);
+  background-color: var(--yellow);
 }
 
 .answerContainer {
@@ -106,9 +107,8 @@
 }
 
 .question {
-  font-family: var(--sharpGroteskSemiBold);
   color: var(--tan);
-  font-size: 2rem;
+  letter-spacing: -0.09px;
 }
 
 .active .question {

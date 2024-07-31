@@ -1,3 +1,7 @@
+.parent {
+  margin-top: -7rem;
+}
+
 .container {
   position: relative;
   font-size: 0;
@@ -39,7 +43,6 @@
 .heading {
   color: var(--tan);
   text-align: center;
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,16 +50,12 @@
 .copy {
   margin-top: 1rem;
   width: 60%;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   color: var(--tan);
   text-align: center;
-}
-
-.searchContainer {
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .btnContainer {
@@ -68,35 +67,7 @@
   margin-right: auto;
 }
 
-.socialsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.iconContainer {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--tan);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.icon {
-  color: var(--tan);
-}
-
-
 @media screen and (max-width: 968px) {
-  .parent {
-    margin-top: 1rem;
-  }
-
   .content {
     display: flex;
     flex-direction: column;
@@ -118,12 +89,6 @@
   }
 }
 
-@media screen and (max-width: 870px) {
-  .parent {
-    margin-top: 4rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .searchContainer,
   .copy {
@@ -139,10 +104,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .parent {
-    margin-top: 8rem;
-  }
-
   .content {
     padding: 3rem;
   }

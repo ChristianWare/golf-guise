@@ -1,4 +1,3 @@
-import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Hero.module.css";
 
@@ -16,7 +15,8 @@ const Hero = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <h1 className={styles.heading}>
-                arizona stay and play golf packages
+                Arizona <br />
+                stay and play <br /> golf packages
               </h1>
               <p className={styles.copy}>
                 Book your next golf vacation with us! Explore top packages and

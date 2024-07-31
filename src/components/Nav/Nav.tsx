@@ -73,9 +73,9 @@ function Nav() {
             href='/'
             className={`${styles.logo} ${isOpen ? styles.active : ""}`}
           >
-            <span>
+            {/* <span>
               <Golf width={23} height={23} className={styles.icon} />
-            </span>
+            </span> */}
             AZ Golf Whisperer
           </Link>
           <ul

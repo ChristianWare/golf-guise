@@ -1,6 +1,6 @@
 :root {
   --orange: rgb(252, 103, 25);
-  --orangeii: #FD9752;
+  --orangeii: #fd9752;
   --green: #1c4f4a;
   --yellow: #ffb130;
   --white: #ffffff;
@@ -60,25 +60,28 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--tuskerGrotesk);
+  font-family: var(--stratosSemibold);
   text-transform: uppercase;
   color: var(--green);
-  hyphens: auto;
 }
 
 h1 {
   font-size: 10rem;
-  line-height: 120%;
+  letter-spacing: -0.04em;
+  line-height: 90%;
 }
 
 h2 {
   font-size: 6rem;
+  letter-spacing: -0.04em;
+  line-height: 90%;
 }
 
 h3 {
   font-size: 3rem;
   line-height: 130%;
-  text-transform: none;
+  letter-spacing: -0.04em;
+  line-height: 90%;
 }
 
 h4 {

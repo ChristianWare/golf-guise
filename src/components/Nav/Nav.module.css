@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  top: 0;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -17,7 +17,7 @@
 .logo {
   font-size: 2.5rem;
   color: var(--white);
-  font-family: var(--tuskerGrotesk);
+  font-family: var(--stratosSemibold);
   text-transform: uppercase;
   transition: color 0.3s ease;
 }

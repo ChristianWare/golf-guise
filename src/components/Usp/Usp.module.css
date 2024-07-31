@@ -1,0 +1,82 @@
+.container {
+  background-color: var(--lightBlack);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  color: var(--white);
+  border-bottom: 4px solid var(--red);
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copy {
+  color: var(--white);
+  opacity: 0.8;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.usp {
+  margin-bottom: 2rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.desc {
+  opacity: 0.5;
+}
+
+.icon {
+  color: var(--black);
+  margin-top: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .usp,
+  .desc {
+    text-align: center;
+  }
+}

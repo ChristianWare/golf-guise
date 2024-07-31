@@ -43,6 +43,12 @@ const sharpGroteskSemiBold = localFont({
   display: "swap",
 });
 
+const stratosSemibold = localFont({
+  src: "../../public/fonts/StratosSemibold.otf",
+  variable: "--stratosSemibold",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -51,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={` ${barlowCondensed.variable} ${styles.bgColor} ${tuskerGrotesk.variable} ${sharpGrotesk.variable} ${sharpGroteskSemiBold.variable}`}
+        className={` ${barlowCondensed.variable} ${styles.bgColor} ${tuskerGrotesk.variable} ${sharpGrotesk.variable} ${sharpGroteskSemiBold.variable} ${stratosSemibold.variable}`}
       >
         <Nav />
         {children}

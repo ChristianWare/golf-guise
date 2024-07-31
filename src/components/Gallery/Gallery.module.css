@@ -21,8 +21,6 @@
 }
 
 .gallery {
-  /* background-color: var(--yellow); */
-  /* padding: 1rem; */
   border-radius: 20px;
   margin: 0 auto;
   display: grid;
@@ -73,10 +71,6 @@
 @media screen and (max-width: 668px) {
   .copy {
     margin-bottom: 0rem;
-  }
-
-  .gallery {
-    padding: 5rem 0rem;
   }
 
   .vStretch {

@@ -58,7 +58,7 @@
 }
 
 .title {
-  font-family: var(--tuskerGrotesk);
+  font-family: var(--stratosSemibold);
   font-size: 4rem;
   text-transform: uppercase;
   padding: 1rem 1.5rem;

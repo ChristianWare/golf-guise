@@ -1,10 +1,7 @@
 import Image from "next/image";
-import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./What.module.css";
 import Img1 from "../../../public/images/img1.png";
-import Tab from "../Tab/Tab";
-import DirectCommunication from "../DirectCommunication/DirectCommunication";
 
 const What = () => {
   return (
