@@ -121,11 +121,6 @@
   grid-area: fourB;
 }
 
-.btnContainer {
-  display: flex;
-  margin-top: 3rem;
-}
-
 /* .boxContainer h5 {
   color: var(--tan);
 } */
@@ -137,7 +132,7 @@
 .btnContainerii {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 3rem;
 }
 

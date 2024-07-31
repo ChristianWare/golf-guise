@@ -9,7 +9,6 @@ const Upcoming: FC<BlogSectionProps> = ({ blogData }) => {
   return (
     <section className={styles.article}>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.top}>
             <h2 className={styles.heading}>Upcoming Articles</h2>
           </div>
@@ -23,7 +22,6 @@ const Upcoming: FC<BlogSectionProps> = ({ blogData }) => {
               ))}
             </div>
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

@@ -7,7 +7,6 @@ const Section = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <h2 className={styles.heading}>Other Package</h2>
           <div className={styles.bottom}>
             <IndividualPackage />
@@ -15,7 +14,6 @@ const Section = () => {
             <IndividualPackage />
             <IndividualPackage />
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

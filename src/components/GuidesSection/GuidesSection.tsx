@@ -11,7 +11,6 @@ const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.top}>
             <h2 className={styles.heading}>Guides</h2>
           </div>
@@ -30,7 +29,6 @@ const GuidesSection: FC<BlogSectionProps> = ({ blogData }) => {
           <div className={styles.btnContainer}>
             <Button btnType='primary' text='see all guides' href='/guides' />
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

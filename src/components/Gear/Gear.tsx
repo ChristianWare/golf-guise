@@ -10,7 +10,6 @@ const Gear = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.top}>
             <h2 className={styles.heading}>Gear we love</h2>
           </div>
@@ -36,7 +35,6 @@ const Gear = () => {
           <div className={styles.btnContainerii}>
             <Button btnType='primary' text='View All' href='/gear' />
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

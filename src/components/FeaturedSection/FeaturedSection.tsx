@@ -11,7 +11,6 @@ const Featured: FC<BlogSectionProps> = ({ blogData }) => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <h2 className={styles.heading}>Featured Articles</h2>
           <div className={styles.top}></div>
           <div className={styles.bottom}>
@@ -39,7 +38,6 @@ const Featured: FC<BlogSectionProps> = ({ blogData }) => {
               ))}
             </div>
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

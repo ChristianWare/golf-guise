@@ -10,7 +10,6 @@ const What = () => {
   return (
     <section>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.content}>
             <div className={styles.top}>
               <h2 className={styles.heading}>
@@ -46,7 +45,6 @@ const What = () => {
             </div>
           </div>
           {/* <DirectCommunication /> */}
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

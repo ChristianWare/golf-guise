@@ -35,7 +35,6 @@ const PostHero = () => {
   return (
     <div className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.content}>
             <div className={styles.contentTop}>
               <Tab text="What's Included" />
@@ -57,7 +56,6 @@ const PostHero = () => {
               ))}
             </div>
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </div>
   );

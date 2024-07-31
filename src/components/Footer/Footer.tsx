@@ -35,7 +35,6 @@ const navItems = [
 const Footer = () => {
   return (
     <LayoutWrapper>
-      <ContentPadding>
         <footer className={styles.container}>
           <div className={styles.brandInfoMobile}>
             <div className={styles.logoBox}>
@@ -116,7 +115,6 @@ const Footer = () => {
             </ul>
           </div>
         </footer>
-      </ContentPadding>
     </LayoutWrapper>
   );
 };

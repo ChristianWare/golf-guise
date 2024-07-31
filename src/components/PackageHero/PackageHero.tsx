@@ -7,7 +7,6 @@ const PackageHero = () => {
   return (
     <section>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.container}>
             <div className={styles.imgOverlay}></div>
             <video preload='auto' autoPlay muted loop className={styles.video}>
@@ -24,7 +23,6 @@ const PackageHero = () => {
               <div className={styles.searchContainer}></div>
             </div>
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

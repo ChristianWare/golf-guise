@@ -12,7 +12,6 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.top}>
             <h2 className={styles.heading}>Other Packages</h2>
           </div>
@@ -52,7 +51,6 @@ const Reviews: FC<BlogSectionProps> = ({ blogData }) => {
           {/* <div className={styles.btnContainer}>
             <Button btnType='primary' text='see all reviews' href='/reviews' />
           </div> */}
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

@@ -47,7 +47,6 @@ const CourseCollection = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <h2 className={styles.heading}>Course Collection</h2>
           <div className={styles.bottom}>
             {data.map((x) => (
@@ -75,7 +74,6 @@ const CourseCollection = () => {
               </div>
             ))}
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

@@ -16,7 +16,6 @@ const Featured = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.content}>
             <div className={styles.top}>
               <Tab text='Featured' />
@@ -96,7 +95,6 @@ const Featured = () => {
               </div>
             )} */}
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

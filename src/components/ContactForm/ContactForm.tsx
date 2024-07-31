@@ -43,7 +43,6 @@ const ContactForm = () => {
 
   return (
     <LayoutWrapper>
-      <ContentPadding>
         <div className={styles.content}>
           <div className={styles.bottom}>
             <div className={styles.left}>
@@ -134,7 +133,6 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-      </ContentPadding>
     </LayoutWrapper>
   );
 };

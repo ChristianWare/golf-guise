@@ -32,7 +32,6 @@ const Gallery = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <h2 className={styles.heading}>Gallery</h2>
           <p className={styles.copy}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
@@ -56,7 +55,6 @@ const Gallery = () => {
               </div>
             ))}
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

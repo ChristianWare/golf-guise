@@ -6,7 +6,6 @@ import styles from "./FinalCTA.module.css";
 const FinalCTA = () => {
   return (
     <LayoutWrapper>
-      <ContentPadding>
         <section className={styles.container}>
           <h2 className={styles.heading}>Final Call to Action</h2>
           <p className={styles.copy}>
@@ -17,7 +16,6 @@ const FinalCTA = () => {
             <Button btnType='primary' text='Current Offers' href='/' />
           </div>
         </section>
-      </ContentPadding>
     </LayoutWrapper>
   );
 };

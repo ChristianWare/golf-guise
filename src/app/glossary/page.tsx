@@ -16,7 +16,6 @@ export default function GlossaryPage() {
         color='green'
       />
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.top}>
             {glossaryMenu.map((x, index) => (
               <Link
@@ -72,7 +71,6 @@ export default function GlossaryPage() {
               ))}
             </div>
           </div>
-        </ContentPadding>
       </LayoutWrapper>
       <InstaFeed />
       <FinalCTA />

@@ -43,7 +43,6 @@ const Faqsiii = () => {
   return (
     <section className={styles.container} id='faq'>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.content}>
             <div className={styles.top}>
               <div className={styles.sectionIntroContainer}>
@@ -97,7 +96,6 @@ const Faqsiii = () => {
               ))}
             </div>
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

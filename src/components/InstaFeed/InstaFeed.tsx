@@ -7,7 +7,6 @@ import Img from "../../../public/images/img1.png";
 const InstaFeed = () => {
   return (
     <LayoutWrapper>
-      <ContentPadding>
         <section className={styles.container}>
           <div className={styles.top}>
             <h2 className={styles.heading}>Instagram</h2>
@@ -27,7 +26,6 @@ const InstaFeed = () => {
             </div>
           </div>
         </section>
-      </ContentPadding>
     </LayoutWrapper>
   );
 };

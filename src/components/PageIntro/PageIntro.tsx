@@ -21,7 +21,6 @@ const PageIntro: FC<Props> = ({
 }) => {
   return (
     <LayoutWrapper>
-      <ContentPadding>
         <section className={`${styles.container} ${styles[color]}`}>
           <div className={styles.container}>
             <div className={styles.imgOverlay}></div>
@@ -39,7 +38,6 @@ const PageIntro: FC<Props> = ({
             </div>
           </div>
         </section>
-      </ContentPadding>
     </LayoutWrapper>
   );
 };

@@ -93,7 +93,6 @@ export default function Page({ params }: any) {
         category={props.frontMatter.category}
       />
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.container}>
             <div className={styles.left}>
               <div className={styles.tocContainer}>
@@ -137,7 +136,6 @@ export default function Page({ params }: any) {
               </div>
             </div>
           </div>
-        </ContentPadding>
       </LayoutWrapper>
       <FinalCTA />
     </main>

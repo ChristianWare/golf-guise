@@ -22,7 +22,6 @@ const TermsSection = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.top}>
             <h2 className={styles.heading}>Golf terms to know</h2>
           </div>
@@ -48,7 +47,6 @@ const TermsSection = () => {
           <div className={styles.btnContainer}>
             <Button btnType='primary' text='View All' href='/glossary' />
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

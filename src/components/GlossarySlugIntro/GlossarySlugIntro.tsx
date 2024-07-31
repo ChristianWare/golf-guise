@@ -25,7 +25,6 @@ const GlossarySlugIntro: FC<Props> = ({
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
               <h1 className={styles.heading}>{heading}</h1>
@@ -62,7 +61,6 @@ const GlossarySlugIntro: FC<Props> = ({
               </div>
             </div> */}
           </div>
-        </ContentPadding>
       </LayoutWrapper>
     </section>
   );
