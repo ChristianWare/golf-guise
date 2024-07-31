@@ -1,5 +1,5 @@
 .parent {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .container {
@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 968px) {
   .parent {
-    margin-top: 6rem;
+    margin-top: 1rem;
   }
 
   .content {
@@ -129,7 +129,7 @@
 
 @media screen and (max-width: 870px) {
   .parent {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 }
 
@@ -148,9 +148,9 @@
 }
 
 @media screen and (max-width: 568px) {
-  /* .container {
-    margin-top: 12rem;
-  } */
+  .parent {
+    margin-top: 8rem;
+  }
 
   .content {
     padding: 3rem;

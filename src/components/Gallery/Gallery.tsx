@@ -32,29 +32,24 @@ const Gallery = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-          <h2 className={styles.heading}>Gallery</h2>
-          <p className={styles.copy}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            sapiente possimus blanditiis consectetur optio necessitatibus, autem
-            libero doloribus commodi, unde reprehenderit nulla eveniet facere
-            exercitationem? Ipsam accusantium rem quibusdam dicta.
-          </p>
-          <div className={styles.gallery}>
-            {images.map((image, index) => (
-              <div
-                key={index}
-                className={`${styles.imgContainer} ${image.class}`}
-              >
-                <Image
-                  src={image.src}
-                  alt=''
-                  layout='fill'
-                  objectFit='cover'
-                  className={styles.img}
-                />
-              </div>
-            ))}
-          </div>
+        <h2 className={styles.heading}>Gallery</h2>
+
+        <div className={styles.gallery}>
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`${styles.imgContainer} ${image.class}`}
+            >
+              <Image
+                src={image.src}
+                alt=''
+                layout='fill'
+                objectFit='cover'
+                className={styles.img}
+              />
+            </div>
+          ))}
+        </div>
       </LayoutWrapper>
     </section>
   );

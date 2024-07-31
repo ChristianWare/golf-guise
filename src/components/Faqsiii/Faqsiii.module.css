@@ -1,15 +1,14 @@
 .container {
   background-color: var(--green);
-  border-top: 1px solid var(--green2);
-  margin-bottom: 15rem;
 }
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 5rem;
-  padding: 15rem 5rem;
+  padding: 5rem;
 }
 
 .top {
@@ -28,9 +27,8 @@
 .copy {
   font-weight: 700;
   color: var(--white);
-
   opacity: 0.8;
-  width: 80%;
+  width: 60%;
 }
 
 .bottom {
@@ -39,15 +37,18 @@
   align-items: flex-start;
   gap: 1rem;
   margin-top: 3rem;
-  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+
 }
 
 .qaContainer,
 .active {
   padding: 3rem;
   padding-right: 4rem;
-  border-radius: 5px;
-  border: 1px solid var(--border);
+  border-radius: 15px;
+  border: 1px solid var(--gray);
   width: 100%;
   cursor: pointer;
   user-select: none;
@@ -55,7 +56,7 @@
 }
 
 .active {
-  background-color: var(--white);
+  background-color: var(--tan);
 }
 
 .answerContainer {
@@ -82,25 +83,26 @@
   height: 45px;
   padding: 1rem;
   border-radius: 50%;
-  border: 1px solid var(--gray2);
-  background-color: var(--green3);
   color: var(--white);
+  transform: rotate(45deg);
 }
 
 .iconFlip {
   transform: rotate(135deg);
-  color: var(--black);
+  color: var(--green);
 }
 
 .question {
-  color: var(--white);
-  font-size: 2.4rem;
-  letter-spacing: -0.5px;
-  text-transform: none;
+  font-family: var(--tuskerGrotesk);
+  text-transform: uppercase;
+  color: var(--tan);
+  font-size: 4rem;
+  /* letter-spacing: -0.5px; */
+  /* text-transform: none; */
 }
 
 .active .question {
-  color: var(--black);
+  color: var(--green);
 }
 
 .answerbox {
@@ -110,15 +112,13 @@
 }
 
 .answer {
-  color: var(--green2);
-  font-weight: 500;
   margin-top: 1.5rem;
   hyphens: auto;
   opacity: 0.8;
 }
 
 .active .answer {
-  color: var(--black);
+  color: var(--green);
 }
 
 .btnContainer {

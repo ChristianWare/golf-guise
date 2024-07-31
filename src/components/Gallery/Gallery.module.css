@@ -7,6 +7,11 @@
   border-bottom: thick double #bcbcbc;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
 }
 
 .copy {
@@ -32,7 +37,7 @@
 
 .img {
   border: 1px solid var(--black);
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .vStretch {

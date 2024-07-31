@@ -43,7 +43,8 @@ export default function Home() {
       <What />
       <Featured />
       <ImageGrid />
-      {/* <Gallery /> */}
+      <Gallery />
+      <Faqsiii />
 
       {/* <PostHero />
       <Featured />

@@ -2,9 +2,8 @@
 
 import styles from "./Faqsiii.module.css";
 import { useState } from "react";
-import Plus from "../../../public/icons/plus.svg";
+import Plus from "../../../public/icons/arrow.svg";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import ContentPadding from "../ContentPadding/ContentPadding";
 
 const Faqsiii = () => {
   const [selected, setSelected] = useState(0);

@@ -19,7 +19,7 @@
   border-bottom: thick double var(--gray);
   padding-bottom: 1rem;
   text-align: center;
-  width: 100%;
+  width: 80%;
 }
 
 .copy {
@@ -58,15 +58,12 @@
 
 .title {
   font-family: var(--tuskerGrotesk);
-  border-bottom: thick double #bcbcbc;
-  padding-bottom: 1rem;
   font-size: 4rem;
-  width: fit-content;
-}
-
-.price {
-  font-size: 3rem;
-  font-family: var(--tuskerGrotesk);
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  padding-top: 1.3rem;
+  background-color: var(--yellow);
+  border-radius: 15px;
 }
 
 .copyii {
@@ -88,6 +85,7 @@
   justify-content: flex-start;
   gap: 2rem;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .listItem {
@@ -159,14 +157,6 @@
   .listItem {
     width: 100%;
     text-align: center;
-  }
-
-  .price {
-    display: none;
-  }
-
-  .priceii {
-    display: inline-block;
   }
 
   .imgContainer {
