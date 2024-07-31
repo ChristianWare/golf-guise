@@ -1,21 +1,17 @@
-.content {
-  padding-top: 20rem;
-  padding-bottom: 12rem;
-}
-
 .topContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 2rem;
 }
 
 .heading {
-  border-bottom: thick double #bcbcbc;
+  border-bottom: thick double var(--gray);
   padding-bottom: 1rem;
   margin-bottom: 3rem;
   text-align: center;
+  margin-right: auto;
 }
 
 .boxContainer {
@@ -29,12 +25,6 @@
   max-width: 1150px;
   width: 100%;
   margin: 0 auto;
-}
-
-.boxContainer h5,
-.boxContainer2 h5 {
-  font-family: var(--tuskerGrotesk);
-  font-size: 2rem;
 }
 
 .box1 {
@@ -53,18 +43,18 @@
 .box4B,
 .box5B {
   position: relative;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid var(--border);
 }
 
 .img {
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .box3,
 .box4B,
 .box2B {
-  color: var(--gray);
+  color: var(--tan);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,22 +63,20 @@
 }
 
 .box3 {
-  background-color: var(--green);
-}
-
-.box4 h5,
-.box2B h5 {
-  color: var(--gray);
+  background-color: var(--yellow);
 }
 
 .box4 {
   background-color: var(--green);
-  color: var(--gray);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 3rem;
+}
+
+.quintero {
+  color: var(--tan);
 }
 
 .boxContainer2 {
@@ -106,10 +94,16 @@
 .box1B {
   grid-area: twoB;
 }
+
 .box2B {
   grid-area: oneB;
-  background-color: var(--green);
+  background-color: var(--orange);
 }
+
+.boulders {
+  color: var(--white);
+}
+
 .box3B {
   grid-area: threeB;
   grid-area: threeB;
@@ -117,7 +111,8 @@
 }
 .box4B {
   grid-area: fiveB;
-  background-color: var(--green);
+  background-color: var(--lightGreen);
+  border: 1px solid var(--green);
 }
 .box5B {
   grid-area: fourB;
@@ -128,12 +123,12 @@
   margin-top: 3rem;
 }
 
-.boxContainer h5 {
-  color: var(--gray) !important;
-}
+/* .boxContainer h5 {
+  color: var(--tan);
+} */
 
 .golfCourse {
-  color: var(--gray) !important;
+  color: var(--tan);
 }
 
 .btnContainerii {

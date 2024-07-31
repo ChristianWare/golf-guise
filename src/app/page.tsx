@@ -41,6 +41,8 @@ export default function Home() {
     <main>
       <Hero />
       <Featured />
+      <ImageGrid />
+      {/* <Gallery /> */}
 
       {/* <What /> */}
       {/* <PostHero />

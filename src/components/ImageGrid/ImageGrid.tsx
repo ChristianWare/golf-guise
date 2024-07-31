@@ -17,7 +17,6 @@ const ImageGrid = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.topContainer}>
-            <Tab text='Golf Courses' />
             <h2 className={styles.heading}>Our Golf Courses</h2>
           </div>
           <div className={styles.boxContainer}>
@@ -40,12 +39,11 @@ const ImageGrid = () => {
               />
             </div>
             <div className={styles.box3}>
-              <h5>Golf Course</h5>
+              <h5 className={styles.wickenburg}>Wickenburg</h5>
             </div>
 
             <div className={styles.box4}>
-              <h5>Golf Course</h5>
-              <a></a>
+              <h5 className={styles.quintero}>Quintero</h5>
             </div>
 
             <div className={styles.box5}>
@@ -69,7 +67,7 @@ const ImageGrid = () => {
               />
             </div>
             <div className={styles.box2B}>
-              <h5>Golf Course</h5>
+              <h5 className={styles.boulders}>Boulders</h5>
             </div>
             <div className={styles.box3B}>
               <Image
@@ -81,7 +79,7 @@ const ImageGrid = () => {
               />
             </div>
             <div className={styles.box4B}>
-              <h5 className={styles.golfCourse}>Golf Course</h5>
+              <h5 className={styles.troon}>Troon</h5>
             </div>
             <div className={styles.box5B}>
               <Image
@@ -93,13 +91,14 @@ const ImageGrid = () => {
               />
             </div>
           </div>
-            <div className={styles.btnContainerii}>
-              <Button
-                btnType='primary'
-                text='More Course Details'
-                href='/courses'
-              />
-            </div>
+          <div className={styles.btnContainerii}>
+            <Button
+              btnType='primary'
+              text='More Course Details'
+              href='/courses'
+              iconColor='white'
+            />
+          </div>
         </div>
       </ContentPadding>
     </LayoutWrapper>
