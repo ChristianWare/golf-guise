@@ -55,9 +55,9 @@ const Faqsiii = () => {
               Here are some common questions asked by potential clients. If you
               do not see your question here feel free to reach out.
             </p>
-            <div className={styles.imgContainer}>
+            {/* <div className={styles.imgContainer}>
               <Image src={Img} alt='' fill className={styles.img} />
-            </div>
+            </div> */}
           </div>
           <div className={styles.bottom}>
             {faqs.map((x, i) => (
