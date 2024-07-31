@@ -1,5 +1,6 @@
 :root {
   --orange: #fc6719;
+  --orangeii: #FD9752;
   --green: #1c4f4a;
   --yellow: #ffb130;
   --white: #ffffff;
@@ -71,13 +72,12 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 130%;
-  font-family: var(--inter);
   text-transform: none;
 }
 

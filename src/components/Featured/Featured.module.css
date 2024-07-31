@@ -101,8 +101,8 @@
 .rightBottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
-  padding: 3rem;
+  grid-gap: 2rem;
+  padding: 2rem;
   background-color: var(--orange);
   margin-top: 2rem;
   border-radius: 20px;
@@ -116,6 +116,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+  background-color: var(--orangeii);
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 .icon {
@@ -195,7 +198,6 @@
 
   .rightBottom {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5rem;
   }
 }
 

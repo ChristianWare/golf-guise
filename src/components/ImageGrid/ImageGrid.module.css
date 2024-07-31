@@ -1,17 +1,5 @@
-.topContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-
 .heading {
-  border-bottom: thick double var(--gray);
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
   text-align: center;
-  margin-right: auto;
 }
 
 .boxContainer {
@@ -25,11 +13,26 @@
   max-width: 1150px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid var(--gray);
+  border-radius: 15px;
+  padding: 1rem;
+  min-height: 270px;
+  grid-area: one;
 }
 
 .box1 {
-  grid-area: one;
-  height: 270px;
+  grid-area: 2;
+  height: 100%;
 }
 
 .box1,
@@ -43,12 +46,12 @@
 .box4B,
 .box5B {
   position: relative;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 1px solid var(--border);
 }
 
 .img {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .box3,
@@ -112,7 +115,7 @@
 .box4B {
   grid-area: fiveB;
   background-color: var(--lightGreen);
-  border: 1px solid var(--green);
+  border: 1px solid var(--gray);
 }
 .box5B {
   grid-area: fourB;
@@ -139,15 +142,32 @@
 }
 
 @media screen and (max-width: 868px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box1B,
+  .box2B,
+  .box3B,
+  .box4B,
+  .box5B {
+    min-height: 150px;
+  }
+
   .boxContainer {
     grid-template-areas:
       "one one"
       "two three"
       "four five";
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 0 1rem 0;
+    margin-bottom: 1rem;
   }
 
+  .box5 {
+    grid-column: span 2;
+  }
   .boxContainer2 {
     display: grid;
     grid-gap: 1rem;
@@ -155,7 +175,7 @@
       "threeB threeB"
       "oneB twoB"
       "fourB fiveB";
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 0 1rem 0;
   }
 
@@ -165,17 +185,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .topContainer {
-    margin-bottom: 4rem;
-  }
-}
-
 @media screen and (max-width: 568px) {
-  .topContainer {
-    margin-bottom: 5.5rem;
-  }
-
   .content {
     padding: 2rem;
   }
@@ -184,11 +194,6 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media screen and (max-width: 328px) {
-  .topContainer {
-    margin-bottom: -1.5rem;
+    margin-top: 0rem;
   }
 }

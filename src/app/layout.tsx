@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
+import { Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
@@ -18,18 +18,11 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({ subsets: ["latin"] });
-
-const ppMoriRegualr = localFont({
-  src: "../../public/fonts/PPMoriRegular.otf",
-  variable: "--ppMoriRegualr",
-  display: "swap",
-});
-
-const ppMoriSemiBold = localFont({
-  src: "../../public/fonts/PPMoriSemiBold.otf",
-  variable: "--ppMoriSemiBold",
-  display: "swap",
+const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--barlowCondensed",
 });
 
 const tuskerGrotesk = localFont({
@@ -58,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} ${ppMoriRegualr.variable} ${ppMoriSemiBold.variable} ${styles.bgColor} ${tuskerGrotesk.variable} ${sharpGrotesk.variable} ${sharpGroteskSemiBold.variable}`}
+        className={` ${barlowCondensed.variable} ${styles.bgColor} ${tuskerGrotesk.variable} ${sharpGrotesk.variable} ${sharpGroteskSemiBold.variable}`}
       >
         <Nav />
         {children}

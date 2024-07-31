@@ -40,11 +40,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <What />
       <Featured />
       <ImageGrid />
       {/* <Gallery /> */}
 
-      {/* <What /> */}
       {/* <PostHero />
       <Featured />
       <ImageGrid />

@@ -5,7 +5,6 @@ import styles from "./ImageGrid.module.css";
 import Img from "../../../public/images/img1.png";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../ContentPadding/ContentPadding";
-import Tab from "../Tab/Tab";
 import { usePathname } from "next/navigation";
 import Button from "../Button/Button";
 
@@ -14,12 +13,11 @@ const ImageGrid = () => {
 
   return (
     <LayoutWrapper>
-      <ContentPadding>
         <div className={styles.content}>
-          <div className={styles.topContainer}>
-            <h2 className={styles.heading}>Our Golf Courses</h2>
-          </div>
           <div className={styles.boxContainer}>
+            <div className={styles.topContainer}>
+              <h2 className={styles.heading}>Our Golf Courses</h2>
+            </div>
             <div className={styles.box1}>
               <Image
                 src={Img}
@@ -100,7 +98,6 @@ const ImageGrid = () => {
             />
           </div>
         </div>
-      </ContentPadding>
     </LayoutWrapper>
   );
 };
