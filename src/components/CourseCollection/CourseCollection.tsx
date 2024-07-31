@@ -1,4 +1,3 @@
-import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./CourseCollection.module.css";
 import Image from "next/image";
@@ -35,35 +34,28 @@ const CourseCollection = () => {
       src: Img1,
       city: "Anthem",
     },
-    {
-      id: 5,
-      title: "Aguila Golf Course",
-      desc: "Aguila Golf Course in Phoenix, Arizona, features a challenging layout with stunning mountain views and well-manicured fairways. Known for its affordable rates and welcoming atmosphere, it provides an excellent golfing experience for players of all levels.",
-      src: Img1,
-      city: "Phoenix",
-    },
   ];
 
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-          <h2 className={styles.heading}>Course Collection</h2>
-          <div className={styles.bottom}>
-            {data.map((x) => (
-              <div key={x.id} className={styles.box}>
-                <h3 className={styles.title}>{x.title}</h3>
-                <div className={styles.imgContainer}>
-                  <Image src={x.src} alt='img' fill className={styles.img} />
-                </div>
+        <h2 className={styles.heading}>Course Collection</h2>
+        <div className={styles.bottom}>
+          {data.map((x) => (
+            <div key={x.id} className={styles.box}>
+              <h3 className={styles.title}>{x.title}</h3>
+              <div className={styles.imgContainer}>
+                <Image src={x.src} alt='img' fill className={styles.img} />
               </div>
-            ))}
-          </div>
-          <div className={styles.bottomii}>
+            </div>
+          ))}
+        </div>
+        {/* <div className={styles.bottomii}>
             {data.map((y) => (
               <div key={y.id} className={styles.detailsBox}>
                 <div className={styles.left}>
-                  <Tab text={y.city} />
                   <h3 className={styles.titleii}>{y.title}</h3>
+                  <Tab text={y.city} />
                   <p className={styles.descii}>{y.desc}</p>
                 </div>
                 <div className={styles.right}>
@@ -73,7 +65,7 @@ const CourseCollection = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
       </LayoutWrapper>
     </section>
   );

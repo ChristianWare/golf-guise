@@ -1,4 +1,3 @@
-import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import IndividualPackage from "./IndividualPackage";
 import styles from "./Section.module.css";

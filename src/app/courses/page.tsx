@@ -1,5 +1,11 @@
+import ContactForm from "@/components/ContactForm/ContactForm";
 import CourseCollection from "@/components/CourseCollection/CourseCollection";
+import Faqsiii from "@/components/Faqsiii/Faqsiii";
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import Gallery from "@/components/Gallery/Gallery";
+import Mission from "@/components/Mission/Mission";
 import PageIntro from "@/components/PageIntro/PageIntro";
+import TermsSection from "@/components/TermsSection/TermsSection";
 
 export default function CoursesPage() {
   return (
@@ -11,6 +17,12 @@ export default function CoursesPage() {
         textAlign='center'
       />
       <CourseCollection />
+      <Mission />
+      <Gallery />
+      <TermsSection />
+      <Faqsiii />
+      <FinalCTA />
+      <ContactForm />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 .container {
   position: relative;
   font-size: 0;
-  margin-top: 9.2rem;
+  margin-top: -7rem;
   margin-bottom: 20rem;
 }
 
@@ -16,7 +16,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 5px;
+  border-radius: 20px;
   height: 80vh;
   border: 1px solid var(--blackiv);
 }
@@ -25,7 +25,7 @@
   width: 100%;
   height: 80vh;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .content {
@@ -64,10 +64,7 @@
   margin-top: 1rem;
   font-size: 1.8rem;
   width: 50%;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   color: var(--tan);
-  /* text-align: center; */
 }
 
 .searchContainer {
@@ -119,10 +116,6 @@
 }
 
 @media screen and (max-width: 968px) {
-  .container {
-    margin-top: 13rem;
-  }
-
   .content {
     display: flex;
     flex-direction: column;
@@ -159,10 +152,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .container {
-    margin-top: 12rem;
-  }
-
   .content {
     padding: 3rem;
   }
