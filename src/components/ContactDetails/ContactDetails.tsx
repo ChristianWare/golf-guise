@@ -1,11 +1,11 @@
 "use client";
 
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ContactDetails.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/house24.png";
-import SocialsContainer from "../SocialsContainer/SocialsContainer";
+
 import Link from "next/link";
+import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 
 const ContactDetails = () => {
   return (
@@ -82,13 +82,11 @@ const ContactDetails = () => {
                   target='_blank'
                   className={styles.detail}
                 >
-                  facebook.com/fontsandfooters
+                  facebook.com/golfguise
                 </Link>
               </div>
             </div>
-            <div className={styles.bottom}>
-              <SocialsContainer />
-            </div>
+            <div className={styles.bottom}></div>
           </div>
         </div>
       </LayoutWrapper>
@@ -96,3 +94,4 @@ const ContactDetails = () => {
   );
 };
 export default ContactDetails;
+
