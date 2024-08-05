@@ -54,7 +54,7 @@ function Nav() {
       href: "/about",
     },
     {
-      text: "Glossary",
+      text: "Gallery",
       href: "/glossary",
     },
 
