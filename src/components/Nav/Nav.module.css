@@ -1,12 +1,12 @@
 .header {
-  position: fixed;
+  /* position: fixed;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   width: 100%;
   z-index: 1000;
-  padding: 1rem 3rem;
-  max-width: 1400px;
+  /* padding: 1rem 3rem; */
+  /* max-width: 1400px; */
 }
 
 .greenTop {
@@ -34,8 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--green);
-  padding: 2rem 4rem;
+  padding: 1rem 3rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 60px;
@@ -91,7 +90,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
   .logo {
     font-size: 2.6rem;
   }
@@ -102,7 +101,6 @@
     align-items: flex-start;
     justify-content: flex-end;
     gap: 3rem;
-    margin-top: 1rem;
     z-index: 1000;
   }
 
@@ -123,8 +121,7 @@
     padding: 1rem;
     padding-left: 2rem;
     transform-origin: top;
-      z-index: 1001;
-
+    z-index: 1001;
   }
 
   .navItem {

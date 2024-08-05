@@ -59,7 +59,7 @@ export default function RootLayout({
       <body
         className={` ${barlowCondensed.variable} ${styles.bgColor} ${tuskerGrotesk.variable} ${sharpGrotesk.variable} ${sharpGroteskSemiBold.variable} ${stratosSemibold.variable}`}
       >
-        <Nav />
+        {/* <Nav /> */}
         {children}
         <Footer />
       </body>

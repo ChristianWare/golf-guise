@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <What />
+      {/* <What /> */}
       <Featured />
       <AboutSection />
       <ImageGrid />

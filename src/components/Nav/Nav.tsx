@@ -3,7 +3,6 @@
 import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Golf from "../../../public/icons/golfball.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);

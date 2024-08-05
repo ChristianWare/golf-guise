@@ -1,10 +1,19 @@
 .parent {
-  margin-top: -7rem;
+  margin-top: -5rem;
 }
 
 .container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
   font-size: 0;
+}
+
+.navContainer {
+  position: absolute;
+  top: 30px;
+  width: 93%;
 }
 
 .imgOverlay {
@@ -15,13 +24,13 @@
   bottom: 0;
   left: 0;
   border-radius: 30px;
-  height: 80vh;
+  height: 85vh;
   border: 1px solid var(--blackiv);
 }
 
 .video {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -33,38 +42,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: grid;
-  padding: 5rem;
+  padding: 3rem 5rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  gap: 2rem;
 }
 
 .heading {
   color: var(--tan);
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .copy {
   margin-top: 1rem;
   width: 60%;
   font-size: 1.8rem;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
   color: var(--tan);
-  text-align: center;
 }
 
 .btnContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 968px) {
@@ -90,7 +92,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .searchContainer,
+  
+  .navContainer {
+    width: 90%;
+  }
+  
   .copy {
     width: 100%;
   }
