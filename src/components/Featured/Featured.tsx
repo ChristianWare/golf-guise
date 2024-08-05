@@ -58,39 +58,28 @@ const Featured = () => {
                   <Arrow width={25} height={25} className={styles.icon} />
                   <h4 className={styles.h4}>Unlimted Recharge</h4>
                   <p className={styles.copyiii}>
-                    Just reserve an electric vehicle when you need it, and you
-                    are ready to go. Simple, convenient and hassle-free.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   </p>
                 </div>
                 <div className={styles.rb2}>
                   <Arrow width={25} height={25} className={styles.icon} />
                   <h4 className={styles.h4}>Unlimted Recharge</h4>
                   <p className={styles.copyiii}>
-                    Just reserve an electric vehicle when you need it, and you
-                    are ready to go. Simple, convenient and hassle-free.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   </p>
                 </div>
               </div>
-              <div className={styles.btnContainer}>
-                <Button
-                  btnType='primaryiii'
-                  text='More Details'
-                  href='/'
-                  iconColor='white'
-                />
-              </div>
+              {/*  */}
             </div>
           </div>
-          {/* {pathname === "/" && (
-              <div className={styles.btnContainerii}>
-                <Button
-                  btnType='primary'
-                  text='See all packages'
-                  href='/packages'
-                  iconColor='white'
-                />
-              </div>
-            )} */}
+          <div className={styles.btnContainer}>
+            <Button
+              btnType='primaryiii'
+              text='More Details'
+              href='/'
+              iconColor='white'
+            />
+          </div>
         </div>
       </LayoutWrapper>
     </section>

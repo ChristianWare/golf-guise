@@ -1,4 +1,7 @@
-.bgColor {
+.content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10rem;
   background-color: var(--green);
   border-radius: 30px;
   background-image: repeating-linear-gradient(
@@ -9,19 +12,12 @@
     transparent 50%
   );
   background-size: 10px 10px;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 10rem;
+  padding: 5rem;
 }
 
 .text {
   font-size: 5rem;
-
   width: 50%;
-
   font-weight: normal;
   color: var(--tan);
 }
@@ -62,6 +58,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .content {
+    padding: 3rem;
+  }
+
   .bottom {
     flex-direction: column;
     align-items: flex-start;
@@ -70,6 +70,14 @@
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    padding: 2rem;
+  }
+
+  .text {
+    font-size: 4rem;
+  }
+
   .copy {
     width: 100%;
   }

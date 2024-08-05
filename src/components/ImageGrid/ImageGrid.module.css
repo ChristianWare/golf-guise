@@ -28,6 +28,14 @@
   padding: 1rem;
   min-height: 270px;
   grid-area: one;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #D7F7E8 0,
+    #B2EFD8 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
 }
 
 .box1 {

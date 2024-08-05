@@ -1,7 +1,5 @@
-import ReviewsSection from "@/components/ReviewsSection/ReviewsSection";
 import TermsSection from "@/components/TermsSection/TermsSection";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
-import Gear from "@/components/Gear/Gear";
 import Hero from "@/components/Hero/Hero";
 import What from "@/components/What/What";
 import ImageGrid from "@/components/ImageGrid/ImageGrid";
@@ -10,6 +8,7 @@ import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Gallery from "@/components/Gallery/Gallery";
 import AboutSection from "@/components/AboutSection/AboutSection";
+import ScrollText from "@/components/ScrollText/ScrollText";
 
 export default function Home() {
   const fs = require("fs");
@@ -38,10 +37,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <ScrollText />
       {/* <What /> */}
-      <Featured />
-      <AboutSection />
       <ImageGrid />
+      <Featured />
+      {/* <AboutSection /> */}
       <Gallery />
       <TermsSection />
       <Faqsiii />

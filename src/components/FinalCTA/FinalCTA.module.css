@@ -3,6 +3,15 @@
   border-radius: 20px;
   padding: 10rem;
   margin: 15rem;
+  border-radius: 30px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #FD9752 0,
+    #FD9752 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
 }
 
 .heading,
