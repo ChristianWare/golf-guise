@@ -1,5 +1,6 @@
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
+import Nav from "../Nav/Nav";
 import styles from "./PageIntro.module.css";
 import { FC } from "react";
 
@@ -21,23 +22,25 @@ const PageIntro: FC<Props> = ({
 }) => {
   return (
     <LayoutWrapper>
-        <section className={`${styles.container} ${styles[color]}`}>
-          <div className={styles.container}>
-            <div className={styles.imgOverlay}></div>
-            <video preload='auto' autoPlay muted loop className={styles.video}>
-              <source src={videoSrc} />
-            </video>
-            <div className={styles.content}>
-              <div className={styles.left}>
-                <h1 className={`${styles.heading} ${styles[textAlign]}`}>
-                  {heading}{" "}
-                </h1>{" "}
-                <p className={`${styles.copy} ${styles[textAlign]}`}>{copy}</p>
-              </div>
-              {/* <div className={styles.searchContainer}></div> */}
+      <section className={`${styles.container} ${styles[color]}`}>
+        <div className={styles.container}>
+          <div className={styles.imgOverlay}></div>
+          <div className={styles.navContainer}>
+            <Nav />
+          </div>
+          <video preload='auto' autoPlay muted loop className={styles.video}>
+            <source src={videoSrc} />
+          </video>
+          <div className={styles.content}>
+            <div className={styles.left}>
+              <h1 className={`${styles.heading} ${styles[textAlign]}`}>
+                {heading}{" "}
+              </h1>{" "}
+              <p className={`${styles.copy} ${styles[textAlign]}`}>{copy}</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     </LayoutWrapper>
   );
 };

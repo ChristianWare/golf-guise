@@ -2,7 +2,6 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./CourseCollection.module.css";
 import Image from "next/image";
 import Img1 from "../../../public/images/img1.png";
-import Tab from "../Tab/Tab";
 
 const CourseCollection = () => {
   const data = [

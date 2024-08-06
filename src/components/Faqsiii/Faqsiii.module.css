@@ -71,6 +71,15 @@
 
 .active {
   background-color: var(--yellow);
+  background-color: var(--yellow);
+  background-image: repeating-linear-gradient(
+    45deg,
+    #efbd6d 0,
+    #efbd6d 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
 }
 
 .answerContainer {
