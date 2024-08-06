@@ -33,7 +33,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  font-family: var(--sharpGrotesk);
+  font-family: var(--hKGuiseSemiBold);
   scroll-behavior: smooth;
   scroll-margin-top: 170px;
   -webkit-tap-highlight-color: transparent;
@@ -107,8 +107,8 @@ input,
 textarea {
   font-weight: 400;
   hyphens: auto;
-  font-size: 1.6rem;
-  line-height: 150%;
+  font-size: 1.7rem;
+  line-height: 140%;
   color: var(--green);
 }
 

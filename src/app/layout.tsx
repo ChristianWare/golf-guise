@@ -49,6 +49,12 @@ const stratosSemibold = localFont({
   display: "swap",
 });
 
+const hKGuiseSemiBold = localFont({
+  src: "../../public/fonts/HKGuiseSemiBold.woff2",
+  variable: "--hKGuiseSemiBold",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -57,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={` ${barlowCondensed.variable} ${styles.bgColor} ${tuskerGrotesk.variable} ${sharpGrotesk.variable} ${sharpGroteskSemiBold.variable} ${stratosSemibold.variable}`}
+        className={` ${barlowCondensed.variable} ${styles.bgColor} ${tuskerGrotesk.variable} ${sharpGrotesk.variable} ${sharpGroteskSemiBold.variable} ${stratosSemibold.variable} ${hKGuiseSemiBold.variable}`}
       >
         {/* <Nav /> */}
         {children}
