@@ -10,11 +10,13 @@ export default function GlossaryPage() {
   return (
     <main>
       <PageIntro
-        heading='Glossary'
-        copy='Read up on golf terms, acronyms, and the industry jargon you need to know in our glossary of golf lingo.'
-        color='green'
+        heading='Gallery'
+        copy='Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+              voluptasz. Asperiores praesentium deleniti officia quidem? Illo
+              omnis excepturi ducimus voluptatem.'
+        videoSrc='./videos/video8.mp4'
       />
-      <LayoutWrapper>
+      {/* <LayoutWrapper>
           <div className={styles.top}>
             {glossaryMenu.map((x, index) => (
               <Link
@@ -70,8 +72,8 @@ export default function GlossaryPage() {
               ))}
             </div>
           </div>
-      </LayoutWrapper>
-      <InstaFeed />
+      </LayoutWrapper> */}
+      {/* <InstaFeed /> */}
       <FinalCTA />
     </main>
   );

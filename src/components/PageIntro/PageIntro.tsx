@@ -1,4 +1,3 @@
-import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import Nav from "../Nav/Nav";
 import styles from "./PageIntro.module.css";
