@@ -30,8 +30,8 @@
   grid-area: one;
   background-image: repeating-linear-gradient(
     45deg,
-    #D7F7E8 0,
-    #B2EFD8 1px,
+    #d7f7e8 0,
+    #b2efd8 1px,
     transparent 0,
     transparent 50%
   );
@@ -133,6 +133,26 @@
   color: var(--tan);
 }
 
+.wekopa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 6rem;
+  color: var(--tan);
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  background-color: var(--green);
+  background-image: repeating-linear-gradient(
+    45deg,
+    #24645e 0,
+    #24645e 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
+}
+
 .btnContainerii {
   display: flex;
   align-items: center;
@@ -185,14 +205,14 @@
 }
 
 @media screen and (max-width: 568px) {
-  /* .content {
-    padding: 2rem;
-  } */
-
   .btnContainerii {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0rem;
+  }
+
+  .wekopa {
+    font-size: 4.5rem;
   }
 }

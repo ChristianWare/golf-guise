@@ -1,3 +1,9 @@
+import Img1 from "../../public/images/img1.png";
+import Img2 from "../../public/images/img1.png";
+import Img3 from "../../public/images/img1.png";
+import Img4 from "../../public/images/img1.png";
+import Img5 from "../../public/images/img1.png";
+
 // export const terms = [
 //   {
 //     title: "Handicap",
@@ -754,3 +760,141 @@ export const terms = [
       "A drive that gos further than most drives ever hit by the golfer who smacked it.",
   },
 ];
+
+export const golfCourseData = [
+  {
+    id: 1,
+    courseName: "We-Ko-Pa",
+    src: Img1,
+    moredata: [
+      {
+        id: 1.1,
+        heading: "Stunning Sonoran Desert Setting",
+        desc: "Just outside of Scottsdale, this natural desert landscape provides a stunning backdrop for a day on the greens, immersing golfers in the unique beauty of the region.",
+      },
+      {
+        id: 1.2,
+        heading: "Two Award-Winning Courses",
+        desc: "We-Ko-Pa boasts two exceptional courses: Cholla and Saguaro. These award-winning courses are designed to challenge players of all skill levels.",
+      },
+      {
+        id: 1.3,
+        heading: "Renowned Course Designers",
+        desc: "The Cholla course was crafted by the acclaimed architect Scott Miller, while the Saguaro course was designed by the legendary duo Bill Coore and Ben Crenshaw.",
+      },
+      {
+        id: 1.4,
+        heading: "Commitment to Excellence",
+        desc: "With top-tier amenities, including a well-appointed clubhouse and professional staff, the club ensures that every aspect of your visit is exceptional.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    courseName: "Wickenburg",
+    src: Img2,
+    moredata: [
+      {
+        id: 2.1,
+        heading: "Scenic Desert Location",
+        desc: "Wickenburg a picturesque desert golfing experience in Wickenburg, Arizona. The scenic views and natural terrain provide a unique and memorable round of golf.",
+      },
+      {
+        id: 2.2,
+        heading: "Two Diverse Courses",
+        desc: "The club features two diverse courses: Big Wick and Li’l Wick. Big Wick offers a challenging 18-hole course, while Li’l Wick 9-hole short course.",
+      },
+      {
+        id: 2.3,
+        heading: "Premier Course Design",
+        desc: "Big Wick was designed by the renowned team of Bill Brownlee and Wendell Pickett. It combines strategic design with stunning desert vistas.",
+      },
+      {
+        id: 2.4,
+        heading: "Exceptional Amenities",
+        desc: "Offering top-tier amenities, including a well-appointed clubhouse, fine dining, and a variety of social activities, ensuring a comprehensive and enjoyable experience.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    courseName: "Quintero",
+    src: Img3,
+    moredata: [
+      {
+        id: 3.1,
+        heading: "Unmatched Desert Beauty",
+        desc: "Quintero is set in the stunning high desert of Peoria. The natural beauty and tranquility of the surroundings make for a truly exceptional golfing experience.",
+      },
+      {
+        id: 3.2,
+        heading: "Challenging Course Layout",
+        desc: "Designed by Rees Jones, Quintero offers a challenging course layout that tests golfers of all skill levels. The course is known for its dramatic elevation.",
+      },
+      {
+        id: 3.3,
+        heading: "Top-Ranked Golf Destination",
+        desc: "Quintero consistently ranks among the top golf courses in Arizona. The breathtaking scenery and a meticulously maintained course makes it a must-visit destination for golfers.",
+      },
+      {
+        id: 3.4,
+        heading: "Luxurious Clubhouse",
+        desc: "The clubhouse at Quintero offers luxurious amenities like fine dining, a pro shop, and comfortable lounges. Visitors get top-notch service after a round of golf.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    courseName: "Boulders",
+    src: Img4,
+    moredata: [
+      {
+        id: 4.1,
+        heading: "Unique Boulder Landscape",
+        desc: "Boulder is set amidst striking boulder formations in Scottsdale, Arizona. The unique landscape provides a dramatic and beautiful backdrop for a round of golf.",
+      },
+      {
+        id: 4.2,
+        heading: "Two World-Class Courses",
+        desc: "Featureing two world-class courses: the North Course and the South Course. Both offer a challenging yet enjoyable experience.",
+      },
+      {
+        id: 4.3,
+        heading: "Legendary Course Designers",
+        desc: "Designed by Jay Morrish, the courses at Boulders Resort & Spa are renowned for their strategic design and natural integration with the surrounding boulder landscape.",
+      },
+      {
+        id: 4.4,
+        heading: "Luxury Resort Amenities",
+        desc: "In addition to golf, Boulders offers luxury amenities including a spa, fine dining, and upscale accommodations, ensuring a complete and luxurious experience.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    courseName: "Troon",
+    src: Img5,
+    moredata: [
+      {
+        id: 5.1,
+        heading: "Desert Golf at its Finest",
+        desc: "Troon, located in Scottsdale, Arizona, epitomizes desert golf at its finest. The natural desert surroundings and rugged landscape provide a stunning and challenging golfing experience.",
+      },
+      {
+        id: 5.2,
+        heading: "Two Renowned Courses",
+        desc: "The club features two renowned courses: Monument and Pinnacle. Both courses, designed by Tom Weiskopf and Jay Morrish, are known for their challenging layouts and breathtaking views.",
+      },
+      {
+        id: 5.3,
+        heading: "Top-Ranked Golf Destination",
+        desc: "Troon consistently ranks among the top golf courses in Arizona and the United States. The combination of exceptional design and pristine conditions makes it a premier golf destination.",
+      },
+      {
+        id: 5.4,
+        heading: "Outstanding Clubhouse Amenities",
+        desc: "The clubhouse at Troon offers outstanding amenities, including fine dining, a pro shop, and event facilities. Visitors can enjoy top-notch service and amenities before and after their round.",
+      },
+    ],
+  },
+] as const;

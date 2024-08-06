@@ -10,7 +10,7 @@
 
 .bottom {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
   margin-top: 2rem;
   padding: 5rem;
@@ -65,7 +65,7 @@
 @media screen and (max-width: 1268px) {
   .bottom {
     padding: 0rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .bottomii {
@@ -77,8 +77,7 @@
 @media screen and (max-width: 968px) {
   .bottom,
   .detailsBox {
-    grid-gap: 2rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .detailsBox {
@@ -103,5 +102,11 @@
   .bottomii {
     margin-top: 20rem;
     padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
