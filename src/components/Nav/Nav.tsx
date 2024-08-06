@@ -68,10 +68,7 @@ function Nav() {
     <>
       <header className={styles.header}>
         <nav className={styles.navbar}>
-          <Link
-            href='/'
-            className={`${styles.logo} ${isOpen ? styles.active : ""}`}
-          >
+          <Link href='/' className={styles.logo}>
             {/* <span>
               <Golf width={23} height={23} className={styles.icon} />
             </span> */}

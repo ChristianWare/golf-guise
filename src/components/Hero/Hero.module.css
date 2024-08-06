@@ -14,6 +14,7 @@
   position: absolute;
   top: 30px;
   width: 93%;
+  z-index: 99999;
 }
 
 .imgOverlay {
@@ -129,5 +130,16 @@
 
   .heading {
     font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .video,
+  .imgOverlay {
+    height: 105vh;
+  }
+
+  .navContainer {
+    top: 20px;
   }
 }
