@@ -55,7 +55,7 @@ function Nav() {
     },
     {
       text: "Gallery",
-      href: "/glossary",
+      href: "/gallery",
     },
 
     {

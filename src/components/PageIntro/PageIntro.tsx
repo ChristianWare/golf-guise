@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import Nav from "../Nav/Nav";
 import styles from "./PageIntro.module.css";
@@ -10,6 +11,7 @@ interface Props {
   color?: string;
   textColor?: string;
   videoSrc?: any;
+  btns? :boolean;
 }
 
 const PageIntro: FC<Props> = ({
@@ -18,6 +20,7 @@ const PageIntro: FC<Props> = ({
   textAlign = "",
   videoSrc,
   color = "",
+  btns,
 }) => {
   return (
     <LayoutWrapper>
@@ -35,7 +38,23 @@ const PageIntro: FC<Props> = ({
               <h1 className={`${styles.heading} ${styles[textAlign]}`}>
                 {heading}{" "}
               </h1>{" "}
-              <p className={`${styles.copy} ${styles[textAlign]}`}>{copy}</p>
+              <p className={`${styles.copy} ${styles[textAlign]}`}>{copy}</p>{" "}
+              {btns && (
+                <div className={styles.btnContainer}>
+                  <Button
+                    btnType='primary'
+                    text='Home'
+                    href='/'
+                    iconColor='white'
+                  />
+                  <Button
+                    btnType='primaryii'
+                    text='Packages'
+                    href='/'
+                    iconColor='green'
+                  />
+                </div>
+              )}
             </div>
           </div>
         </div>

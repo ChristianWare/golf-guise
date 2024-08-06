@@ -2,7 +2,7 @@
 
 import styles from "./ContactDetails.module.css";
 import Image from "next/image";
-import Img from "../../../public/images/house24.png";
+import Img from "../../../public/images/img1.png";
 
 import Link from "next/link";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
@@ -13,29 +13,6 @@ const ContactDetails = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <svg
-              width='0'
-              height='0'
-              xmlns='http://www.w3.org/2000/svg'
-              version='1.1'
-            >
-              <defs>
-                <filter id='goo'>
-                  <feGaussianBlur
-                    in='SourceGraphic'
-                    stdDeviation='5'
-                    result='blur'
-                  />
-                  <feColorMatrix
-                    in='blur'
-                    mode='matrix'
-                    values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
-                    result='goo'
-                  />
-                  <feComposite in='SourceGraphic' in2='goo' operator='atop' />
-                </filter>
-              </defs>
-            </svg>
             <div className={styles.miscContainer}>
               <div className={styles.imgContainer}>
                 <Image
@@ -53,36 +30,33 @@ const ContactDetails = () => {
               <div className={styles.box}>
                 <h2 className={styles.title}>Phone</h2>
                 <Link href='tel:+62363267800' className={styles.detail}>
-                  623-632-6780
+                  623-632-6678
                 </Link>
               </div>
               <div className={styles.box}>
                 <h2 className={styles.title}>Email</h2>
-                <Link
-                  href='mailto:fontsandfooters@gmail.com'
-                  className={styles.detail}
-                >
-                  fontsandfooters@gmail.com
+                <Link href='mailto:azgolf@gmail.com' className={styles.detail}>
+                  azgolf@gmail.com
                 </Link>
               </div>
               <div className={styles.box}>
                 <h2 className={styles.title}>Calendly</h2>
                 <Link
-                  href='https://calendly.com/fontsandfooters'
+                  href='https://calendly.com/azgolf'
                   target='_blank'
                   className={styles.detail}
                 >
-                  https://calendly.com/fontsandfooters
+                  https://calendly.com/azgolf
                 </Link>
               </div>
               <div className={styles.box}>
                 <h2 className={styles.title}>Facebook</h2>
                 <Link
-                  href='https://www.facebook.com/fontsandfooters'
+                  href='https://www.facebook.com/azgolf'
                   target='_blank'
                   className={styles.detail}
                 >
-                  facebook.com/golfguise
+                  facebook.com/azgolf
                 </Link>
               </div>
             </div>

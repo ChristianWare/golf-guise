@@ -1,3 +1,4 @@
+import ContactDetails from "@/components/ContactDetails/ContactDetails";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
@@ -8,11 +9,11 @@ export default function ContactPage() {
     <main>
       <PageIntro
         heading='Contact Us'
-        copy='Get in Touch with AZ Golf Whisperers:'
-        videoSrc='./videos/video6.mp4'
+        copy='Get in Touch with AZ Golf Whisperers'
+        videoSrc='./videos/video9.mp4'
         textAlign='center'
       />
-      <ContactForm />
+      <ContactDetails />
       <Faqsiii />
       <FinalCTA />
     </main>

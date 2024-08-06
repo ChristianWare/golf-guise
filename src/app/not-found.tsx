@@ -9,10 +9,11 @@ const NotFound = () => {
     <main>
       <PageIntro
         heading='404 Error'
-        copy="Sorry, the page you're looking for doesn't exist or has been removed."
+        copy="Sorry, the page you're looking for doesn't exist or has been removed. Please go back tot the home page."
         textAlign='center'
+        videoSrc='./videos/video8.mp4'
+        btns={true}
       />
-      <TermsSection />
       <FinalCTA />
     </main>
   );

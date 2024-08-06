@@ -131,6 +131,14 @@
   color: var(--tan);
 }
 
+.btnContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 1068px) {
   .content {
     padding: 4rem;
