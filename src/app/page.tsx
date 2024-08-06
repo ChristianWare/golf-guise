@@ -5,10 +5,10 @@ import What from "@/components/What/What";
 import ImageGrid from "@/components/ImageGrid/ImageGrid";
 import Featured from "@/components/Featured/Featured";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
-import ContactForm from "@/components/ContactForm/ContactForm";
 import Gallery from "@/components/Gallery/Gallery";
 import AboutSection from "@/components/AboutSection/AboutSection";
 import ScrollText from "@/components/ScrollText/ScrollText";
+import ContactSection from "@/components/ContactSection/ContactSection";
 
 export default function Home() {
   const fs = require("fs");
@@ -39,14 +39,13 @@ export default function Home() {
       <Hero />
       <ScrollText />
       {/* <What /> */}
-      <ImageGrid />
       <Featured />
+      <ImageGrid />
       {/* <AboutSection /> */}
-      <Gallery />
       <TermsSection />
+      <Gallery />
       <Faqsiii />
       <FinalCTA />
-      <ContactForm />
     </main>
   );
 }

@@ -12,6 +12,11 @@
   background-size: 10px 10px;
 }
 
+.topTop {
+  margin-bottom: 5rem;
+  padding: 5rem;
+}
+
 .top,
 .bottom {
   padding: 3rem;
@@ -131,6 +136,10 @@
 }
 
 @media screen and (max-width: 968px) {
+  .topTop {
+    padding: 3rem;
+  }
+
   .top {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -166,6 +175,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .topTop {
+    padding: 2rem;
+  }
+
   .top {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 5rem;

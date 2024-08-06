@@ -22,7 +22,7 @@ const TermsSection = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Golf terms to know</h2>
+          <h2 className={styles.heading}>Golf Club Rentals</h2>
         </div>
         <div className={styles.bottom}>
           {randomIndices.map((index) => (
