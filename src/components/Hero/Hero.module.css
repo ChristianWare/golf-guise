@@ -56,6 +56,14 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #0f0c0c 0,
+    #f1f1f1 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
 }
 
 .heading {

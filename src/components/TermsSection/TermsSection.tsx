@@ -16,7 +16,7 @@ const TermsSection = () => {
   const termIndices = terms.map((_, index) => index);
   shuffleArray(termIndices);
 
-  const randomIndices = termIndices.slice(0, 6);
+  const randomIndices = termIndices.slice(0, 4);
 
   return (
     <section className={styles.container}>
