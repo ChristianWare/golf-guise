@@ -8,6 +8,10 @@ import Arrow from "../../../public/icons/arrow.svg";
 import Button from "../Button/Button";
 import Image, { StaticImageData } from "next/image";
 import Img from "../../../public/images/img1.png";
+import Diamond from "../../../public/images/diamond.webp";
+import Platinum from "../../../public/images/platimun.jpg";
+import Gold from "../../../public/images/gold.jpg";
+import Silver from "../../../public/images/silver.webp";
 import Modal from "../Modal/Modal";
 
 interface PricingDetail {
@@ -32,7 +36,7 @@ const data: DataItem[] = [
   {
     id: 1,
     series: "Diamond Series",
-    src: Img,
+    src: Diamond,
     details: {
       age: "1 year old",
       clubs: "PING G425 & TaylorMade Stealth2",
@@ -63,7 +67,7 @@ const data: DataItem[] = [
   {
     id: 2,
     series: "Platinum Series",
-    src: Img,
+    src: Platinum,
     details: {
       age: "2 Years Old",
       clubs: "PING G410 & TaylorMade SIM",
@@ -94,7 +98,7 @@ const data: DataItem[] = [
   {
     id: 3,
     series: "Gold Series",
-    src: Img,
+    src: Gold,
     details: {
       age: "3.5 YEARS OLD",
       clubs: "PING G400 & TaylorMade M4",
@@ -113,7 +117,7 @@ const data: DataItem[] = [
   {
     id: 4,
     series: "Silver Series",
-    src: Img,
+    src: Silver,
     details: {
       age: "5.5 YEARS OLD",
       clubs: "PING G30",
