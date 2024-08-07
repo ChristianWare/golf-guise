@@ -6,6 +6,11 @@ import Img from "../../../public/images/img1.png";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import { usePathname } from "next/navigation";
 import Button from "../Button/Button";
+import Weko from "../../../public/images/weko.jpg";
+import Wick from "../../../public/images/wick.jpeg";
+import Quintero from "../../../public/images/q.jpeg";
+import Boulders from "../../../public/images//boulders.jpg";
+import Troon from "../../../public/images/troon.jpg";
 
 const ImageGrid = () => {
   const pathname = usePathname();
@@ -20,7 +25,7 @@ const ImageGrid = () => {
           </div>
           <div className={styles.box1}>
             <Image
-              src={Img}
+              src={Weko}
               alt='Nacho fries'
               layout='fill'
               objectFit='cover'
@@ -29,7 +34,7 @@ const ImageGrid = () => {
           </div>
           <div className={styles.box2}>
             <Image
-              src={Img}
+              src={Wick}
               alt='drone image 2'
               layout='fill'
               objectFit='cover'
@@ -46,7 +51,7 @@ const ImageGrid = () => {
 
           <div className={styles.box5}>
             <Image
-              src={Img}
+              src={Quintero}
               alt='drone image 3'
               layout='fill'
               objectFit='cover'
@@ -57,7 +62,7 @@ const ImageGrid = () => {
         <div className={styles.boxContainer2}>
           <div className={styles.box1B}>
             <Image
-              src={Img}
+              src={Troon}
               alt='drone image 4'
               layout='fill'
               objectFit='cover'
@@ -75,7 +80,7 @@ const ImageGrid = () => {
           </div>
           <div className={styles.box5B}>
             <Image
-              src={Img}
+              src={Boulders}
               alt='drone image 6'
               layout='fill'
               objectFit='cover'
