@@ -22,7 +22,6 @@ export default function CoursesPage() {
       <TermsSection />
       <Faqsiii />
       <FinalCTA />
-      <ContactForm />
     </main>
   );
 }

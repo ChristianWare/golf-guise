@@ -22,7 +22,6 @@ export default function AboutPage() {
       <TermsSection />
       <Faqsiii />
       <FinalCTA />
-      <ContactForm />
     </main>
   );
 }
