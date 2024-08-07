@@ -3,6 +3,11 @@ import Img2 from "../../public/images/img1.png";
 import Img3 from "../../public/images/img1.png";
 import Img4 from "../../public/images/img1.png";
 import Img5 from "../../public/images/img1.png";
+import Weko from "../../public/images/weko.jpg";
+import Wick from "../../public/images/wick.jpeg";
+import Quintero from "../../public/images/q.jpeg";
+import Boulders from "../../public/images//boulders.jpg";
+import Troon from "../../public/images/troon.jpg";
 
 // export const terms = [
 //   {
@@ -765,7 +770,7 @@ export const golfCourseData = [
   {
     id: 1,
     courseName: "We-Ko-Pa",
-    src: Img1,
+    src: Weko,
     moredata: [
       {
         id: 1.1,
@@ -792,7 +797,7 @@ export const golfCourseData = [
   {
     id: 2,
     courseName: "Wickenburg",
-    src: Img2,
+    src: Wick,
     moredata: [
       {
         id: 2.1,
@@ -819,7 +824,7 @@ export const golfCourseData = [
   {
     id: 3,
     courseName: "Quintero",
-    src: Img3,
+    src: Quintero,
     moredata: [
       {
         id: 3.1,
@@ -846,7 +851,7 @@ export const golfCourseData = [
   {
     id: 4,
     courseName: "Boulders",
-    src: Img4,
+    src: Boulders,
     moredata: [
       {
         id: 4.1,
@@ -873,7 +878,7 @@ export const golfCourseData = [
   {
     id: 5,
     courseName: "Troon",
-    src: Img5,
+    src: Troon,
     moredata: [
       {
         id: 5.1,

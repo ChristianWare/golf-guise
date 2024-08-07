@@ -1,34 +1,38 @@
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./CourseCollection.module.css";
 import Image from "next/image";
-import Img1 from "../../../public/images/img1.png";
+import Weko from "../../../public/images/weko.jpg";
+import Wick from "../../../public/images/wick.jpeg";
+import Quintero from "../../../public/images/q.jpeg";
+import Boulders from "../../../public/images//boulders.jpg";
+import Troon from "../../../public/images/troon.jpg";
 
 const CourseCollection = () => {
   const data = [
     {
       id: 1,
       title: "We-Ko-Pa",
-      src: Img1,
+      src: Weko,
     },
     {
       id: 2,
       title: "Wickenburg",
-      src: Img1,
+      src: Wick,
     },
     {
       id: 3,
       title: "Quintero",
-      src: Img1,
+      src: Quintero,
     },
     {
       id: 4,
       title: "Boulders",
-      src: Img1,
+      src: Boulders,
     },
     {
       id: 5,
       title: "Troon",
-      src: Img1,
+      src: Troon,
     },
   ];
 

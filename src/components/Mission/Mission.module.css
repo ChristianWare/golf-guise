@@ -15,7 +15,7 @@
 
 .box {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
 }
 
@@ -24,17 +24,17 @@
   padding: 1.5rem;
   border-radius: 20px;
   background-color: var(--lightGreen);
-  /* width: 60%; */
+  width: 60%;
   margin-bottom: 6rem;
 }
 
-/* .courseDetailsContainer:nth-child(odd) {
+.courseDetailsContainer:nth-child(odd) {
   margin-right: auto;
 }
 
 .courseDetailsContainer:nth-child(even) {
   margin-left: auto;
-} */
+}
 
 .bottom {
   display: grid;
@@ -133,6 +133,10 @@
     margin-bottom: 2rem;
   }
 
+  .courseDetailsContainer {
+    width: 80%;
+  }
+
   .bottom {
     grid-gap: 3rem;
     width: 100%;
@@ -207,6 +211,12 @@
 
   .imgContainer {
     height: 350px;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .courseDetailsContainer {
+    width: 100%;
   }
 }
 
