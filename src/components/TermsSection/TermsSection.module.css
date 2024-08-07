@@ -33,6 +33,7 @@
   justify-content: center;
   gap: 2rem;
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 
 .box:hover {
@@ -50,6 +51,8 @@
   font-size: 2.5rem;
   text-transform: uppercase;
   transition: all 0.3s ease-in;
+  text-align: center;
+  user-select: none;
 }
 
 .desc {
@@ -79,6 +82,14 @@
   grid-template-columns: repeat(1, 11fr);
   width: fit-content;
   margin-left: auto;
+}
+
+.modalTitle {
+  text-align: center;
+  border-bottom: thick double #bcbcbc;
+  padding-bottom: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 968px) {
