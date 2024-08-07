@@ -48,7 +48,8 @@
   padding: 5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .left {
@@ -89,7 +90,7 @@
 .copy {
   margin-top: 1rem;
   font-size: 1.8rem;
-  width: 50%;
+  width: 70%;
   color: var(--tan);
 }
 

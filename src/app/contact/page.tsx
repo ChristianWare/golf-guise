@@ -11,7 +11,7 @@ export default function ContactPage() {
         heading='Contact Us'
         copy='Get in Touch with AZ Golf Whisperers'
         videoSrc='./videos/video9.mp4'
-        textAlign='center'
+        // textAlign='center'
       />
       <ContactDetails />
       <Faqsiii />
