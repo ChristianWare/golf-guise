@@ -28,7 +28,7 @@ interface Details {
 interface DataItem {
   id: number;
   series: string;
-  src: StaticImageData; // Next.js specific type for static images
+  src: StaticImageData;
   details: Details;
 }
 

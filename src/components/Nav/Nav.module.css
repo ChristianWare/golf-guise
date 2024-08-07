@@ -20,6 +20,7 @@
   font-family: var(--stratosSemibold);
   text-transform: uppercase;
   transition: color 0.3s ease;
+  user-select: none;
 }
 
 .icon {
@@ -122,14 +123,14 @@
     transform-origin: top;
     z-index: 1001;
     border-radius: 25px;
-     background-image: repeating-linear-gradient(
-    45deg,
-    #24645e 0,
-    #24645e 1px,
-    transparent 0,
-    transparent 50%
-  );
-  background-size: 10px 10px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #24645e 0,
+      #24645e 1px,
+      transparent 0,
+      transparent 50%
+    );
+    background-size: 10px 10px;
   }
 
   .navItem {
@@ -174,7 +175,6 @@
   }
   .navbar {
     align-items: center;
-
   }
 
   .logo {
@@ -189,7 +189,7 @@
 @media screen and (max-width: 375px) {
   .navMenu.active {
     top: -10px;
-   
+
     height: 90vh;
     width: 100%;
   }

@@ -74,6 +74,7 @@
 .img {
   border-radius: 15px;
   object-fit: cover;
+  border: 1px solid var(--gray);
 }
 
 .btnContainer {
