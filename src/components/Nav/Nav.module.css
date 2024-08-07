@@ -14,14 +14,6 @@
   height: 3px;
 }
 
-.logo {
-  font-size: 2.5rem;
-  color: var(--white);
-  font-family: var(--stratosSemibold);
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-  user-select: none;
-}
 
 .icon {
   position: relative;
@@ -35,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 60px;

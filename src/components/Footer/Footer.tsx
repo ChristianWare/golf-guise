@@ -8,6 +8,8 @@ import Twitter from "../../../public/icons/twitter.svg";
 import Email from "../../../public/icons/email.svg";
 import Golf from "../../../public/icons/golfball.svg";
 import ContactSection from "../ContactSection/ContactSection";
+import Image from "next/image";
+import Logo from "../../../public/icons/logo.png";
 
 const navItems = [
   {
@@ -42,15 +44,23 @@ const Footer = () => {
         <div className={styles.brandInfoMobile}>
           <div className={styles.logoBox}>
             <h6 className={styles.logo}>
-              <span>
+              {/* <span>
                 <Golf width={40} height={40} classname={styles.iconGolf} />
               </span>
-              AZ Golf Whisperer
+              AZ Golf Whisperer */}
+              <Image
+                src={Logo}
+                alt='Logo'
+                width={252}
+                height={75}
+                className={styles.logo}
+              />
             </h6>
             <p className={styles.copy}>
               Explore our fairway treasures, refine your swing, and dive deep
               into the world of golf – where passion meets precision.
             </p>
+            <br />
             <div className={styles.socials}>
               <div className={styles.socialContainer}>
                 <Instagram width={15} height={15} className={styles.icon} />
@@ -65,15 +75,23 @@ const Footer = () => {
           <div className={styles.brandInfo}>
             <div className={styles.logoBox}>
               <h6 className={styles.logo}>
-                <span>
+                {/* <span>
                   <Golf width={50} height={50} classname={styles.icon} />
                 </span>
-                AZ Golf Whisperer
+                AZ Golf Whisperer */}
+                <Image
+                  src={Logo}
+                  alt='Logo'
+                  width={335}
+                  height={100}
+                  className={styles.logo}
+                />
               </h6>
               <p className={styles.copy}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
                 atque.
               </p>
+              <br />
               <div className={styles.socials}>
                 <div className={styles.socialContainer}>
                   <Instagram width={20} height={20} className={styles.icon} />

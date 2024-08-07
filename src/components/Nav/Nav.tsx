@@ -3,6 +3,8 @@
 import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Logo from "../../../public/icons/logo.png";
+import Image from "next/image";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,10 +71,7 @@ function Nav() {
       <header className={styles.header}>
         <nav className={styles.navbar}>
           <Link href='/' className={styles.logo}>
-            {/* <span>
-              <Golf width={23} height={23} className={styles.icon} />
-            </span> */}
-            AZ Golf Whisperer
+            <Image src={Logo} alt='Logo' width={117.25} height={35} className={styles.logo} />
           </Link>
           <ul
             className={
