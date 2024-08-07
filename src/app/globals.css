@@ -35,7 +35,7 @@
   line-height: 120%;
   font-family: var(--hKGuiseSemiBold);
   scroll-behavior: smooth;
-  scroll-margin-top: 170px;
+  scroll-margin-top: 50px;
   -webkit-tap-highlight-color: transparent;
 }
 

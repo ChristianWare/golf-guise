@@ -1,10 +1,7 @@
-"use client";
-
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./ImageGrid.module.css";
-import Img from "../../../public/images/img1.png";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import { usePathname } from "next/navigation";
 import Button from "../Button/Button";
 import Weko from "../../../public/images/weko.jpg";
 import Wick from "../../../public/images/wick.jpeg";
@@ -13,8 +10,6 @@ import Boulders from "../../../public/images//boulders.jpg";
 import Troon from "../../../public/images/troon.jpg";
 
 const ImageGrid = () => {
-  const pathname = usePathname();
-
   return (
     <LayoutWrapper>
       <div className={styles.content}>
@@ -41,13 +36,13 @@ const ImageGrid = () => {
               className={styles.img}
             />
           </div>
-          <div className={styles.box3}>
+          <Link href='/courses/#wickenburg' className={styles.box3}>
             <h5 className={styles.wickenburg}>Wickenburg</h5>
-          </div>
+          </Link>
 
-          <div className={styles.box4}>
+          <Link href='/courses/#quintero' className={styles.box4}>
             <h5 className={styles.quintero}>Quintero</h5>
-          </div>
+          </Link>
 
           <div className={styles.box5}>
             <Image
@@ -69,15 +64,15 @@ const ImageGrid = () => {
               className={styles.img}
             />
           </div>
-          <div className={styles.box2B}>
+          <Link href='/courses/#boulders' className={styles.box2B}>
             <h5 className={styles.boulders}>Boulders</h5>
-          </div>
-          <div className={styles.box3B}>
+          </Link>
+          <Link href='/courses/#we-ko-pa' className={styles.box3B}>
             <h5 className={styles.wekopa}>We-Ko-Pa</h5>
-          </div>
-          <div className={styles.box4B}>
+          </Link>
+          <Link href='/courses/#troon' className={styles.box4B}>
             <h5 className={styles.troon}>Troon</h5>
-          </div>
+          </Link>
           <div className={styles.box5B}>
             <Image
               src={Boulders}

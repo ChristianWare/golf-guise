@@ -769,6 +769,7 @@ export const terms = [
 export const golfCourseData = [
   {
     id: 1,
+    idData: "we-ko-pa",
     courseName: "We-Ko-Pa",
     src: Weko,
     moredata: [
@@ -796,6 +797,7 @@ export const golfCourseData = [
   },
   {
     id: 2,
+    idData: "wickenburg",
     courseName: "Wickenburg",
     src: Wick,
     moredata: [
@@ -823,6 +825,7 @@ export const golfCourseData = [
   },
   {
     id: 3,
+    idData: "quintero",
     courseName: "Quintero",
     src: Quintero,
     moredata: [
@@ -850,6 +853,7 @@ export const golfCourseData = [
   },
   {
     id: 4,
+    idData: "boulders",
     courseName: "Boulders",
     src: Boulders,
     moredata: [
@@ -877,6 +881,7 @@ export const golfCourseData = [
   },
   {
     id: 5,
+    idData: "troon",
     courseName: "Troon",
     src: Troon,
     moredata: [

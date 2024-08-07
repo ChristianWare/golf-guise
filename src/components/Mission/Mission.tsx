@@ -14,7 +14,11 @@ const Mission = () => {
         </div>
         <div className={styles.box}>
           {golfCourseData.map((x) => (
-            <div key={x.id} className={styles.courseDetailsContainer}>
+            <div
+              key={x.id}
+              className={styles.courseDetailsContainer}
+              id={x.idData}
+            >
               <div className={styles.bottom}>
                 <div className={styles.left}>
                   <h3 className={styles.courseName}>{x.courseName}</h3>
