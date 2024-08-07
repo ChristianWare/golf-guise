@@ -14,7 +14,7 @@ export default function CoursesPage() {
         heading='Our Courses'
         copy='Here are some of our best courses that are included in the packages we have to offer.'
         videoSrc='./videos/video6.mp4'
-        textAlign='center'
+        // textAlign='center'
       />
       <CourseCollection />
       <Mission />
