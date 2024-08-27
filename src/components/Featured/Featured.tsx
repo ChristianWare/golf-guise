@@ -19,11 +19,12 @@ const Featured = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             {/* <Tab text='Featured' /> */}
-            <h2 className={styles.heading}>Featured Package</h2>
+            <h2 className={styles.heading}>
+              Featured Package: <br /> Scottsdale Summertime Special
+            </h2>
             <p className={styles.copy}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              voluptas. Asperiores praesentium deleniti officia quidem? Illo
-              omnis excepturi ducimus voluptatem.
+              Experience the fantastic Sonesta Suites, 3 great rounds of golf,
+              and a rental car starting from $339 per person, per day all in!
             </p>
           </div>
           <div className={styles.bottom}>
@@ -34,38 +35,42 @@ const Featured = () => {
             </div>
             <div className={styles.right}>
               <div className={styles.rightTop}>
-                <h3 className={styles.title}>Package 1 - $250 / Day</h3>
+                <h3 className={styles.title}>$339 / Day</h3>
                 <p className={styles.copyii}>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Aspernatur vel dolores aliquid voluptatum iure? Quidem
-                  pariatur id sunt ab temporibus repellat quia dolor! Quas,
-                  quibusdam!
+                  &quot;Scottsdale Summertime Special&quot; Package includes:
                 </p>
                 <ul className={styles.list}>
                   <li className={styles.listItem}>
-                    Access to all vehicle categories
+                    • 3 Nights at The Sonesta Suites Scottsdale
                   </li>
                   <li className={styles.listItem}>
-                    Access to all vehicle categories
+                    • Complimentary breakfast buffet with a beer and wine happy
+                    hour after your round
                   </li>
                   <li className={styles.listItem}>
-                    Access to all vehicle categories
+                    • 3 Days of golf at: Legacy Golf Club
                   </li>
                 </ul>
               </div>
               <div className={styles.rightBottom}>
                 <div className={styles.rb1}>
                   <Arrow width={25} height={25} className={styles.icon} />
-                  <h4 className={styles.h4}>Unlimted Recharge</h4>
+                  <h4 className={styles.h4}>Contact Cindy</h4>
                   <p className={styles.copyiii}>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    602-667-9889
+                    <br />
+                    <br />
+                    cindy@azgolfwhisperer.com
                   </p>
                 </div>
                 <div className={styles.rb2}>
                   <Arrow width={25} height={25} className={styles.icon} />
-                  <h4 className={styles.h4}>Unlimted Recharge</h4>
+                  <h4 className={styles.h4}>Contact Lewis</h4>
                   <p className={styles.copyiii}>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    602-784-1988
+                    <br />
+                    <br />
+                    lewis@azgolfwhisperer.com
                   </p>
                 </div>
               </div>

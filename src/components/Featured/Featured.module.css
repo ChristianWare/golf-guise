@@ -60,7 +60,7 @@
   align-items: flex-start;
   justify-content: space-between;
   height: 100%;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -71,17 +71,21 @@
   padding: 1rem 1.5rem;
   padding-top: 1.3rem;
   background-color: var(--yellow);
-  border-radius: 15px;
+  border: 1px solid var(--green);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .copyii {
   opacity: 0.8;
+  padding: 1rem;
+  border: 1px solid var(--green);
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .btnContainer {
-  /* display: grid; */
-  /* width: 100%; */
-  /* grid-template-columns: repeat(1, 1fr); */
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -143,6 +147,7 @@
 
 .h4 {
   color: var(--white);
+  text-decoration: underline;
 }
 
 .copyiii {
