@@ -14,7 +14,6 @@
   height: 3px;
 }
 
-
 .icon {
   position: relative;
   top: 1px;
@@ -56,8 +55,9 @@
 }
 
 .navItem {
-  font-size: 1.6rem;
-  text-transform: capitalize;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: var(--stratosSemibold);
   user-select: none;
   white-space: nowrap;
   color: var(--white);
