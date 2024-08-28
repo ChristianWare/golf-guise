@@ -9,15 +9,15 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 const Values = () => {
   const data = [
     {
-      title: "John Smith, CEO ",
+      title: "Cindy Smith, CEO ",
       src: Img1,
       detail:
-        "With over 20 years in the golf industry, John brings a wealth of knowledge and a deep love for the game.",
+        "With over 20 years in the golf industry, Cindy brings a wealth of knowledge and a deep love for the game.",
     },
     {
-      title: "Jane Smith, CTO",
+      title: "Lewis Smith, CTO",
       detail:
-        "Jane has been curating personalized travel experiences for over a decade.",
+        "Lewis has been curating personalized travel experiences for over a decade.",
       src: Img2,
     },
   ];
@@ -28,8 +28,7 @@ const Values = () => {
         <div className={styles.top}>
           <h2 className={styles.heading}>Meet Our Team</h2>
           <p className={styles.topCopy}>
-            Boost your online sales with secure, user-friendly, and scalable
-            e-commerce websites.
+           Meet our team!
           </p>
         </div>
         <div className={styles.bottom}>
