@@ -88,8 +88,8 @@ const Footer = () => {
                 />
               </h6>
               <p className={styles.copy}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-                atque.
+                Book your next golf vacation with us! Explore top packages and
+                destinations. Contact us or request a quote to get started.
               </p>
               <br />
               <div className={styles.socials}>

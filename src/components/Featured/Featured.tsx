@@ -77,14 +77,16 @@ const Featured = () => {
               {/*  */}
             </div>
           </div>
-          <div className={styles.btnContainer}>
-            <Button
-              btnType='primaryiii'
-              text='More Details'
-              href='/'
-              iconColor='white'
-            />
-          </div>
+          {pathname === "/" && (
+            <div className={styles.btnContainer}>
+              <Button
+                btnType='primaryiii'
+                text='See Other Packages'
+                href='/packages'
+                iconColor='white'
+              />
+            </div>
+          )}
         </div>
       </LayoutWrapper>
     </section>

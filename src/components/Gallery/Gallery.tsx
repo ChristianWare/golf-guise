@@ -3,6 +3,7 @@ import styles from "./Gallery.module.css";
 import Img1 from "../../../public/images/img1.png";
 import Image from "next/image";
 import Slider from "../Slider/Slider";
+import Button from "../Button/Button";
 
 const images = [
   { src: Img1, class: "" },
@@ -30,8 +31,9 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section className={styles.container}>
-      {/* <LayoutWrapper> */}
+    <>
+      <section className={styles.container}>
+        {/* <LayoutWrapper> */}
         <h2 className={styles.heading}>Gallery</h2>
 
         <div className={styles.gallery}>
@@ -50,9 +52,18 @@ const Gallery = () => {
             </div>
           ))} */}
         </div>
-      {/* </LayoutWrapper> */}
+        {/* </LayoutWrapper> */}
         <Slider />
-    </section>
+      </section>
+        <div className={styles.btnContainer}>
+          <Button
+            text='see all images'
+            btnType='primary'
+            href='/gallery'
+            iconColor='white'
+          />
+        </div>
+    </>
   );
 };
 export default Gallery;

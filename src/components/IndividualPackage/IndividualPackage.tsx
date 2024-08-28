@@ -1,47 +1,55 @@
 import Button from "../Button/Button";
 import styles from "./IndividualPackage.module.css";
 
-const IndividualPackage = () => {
+type PackageProps = {
+  packageData: {
+    title: string;
+    price: string;
+    description: string;
+    features: readonly string[]; // Allow readonly array
+    golfPerkTitle: string;
+    golfPerkDescription: string;
+    button: {
+      text: string;
+      href: string;
+    };
+  };
+};
+
+const IndividualPackage: React.FC<PackageProps> = ({ packageData }) => {
   return (
     <article>
       <div className={styles.bottom}>
         <div className={styles.right}>
           <div className={styles.rightTop}>
             <h3 className={styles.title}>
-              Package 1 <span className={styles.priceii}> - $250 / Day</span>
+              {packageData.title} 
+              <br />
+              {packageData.price}
             </h3>
-            <p className={styles.copyii}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Aspernatur vel dolores aliquid voluptatum iure? Quidem pariatur id
-              sunt ab temporibus repellat quia dolor! Quas, quibusdam!
-            </p>
+            {/* <span className={styles.priceii}>{packageData.price}</span> */}
+            <p className={styles.copyii}>{packageData.description}</p>
           </div>
           <ul className={styles.list}>
-            <li className={styles.listItem}>
-              Access to all vehicle categories
-            </li>
-            <li className={styles.listItem}>
-              Access to all vehicle categories
-            </li>
-            <li className={styles.listItem}>
-              Access to all vehicle categories
-            </li>
-           
+            {packageData.features.map((feature, index) => (
+              <li key={index} className={styles.listItem}>
+                {feature}
+              </li>
+            ))}
           </ul>
           <div className={styles.rightBottom}>
             <div className={styles.rb1}>
-              <h4>Unlimted Recharge</h4>
+              <h4>{packageData.golfPerkTitle}</h4>
               <p className={styles.copyiii}>
-                Just reserve an electric vehicle when you need it, and you are
-                ready to go. Simple, convenient and hassle-free.
+                {packageData.golfPerkDescription}
               </p>
             </div>
           </div>
           <div className={styles.btnContainer}>
             <Button
               btnType='primaryiii'
-              text='Get Started Now'
-              href='/'
+              text={packageData.button.text}
+              href='/contact'
               iconColor='white'
             />
           </div>

@@ -52,7 +52,7 @@ const Faqsiii = () => {
               </h2>
             </div>
             <p className={styles.copy}>
-              Here are some common questions asked by potential clients. If you
+              Here are some common questions asked by potential guests. If you
               do not see your question here feel free to reach out.
             </p>
             {/* <div className={styles.imgContainer}>

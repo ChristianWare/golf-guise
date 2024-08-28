@@ -51,6 +51,7 @@
   background-color: var(--yellow);
   border-radius: 10px;
   width: 100%;
+  line-height: 140%;
 }
 
 .price {
@@ -69,7 +70,7 @@
   display: grid;
   width: 100%;
   grid-template-columns: repeat(1, 1fr);
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .list {
@@ -118,6 +119,11 @@
     transparent 50%
   );
   background-size: 10px 10px;
+}
+
+.rb1 h4 {
+  text-align: center;
+  width: 100%;
 }
 
 .icon {
